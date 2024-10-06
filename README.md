@@ -5,10 +5,10 @@ Analyse de la qualité des reads forward et reverse de T.cornetzi et de T.septen
 
 **06/10** 
 
-Analyse de qualité des reads _1 et _2 de T.septentrionalis : 
+Analyse de qualité des reads SRR3270634_1 et SRR3270634_2 de T.septentrionalis : 
 - reads de longueur 90 pb et 
 - 42% GC, 
 - per base sequence content : on oberve une distribution non uniforme pour les 10-15 nucléotides, ce qui est normal en RNA-seq
 - sequence duplication level : on a un certain nombre de reads qui sont présents plusieurs fois, il est attendu d'avoir des reads dupliqués pour les transcrits de forte abondance
-- overrepresented sequence : il y a présence de séquence qui correspond à un adaptateur Truseq
+- overrepresented sequence : il y a présence de séquence qui correspond à un adaptateur Truseq dans SRR3270634_1
 
