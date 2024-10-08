@@ -27,4 +27,23 @@ STAR --runMode genomeGenerate --genomeDir index_genomes/index_gcf/T_septentriona
 STAR --runMode genomeGenerate --genomeDir index_genomes/index_gca/T_septentrionalis --genomeFastaFiles genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594115.1/GCA_001594115.1_Tsep1.0_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
 
 
+**8/10**
+
+Le trimming a induit des incohérences dans la longueur des séquences et qualité associées à SRR3270634_trimmed_1 donc utilisation des reads non trimmés pour le mapping.
+Mapping des reads SRR3270634_1.fastq et SRR3270634_2.fastq de T.septentrionalis sur les génomes de références gca et gcf de T.septentrionalis.
+
+STAR --genomeDir index_genomes/index_gcf/T_septentrionalis \
+--sjdbGTFfile genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594115.1/genomic.gff \
+--readFilesIn raw_reads/T_septentrionalis/SRR3270634_1.fastq raw_reads/T_septentrionalis/SRR3270634_2.fastq \
+--runThreadN 4 \
+--outFileNamePrefix mapping/map_gcf/T_septentrionalis/SRR3270634_gcf_
+
+STAR --genomeDir index_genomes/index_gca/T_septentrionalis \
+--sjdbGTFfile genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594115.1/genomic.gff \
+--readFilesIn raw_reads/T_septentrionalis/SRR3270634_1.fastq raw_reads/T_septentrionalis/SRR3270634_2.fastq \
+--runThreadN 4 \
+--outFileNamePrefix mapping/map_gca/T_septentrionalis/SRR3270634_gca_
+
+
+
 
