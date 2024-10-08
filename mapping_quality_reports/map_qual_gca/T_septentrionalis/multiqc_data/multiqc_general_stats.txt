@@ -1,0 +1,2 @@
+Sample	star-total_reads	star-mapped	star-mapped_percent	star-uniquely_mapped	star-uniquely_mapped_percent	star-multimapped
+SRR3270634_gca	32.356766	30.470433	94.17	29.927587	92.49	0.5428459999999999

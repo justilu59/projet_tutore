@@ -1,0 +1,2 @@
+[2024-10-08 15:59:56,486] multiqc.core.file_search                           [INFO   ]  Search path: /data/projet1/projet_tutore/mapping/map_gcf/T_septentrionalis
+[2024-10-08 15:59:56,597] multiqc.modules.star.star                          [INFO   ]  Found 1 reports

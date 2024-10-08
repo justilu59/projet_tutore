@@ -1,0 +1,2 @@
+Sample	Uniquely mapped	Mapped to multiple loci	Mapped to too many loci	Unmapped: too short	Unmapped: other
+SRR3270634_gca	29927587.0	542846.0	45918.0	1833946.0	6469.0
