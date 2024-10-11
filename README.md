@@ -1,4 +1,24 @@
 # projet_tutore
+**03/10**
+
+**Importation des données des génomes de référence des 3 espèces de fourmis T.septentrionalis, T.cornetzi et T.zeteki avec l'outil ncbi-datasets-cli version 16.31.0**:
+
+datasets download genome accession GCF_001594115.1 --include gff3,rna,cds,protein,genome,seq-report
+
+datasets download genome accession GCF_001594075.2 --include gff3,rna,cds,protein,genome,seq-report
+
+datasets download genome accession GCF_001594055.1 --include gff3,rna,cds,protein,genome,seq-report
+
+Les mêmes commandes sont exécutées pour l'annotation gca.
+
+**Importation des données de RNA-seq avec l'outil sra-tools version 3.1.1**:
+
+fastq-dump --split-files --gzip SRR3270634
+
+fastq-dump --split-files --gzip SRR3270378
+
+fastq-dump --split-files --gzip SRR3270377
+
 **04/10** 
 
 **Génération du rapport de qualité des reads forward et reverse de T.cornetzi et de T.septentrionalis avec l'outil Fastqc version 0.11.9 et application des commandes**:
