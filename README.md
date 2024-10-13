@@ -82,7 +82,7 @@ multiqc /data/projet1/projet_tutore/mapping/map_gca/T_septentrionalis -o /data/p
 - 92,6 % des lectures s'alignent à un endroit unique sur le génome, donc la majorité des lectures ont une correspondance claire et non ambigüe avec une région sur le génome de référence.
 La longueur moyenne des lectures mappée est de 178.5 bp, ce qui est correct pour des lectures paired end de 90 bp
 
-**Assemblage des reads à l'aide de l'annotation gcf avec l'outil stringtie version 2.2.3**:
+**Assemblage des reads à l'aide de l'assemblage de transcrits de T.septentrionalis basé sur l'annotation gcf avec l'outil stringtie version 2.2.3**:
 
 en premier lieu, on a transformer le ficher d'alignement sam généré par star en fichier bam et on a trié ce fichier bam avec l'outil samtools version 1.21
 
@@ -94,6 +94,34 @@ On a transformé l'annotation de référence .gff en fichier .gtf avec l'outil g
 gffread genomic.gff -T -o genomic.gtf
 
 stringtie mapping/map_gcf/T_septentrionalis/SRR3270634_gcf_sorted.bam -G genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594115.1/genomic.gtf -o transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.gtf
+
+**12/10**
+
+**Evaluation de l'annotation de l'assemblage de transcrits de T.septentrionalis par rapport à annotation de référence gcf avec l'outil gffcompare version v0.12.6** 
+
+gffcompare -r genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594115.1/genomic.gtf -o annotation_analysis/annotation_gcf/T_septentrionalis/comparison_output transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.gtf
+
+**Analyse du rapport généré par gffcompare concernant l'assemblage des transcrits de T.septentrionalis basé sur annotation gcf**
+
+- Il y a 33 897 transcrits dans l'assemblage au total.
+- 14 598 transcrits correspondent parfaitement à l'annotation de référence gcf.
+- 8690 loci correspondent à ceux de l'annotation gcf.
+- 7,7 % des exons annotés manquent dans l'assemblage (7205 exons manquants sur 93707)
+- 9,3% des exons détectés dans l'assemblage n'étaient pas présent dans l'annotation de référence (9907 nouveaux exons sur 107041)
+- 7,2 % des introns annotés sont manquants.
+- 2,3 % des introns de l'assemblage sont nouveaux.
+- 10,6 % des loci annotés sont absents de l'assemblage.
+- 33,2 % des loci trouvés dans l'assemblage sont nouveaux, ce qui est assez élevé et pourrait indiquer la découverte de nouveaux loci non annotés
+
+**Evaluation de la complétude de l'assemblage des transcrits de T.septentrionalis basé sur annotation gcf avec l'outil BUSCO version 5.7.1**
+
+au préalable on transforme l'assemblage des transcrits .gtf en .fasta
+
+gffread assembled_transcripts.gtf -g reference_genome.fasta -w assembled_transcripts.fasta
+
+busco -i transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gcf/T_septentrionalis/busco_output -m transcriptome -f
+
+
 
 
 
