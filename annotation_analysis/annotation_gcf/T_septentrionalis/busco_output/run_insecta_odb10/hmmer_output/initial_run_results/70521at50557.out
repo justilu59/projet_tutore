@@ -1,0 +1,29 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+70521at50557_34720_0:00116b|STRG.7226.1:317-1366|+ -            350 70521at50557         -            268  3.2e-108  360.1  17.8   1   2   1.9e-51   1.9e-48  164.2   0.5     1   142    10   178    10   181 0.87 -
+70521at50557_34720_0:00116b|STRG.7226.1:317-1366|+ -            350 70521at50557         -            268  3.2e-108  360.1  17.8   2   2   2.3e-62   2.3e-59  199.9  11.3   135   268   195   339   178   339 0.90 -
+70521at50557_34720_0:00116b|STRG.7226.4:317-1066|+ -            250 70521at50557         -            268   1.3e-74  249.9  10.3   1   2   8.2e-52   8.1e-49  165.3   0.7     1   142    10   178    10   183 0.87 -
+70521at50557_34720_0:00116b|STRG.7226.4:317-1066|+ -            250 70521at50557         -            268   1.3e-74  249.9  10.3   2   2   1.7e-28   1.7e-25   88.9   3.2   135   188   195   250   182   250 0.87 -
+70521at50557_34720_0:00116b|STRG.7226.2:317-844|+  -            176 70521at50557         -            268   1.1e-48  164.9   0.6   1   1   1.9e-51   1.9e-48  164.2   0.6     1   139    10   175    10   176 0.87 -
+70521at50557_108931_0:003023|STRG.917.2:815-1819|+ -            335 70521at50557         -            268   2.2e-36  124.6   0.7   1   2   9.9e-05     0.098   11.0   0.0    59   123    46   115    23   157 0.73 -
+70521at50557_108931_0:003023|STRG.917.2:815-1819|+ -            335 70521at50557         -            268   2.2e-36  124.6   0.7   2   2   8.7e-35   8.6e-32  109.5   1.9   138   267   167   314   161   315 0.81 -
+70521at50557_108931_0:003023|STRG.917.3:430-1434|+ -            335 70521at50557         -            268   2.2e-36  124.6   0.7   1   2   9.9e-05     0.098   11.0   0.0    59   123    46   115    23   157 0.73 -
+70521at50557_108931_0:003023|STRG.917.3:430-1434|+ -            335 70521at50557         -            268   2.2e-36  124.6   0.7   2   2   8.7e-35   8.6e-32  109.5   1.9   138   267   167   314   161   315 0.81 -
+70521at50557_7130_0:003bdd|STRG.7226.3:92-349|+    -             86 70521at50557         -            268   1.7e-19   69.2   0.2   1   1     2e-22     2e-19   69.0   0.2     1    65    10    86    10    86 0.90 -
+70521at50557_7130_0:003bdd|STRG.7226.5:317-574|+   -             86 70521at50557         -            268   1.7e-19   69.2   0.2   1   1     2e-22     2e-19   69.0   0.2     1    65    10    86    10    86 0.90 -
+70521at50557_7130_0:003bdd|STRG.7226.6:92-349|+    -             86 70521at50557         -            268   1.7e-19   69.2   0.2   1   1     2e-22     2e-19   69.0   0.2     1    65    10    86    10    86 0.90 -
+70521at50557_108931_0:003023|STRG.917.1:711-1448|+ -            246 70521at50557         -            268   4.2e-19   67.9   0.1   1   2   4.6e-05     0.046   12.1   0.0    57   123    44   115    11   156 0.74 -
+70521at50557_108931_0:003023|STRG.917.1:711-1448|+ -            246 70521at50557         -            268   4.2e-19   67.9   0.1   2   2   8.8e-18   8.7e-15   53.8   0.2   138   187   167   220   161   231 0.84 -
+70521at50557_108931_0:003023|STRG.917.4:815-1558|+ -            248 70521at50557         -            268   4.3e-19   67.9   0.1   1   2   4.9e-05     0.049   12.0   0.0    58   123    45   115    15   156 0.74 -
+70521at50557_108931_0:003023|STRG.917.4:815-1558|+ -            248 70521at50557         -            268   4.3e-19   67.9   0.1   2   2   8.9e-18   8.8e-15   53.7   0.2   138   187   167   220   161   231 0.84 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/70521at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/70521at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/70521at50557.hmm annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Oct 13 10:11:56 2024
+# [ok]

@@ -1,0 +1,22 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+97398at50557_34720_0:00215d|STRG.16291.1:86-652|+  -            189 97398at50557         -            191   4.7e-87  289.3   0.3   1   1   3.9e-90   5.5e-87  289.1   0.3    10   165    31   189    24   189 0.97 -
+97398at50557_156304_0:00164c|STRG.14827.1:51-653|+ -            201 97398at50557         -            191   4.9e-12   44.6   0.0   1   1   4.1e-14   5.8e-11   41.1   0.0    11   184    11   185     2   191 0.80 -
+97398at50557_166361_0:0011b3|STRG.14827.2:48-644|+ -            199 97398at50557         -            191   1.1e-11   43.5   0.0   1   1   8.5e-14   1.2e-10   40.1   0.0    16   184     7   176     1   182 0.81 -
+97398at50557_217634_0:000308|STRG.1892.2:211-762|+ -            184 97398at50557         -            191   1.7e-10   39.6   0.1   1   2   6.9e-09   9.7e-06   24.1   0.0    17    70    18    70     2    75 0.79 -
+97398at50557_217634_0:000308|STRG.1892.2:211-762|+ -            184 97398at50557         -            191   1.7e-10   39.6   0.1   2   2     1e-05     0.014   13.8   0.0   114   181   116   182   113   184 0.91 -
+97398at50557_520822_0:000382|STRG.1892.1:233-727|+ -            165 97398at50557         -            191     6e-10   37.8   0.2   1   2   3.7e-08   5.2e-05   21.7   0.1    20    70     1    50     1    55 0.85 -
+97398at50557_520822_0:000382|STRG.1892.1:233-727|+ -            165 97398at50557         -            191     6e-10   37.8   0.2   2   2   6.5e-06    0.0092   14.4   0.0   114   181    96   162    93   165 0.91 -
+97398at50557_307658_0:001a1c|STRG.1892.3:27-518|+  -            164 97398at50557         -            191   7.1e-10   37.6   0.2   1   2   3.6e-08   5.1e-05   21.7   0.1    20    70     1    50     1    55 0.85 -
+97398at50557_307658_0:001a1c|STRG.1892.3:27-518|+  -            164 97398at50557         -            191   7.1e-10   37.6   0.2   2   2   7.8e-06     0.011   14.1   0.0   114   181    96   162    93   164 0.91 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/97398at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/97398at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/97398at50557.hmm annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Oct 13 13:57:35 2024
+# [ok]

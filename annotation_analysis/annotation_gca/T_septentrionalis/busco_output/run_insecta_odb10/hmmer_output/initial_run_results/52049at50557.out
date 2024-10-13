@@ -1,0 +1,25 @@
+#                                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+52049at50557_34720_0:001866|STRG.11974.1:84-1382|+    -            433 52049at50557         -            325   2.7e-98  327.7  38.5   1   2   6.3e-72   5.3e-69  231.4   7.9     1   200     8   231     8   242 0.89 -
+52049at50557_34720_0:001866|STRG.11974.1:84-1382|+    -            433 52049at50557         -            325   2.7e-98  327.7  38.5   2   2   7.9e-29   6.7e-26   89.8  22.8   199   325   250   427   234   427 0.76 -
+52049at50557_34720_0:001866|STRG.11974.2:84-1397|+    -            433 52049at50557         -            325   2.7e-98  327.7  38.5   1   2   6.3e-72   5.3e-69  231.4   7.9     1   200     8   231     8   242 0.89 -
+52049at50557_34720_0:001866|STRG.11974.2:84-1397|+    -            433 52049at50557         -            325   2.7e-98  327.7  38.5   2   2   7.9e-29   6.7e-26   89.8  22.8   199   325   250   427   234   427 0.76 -
+63888at50557_64793_0:0029eb|STRG.3244.1:0-1220|+      -            407 52049at50557         -            325   4.9e-08   31.1   8.5   1   1   1.2e-10     1e-07   30.1   8.5   287   325   332   370   325   370 0.89 -
+92128at50557_103372_0:00151f|STRG.8693.3:197-1492|+   -            432 52049at50557         -            325   8.9e-06   23.7   8.9   1   1     2e-08   1.7e-05   22.7   8.9   288   324    24    60    16    61 0.85 -
+92128at50557_103372_0:00151f|STRG.8693.4:431-1758|+   -            432 52049at50557         -            325   8.9e-06   23.7   8.9   1   1     2e-08   1.7e-05   22.7   8.9   288   324    24    60    16    61 0.85 -
+92128at50557_103372_0:00151f|STRG.8693.1:776-2107|+   -            444 52049at50557         -            325   3.4e-05   21.7   9.5   1   1   7.6e-08   6.5e-05   20.8   9.5   300   324    48    72    34    73 0.89 -
+92128at50557_103372_0:00151f|STRG.8693.2:929-2260|+   -            444 52049at50557         -            325   3.4e-05   21.7   9.5   1   1   7.6e-08   6.5e-05   20.8   9.5   300   324    48    72    34    73 0.89 -
+61099at50557_103372_0:00088e|STRG.2357.1:45-1460|+    -            472 52049at50557         -            325   9.8e-05   20.2   5.2   1   1   1.9e-07   0.00016   19.5   5.2   289   324   405   440   392   441 0.87 -
+106648at50557_166361_0:0012e0|STRG.18917.1:39-1019|+  -            327 52049at50557         -            325   0.00033   18.5   4.3   1   1   5.7e-07   0.00048   18.0   4.3   293   324   133   165   122   166 0.84 -
+106648at50557_166361_0:0012e0|STRG.18917.2:133-1113|+ -            327 52049at50557         -            325   0.00033   18.5   4.3   1   1   5.7e-07   0.00048   18.0   4.3   293   324   133   165   122   166 0.84 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/52049at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/52049at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/52049at50557.hmm annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Oct 13 13:55:37 2024
+# [ok]

@@ -1,0 +1,21 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+72769at50557_34720_0:00075f|STRG.3163.1:462-1886|+  -            475 72769at50557         -            325    7e-164  543.9  14.9   1   2   8.8e-55   2.2e-51  174.2   8.2     1   117     5   121     5   194 0.78 -
+72769at50557_34720_0:00075f|STRG.3163.1:462-1886|+  -            475 72769at50557         -            325    7e-164  543.9  14.9   2   2  2.9e-115  7.2e-112  372.9   0.5   115   325   256   475   234   475 0.93 -
+72769at50557_34720_0:00075f|STRG.3163.2:444-1868|+  -            475 72769at50557         -            325    7e-164  543.9  14.9   1   2   8.8e-55   2.2e-51  174.2   8.2     1   117     5   121     5   194 0.78 -
+72769at50557_34720_0:00075f|STRG.3163.2:444-1868|+  -            475 72769at50557         -            325    7e-164  543.9  14.9   2   2  2.9e-115  7.2e-112  372.9   0.5   115   325   256   475   234   475 0.93 -
+72769at50557_34720_0:00075f|STRG.3163.4:334-1755|+  -            474 72769at50557         -            325  1.6e-163  542.7  14.5   1   2   8.9e-55   2.2e-51  174.2   8.2     1   117     5   121     5   194 0.78 -
+72769at50557_34720_0:00075f|STRG.3163.4:334-1755|+  -            474 72769at50557         -            325  1.6e-163  542.7  14.5   2   2  8.1e-115    2e-111  371.5   0.4   115   324   256   474   234   474 0.93 -
+72769at50557_610380_0:0013fd|STRG.3163.3:444-1849|+ -            467 72769at50557         -            325  3.2e-160  531.9  14.9   1   2   9.4e-55   2.3e-51  174.1   8.3     1   117     5   121     5   195 0.78 -
+72769at50557_610380_0:0013fd|STRG.3163.3:444-1849|+ -            467 72769at50557         -            325  3.2e-160  531.9  14.9   2   2  1.3e-111  3.3e-108  360.9   0.4   115   323   256   467   234   467 0.93 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/72769at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/72769at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/72769at50557.hmm annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Oct 13 10:12:03 2024
+# [ok]

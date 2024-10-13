@@ -1,0 +1,25 @@
+#                                                                                                              --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                          accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                  ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+110270at50557_103372_0:0020da|STRG.10229.1:84-743|+    -            220 110270at50557        -            180   2.9e-68  228.1   1.2   1   1   2.5e-71   3.6e-68  227.8   1.2     1   180    12   216    12   216 0.90 -
+109102at50557_103372_0:00272e|STRG.2392.2:1020-1823|+  -            268 110270at50557        -            180   8.7e-18   63.6   0.0   1   2   4.2e-10   5.9e-07   28.3   0.0     1    50    18    71    18    77 0.80 -
+109102at50557_103372_0:00272e|STRG.2392.2:1020-1823|+  -            268 110270at50557        -            180   8.7e-18   63.6   0.0   2   2   1.3e-11   1.8e-08   33.3   0.0    60   120    98   157    90   173 0.85 -
+109102at50557_103372_0:00272e|STRG.2392.1:1078-1893|+  -            272 110270at50557        -            180   9.2e-18   63.5   0.0   1   2   4.3e-10     6e-07   28.3   0.0     1    50    22    75    22    81 0.80 -
+109102at50557_103372_0:00272e|STRG.2392.1:1078-1893|+  -            272 110270at50557        -            180   9.2e-18   63.5   0.0   2   2   1.3e-11   1.9e-08   33.2   0.0    60   120   102   161    94   177 0.85 -
+109102at50557_103372_0:00272e|STRG.2392.3:215-1030|+   -            272 110270at50557        -            180   9.2e-18   63.5   0.0   1   2   4.3e-10     6e-07   28.3   0.0     1    50    22    75    22    81 0.80 -
+109102at50557_103372_0:00272e|STRG.2392.3:215-1030|+   -            272 110270at50557        -            180   9.2e-18   63.5   0.0   2   2   1.3e-11   1.9e-08   33.2   0.0    60   120   102   161    94   177 0.85 -
+109102at50557_103372_0:00272e|STRG.2392.4:211-1026|+   -            272 110270at50557        -            180   9.2e-18   63.5   0.0   1   2   4.3e-10     6e-07   28.3   0.0     1    50    22    75    22    81 0.80 -
+109102at50557_103372_0:00272e|STRG.2392.4:211-1026|+   -            272 110270at50557        -            180   9.2e-18   63.5   0.0   2   2   1.3e-11   1.9e-08   33.2   0.0    60   120   102   161    94   177 0.85 -
+109102at50557_136037_0:0000fd|STRG.15228.1:197-883|+   -            229 110270at50557        -            180   1.4e-13   49.9   0.1   1   1   4.5e-15   6.4e-12   44.5   0.1     2   139    11   167    10   176 0.76 -
+109102at50557_1049336_0:000a13|STRG.8034.2:1087-1641|+ -            185 110270at50557        -            180   1.9e-05   23.4   0.0   1   2   0.00012      0.17   10.5   0.0     1    31    17    47    17    70 0.90 -
+109102at50557_1049336_0:000a13|STRG.8034.2:1087-1641|+ -            185 110270at50557        -            180   1.9e-05   23.4   0.0   2   2   8.4e-05      0.12   11.0   0.0    70   119   111   160   102   176 0.88 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/110270at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/110270at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/110270at50557.hmm annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Oct 13 10:05:32 2024
+# [ok]

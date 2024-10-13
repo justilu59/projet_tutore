@@ -1,0 +1,27 @@
+#                                                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+102517at50557_83485_0:000972|STRG.9425.4:226-1299|+  -            358 123703at50557        -            207  1.3e-100  334.4  12.4   1   2  1.1e-103  1.3e-100  334.4  12.4     2   207     4   240     3   240 0.92 -
+102517at50557_83485_0:000972|STRG.9425.4:226-1299|+  -            358 123703at50557        -            207  1.3e-100  334.4  12.4   2   2      0.22   2.5e+02    0.3   0.3   135   163   238   265   237   275 0.72 -
+102517at50557_64793_0:001c2d|STRG.9425.1:226-1359|+  -            378 123703at50557        -            207  1.4e-100  334.2  12.3   1   2  1.3e-103  1.4e-100  334.2  12.3     2   207     4   240     3   240 0.92 -
+102517at50557_64793_0:001c2d|STRG.9425.1:226-1359|+  -            378 123703at50557        -            207  1.4e-100  334.2  12.3   2   2      0.26   2.9e+02    0.1   0.4   135   163   238   265   237   275 0.72 -
+102517at50557_64793_0:001c2d|STRG.9425.3:226-1359|+  -            378 123703at50557        -            207  1.4e-100  334.2  12.3   1   2  1.3e-103  1.4e-100  334.2  12.3     2   207     4   240     3   240 0.92 -
+102517at50557_64793_0:001c2d|STRG.9425.3:226-1359|+  -            378 123703at50557        -            207  1.4e-100  334.2  12.3   2   2      0.26   2.9e+02    0.1   0.4   135   163   238   265   237   275 0.72 -
+102517at50557_64793_0:001c2d|STRG.9425.2:226-1356|+  -            377 123703at50557        -            207  1.8e-100  333.9  12.6   1   2  1.6e-103  1.8e-100  333.9  12.6     2   207     4   240     3   240 0.92 -
+102517at50557_64793_0:001c2d|STRG.9425.2:226-1356|+  -            377 123703at50557        -            207  1.8e-100  333.9  12.6   2   2      0.21   2.3e+02    0.4   0.4   135   163   238   265   236   276 0.73 -
+102517at50557_64793_0:001c2d|STRG.9425.5:226-1356|+  -            377 123703at50557        -            207  1.8e-100  333.9  12.6   1   2  1.6e-103  1.8e-100  333.9  12.6     2   207     4   240     3   240 0.92 -
+102517at50557_64793_0:001c2d|STRG.9425.5:226-1356|+  -            377 123703at50557        -            207  1.8e-100  333.9  12.6   2   2      0.21   2.3e+02    0.4   0.4   135   163   238   265   236   276 0.73 -
+102517at50557_307658_0:000cd7|STRG.9128.1:152-1258|+ -            369 123703at50557        -            207   2.2e-36  124.6   9.3   1   1   4.2e-39   4.6e-36  123.5   9.3     3   206     9   230     7   231 0.83 -
+102517at50557_307658_0:000cd7|STRG.9128.2:152-2944|+ -            369 123703at50557        -            207   2.2e-36  124.6   9.3   1   1   4.2e-39   4.6e-36  123.5   9.3     3   206     9   230     7   231 0.83 -
+102517at50557_103372_0:000664|STRG.9128.3:0-2705|+   -            340 123703at50557        -            207     1e-31  109.4   7.6   1   1     2e-34   2.1e-31  108.3   7.6    23   206     2   201     1   202 0.84 -
+135714at50557_456900_0:001c69|STRG.10174.4:47-772|+  -            242 123703at50557        -            207      0.15   10.8   4.1   1   1   0.00033      0.36    9.6   4.1    76   122     8    60     3    95 0.62 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/123703at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/123703at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/123703at50557.hmm annotation_analysis/annotation_gcf/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Oct 13 10:06:10 2024
+# [ok]

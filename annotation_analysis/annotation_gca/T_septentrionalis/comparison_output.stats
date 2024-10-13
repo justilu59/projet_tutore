@@ -1,0 +1,30 @@
+# gffcompare v0.12.6 | Command line was:
+#gffcompare -r genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594115.1/genomic.gtf -o annotation_analysis/annotation_gca/T_septentrionalis/comparison_output transcripts_assembly/gca_assembly/T_septentrionalis/assembled_transcripts.gtf
+#
+
+#= Summary for dataset: transcripts_assembly/gca_assembly/T_septentrionalis/assembled_transcripts.gtf 
+#     Query mRNAs :   33833 in   19953 loci  (24080 multi-exon transcripts)
+#            (6368 multi-transcript loci, ~1.7 transcripts per locus)
+# Reference mRNAs :   15221 in   15221 loci  (13272 multi-exon)
+# Super-loci w/ reference transcripts:    10230
+#-----------------| Sensitivity | Precision  |
+        Base level:    82.3     |    49.8    |
+        Exon level:    60.4     |    53.5    |
+      Intron level:    68.4     |    70.0    |
+Intron chain level:    34.0     |    18.7    |
+  Transcript level:    29.6     |    13.3    |
+       Locus level:    29.6     |    22.4    |
+
+     Matching intron chains:    4510
+       Matching transcripts:    4510
+              Matching loci:    4510
+
+          Missed exons:   20277/86362	( 23.5%)
+           Novel exons:   19636/98690	( 19.9%)
+        Missed introns:   15085/71141	( 21.2%)
+         Novel introns:    7394/69563	( 10.6%)
+           Missed loci:    4127/15221	( 27.1%)
+            Novel loci:    8003/19953	( 40.1%)
+
+ Total union super-loci across all input datasets: 18231 
+33833 out of 33833 consensus transcripts written in annotation_analysis/annotation_gca/T_septentrionalis/comparison_output.annotated.gtf (0 discarded as redundant)

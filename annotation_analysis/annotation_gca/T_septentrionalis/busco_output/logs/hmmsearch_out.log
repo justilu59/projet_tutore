@@ -1,0 +1,845 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/8602at50557.hmm
+# target sequence database:        annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/rerun_results/assembled_transcripts.fasta.modified.fas
+# per-dom hits tabular output:     annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/rerun_results/8602at50557.out
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       8602at50557  [M=681]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                             -----------
+   2.9e-196  649.8  23.7   3.4e-194  642.9  13.1    3.9  3  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+      
+   1.4e-193  640.9  24.7   1.5e-191  634.1  14.0    3.8  3  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+      
+   1.6e-193  640.7  24.8   1.7e-191  634.0  14.1    3.9  3  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+      
+     1e-164  545.5  27.1   6.4e-163  539.6  27.1    2.1  1  8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+     
+      6e-36  120.0   0.0    9.5e-36  119.3   0.0    1.2  1  8602at50557_108931_0:003521|STRG.15075.1:865-1938|+   
+      6e-36  120.0   0.0    9.5e-36  119.3   0.0    1.2  1  8602at50557_108931_0:003521|STRG.15075.3:1260-2333|+  
+    5.3e-35  116.8   3.0    5.3e-35  116.8   3.0    1.8  2  8602at50557_139723_0:0015bd|STRG.693.1:1010-2131|+    
+    3.5e-33  110.8   3.2    3.5e-33  110.8   3.2    1.8  2  8602at50557_139723_0:0015bd|STRG.693.2:1010-2146|+    
+      1e-32  109.3   3.2      1e-32  109.3   3.2    1.8  2  8602at50557_139723_0:0015bd|STRG.693.3:435-1574|+     
+    1.4e-32  108.8   0.1    3.9e-20   67.7   0.0    2.1  2  8602at50557_108931_0:003521|STRG.15075.2:865-1933|+   
+    3.8e-30  100.8   0.6    4.3e-30  100.6   0.6    1.0  1  8602at50557_108931_0:003521|STRG.16284.1:804-1793|+   
+    2.5e-16   55.1   2.6      3e-16   54.9   2.6    1.0  1  8602at50557_108931_0:003521|STRG.19592.1:567-1349|+   
+    2.5e-16   55.1   2.6      3e-16   54.9   2.6    1.0  1  8602at50557_108931_0:003521|STRG.19592.2:438-1220|+   
+    5.5e-16   54.0   0.3    8.2e-16   53.4   0.3    1.1  1  8602at50557_108931_0:003521|STRG.1881.1:120-1106|+    
+    9.5e-12   40.0   1.9    1.9e-11   39.0   1.9    1.4  1  8602at50557_56086_0:000070|STRG.12690.1:1049-2140|+   
+    9.5e-12   40.0   1.9    1.9e-11   39.0   1.9    1.4  1  8602at50557_56086_0:000070|STRG.12690.2:1019-2110|+   
+    9.5e-12   40.0   1.9    1.9e-11   39.0   1.9    1.4  1  8602at50557_56086_0:000070|STRG.12690.3:973-2064|+    
+    9.5e-12   40.0   1.9    1.9e-11   39.0   1.9    1.4  1  8602at50557_56086_0:000070|STRG.12690.4:911-2002|+    
+    7.5e-10   33.7   0.2    3.2e-09   31.6   0.2    1.7  1  8602at50557_108931_0:003521|STRG.6484.1:116-883|+     
+    8.2e-06   20.4   1.5     0.0041   11.4   0.0    2.2  2  8602at50557_1629725_0:000e58|STRG.4647.1:304-1653|+   
+    8.2e-06   20.4   1.5     0.0041   11.4   0.0    2.2  2  8602at50557_1629725_0:000e58|STRG.4647.2:822-2171|+   
+    1.8e-05   19.2   0.8    2.1e-05   19.0   0.8    1.2  1  8602at50557_123851_0:00302a|STRG.12685.1:986-1549|+   
+
+
+Domain annotation for each sequence (and alignments):
+>> 8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  642.9  13.1  6.9e-196  3.4e-194     315     666 ..     254     641 ..     249     651 .. 0.92
+   2 !    5.7   1.3    0.0046      0.22     632     663 ..     655     705 ..     644     708 .. 0.64
+   3 !    4.6   0.0    0.0098      0.48     665     678 ..     808     822 ..     801     825 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 642.9 bits;  conditional E-value: 6.9e-196
+                                       8602at50557 315 dsfkqvg...rvrkqfvrr.....slaqcerec...rdfvcrsfnyr...........nce 353
+                                                       d+f+qvg   rvrk+fvrr     slaqcerec   rdfvcrsfnyr           nce
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 254 DNFRQVGsrtRVRKPFVRRyttasSLAQCERECadaRDFVCRSFNYRpytapygaerdNCE 314
+                                                       78999865559*******97777789******966678********8888888888889** PP
+
+                                       8602at50557 354 lsdrdsrdldlnnpayfe....ydfyers........ecldvsqvcnedGmeftlrtpegf 402
+                                                       lsdrdsrd+d+ np y++    ydfyer+        ecldvsqvc+edGmeftlrtpegf
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 315 LSDRDSRDMDMGNPVYYDtgsdYDFYERNngrqgadgECLDVSQVCSEDGMEFTLRTPEGF 375
+                                                       ****************9544449****97555555557*********************** PP
+
+                                       8602at50557 403 lGriytyGfydrcffrgnGgtvnvlrisGaqGypecgtqrygdtltnivvvqfsdyvqtgr 463
+                                                       +GriytyG+ydrcffrgnG tvn lrisG+qGypecgtqrygdt+tnivvvqfsdyvqtgr
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 376 IGRIYTYGYYDRCFFRGNGRTVNKLRISGPQGYPECGTQRYGDTMTNIVVVQFSDYVQTGR 436
+                                                       ************************************************************* PP
+
+                                       8602at50557 464 dkrfnltclfrGpgeavvtsgyigagsgspipieylpaenslsskvrllilyqgrptttia 524
+                                                       dkrfnltc+frGp+eavvtsgyigagsgspipieylpaen+lss+vrllilyqgrptttia
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 437 DKRFNLTCMFRGPDEAVVTSGYIGAGSGSPIPIEYLPAENTLSSRVRLLILYQGRPTTTIA 497
+                                                       ************************************************************* PP
+
+                                       8602at50557 525 vGdpltfrleaqdgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeldrsreg 585
+                                                       vGdpltfrleaqdgynyvtdifatnviardpysg+svqlidrygcpvdnyvfp+ldr+r+g
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 498 VGDPLTFRLEAQDGYNYVTDIFATNVIARDPYSGKSVQLIDRYGCPVDNYVFPGLDRLRDG 558
+                                                       ************************************************************* PP
+
+                                       8602at50557 586 dslearfnafkipesnflvfeatvrtcrdgcqpaycg...rsepsfgrrrreqvremievf 643
+                                                       dslearfnafkipesnflvfea+vrtcrdgcqpaycg   rsepsfgrrrr+   + +   
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 559 DSLEARFNAFKIPESNFLVFEANVRTCRDGCQPAYCGgtgRSEPSFGRRRRDVNNDTVTDE 619
+                                                       ************************************55559**********9888877665 PP
+
+                                       8602at50557 644 esreelvcltkkeyyglvsavvd 666
+                                                       ++ +  +++t++++++  +++++
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 620 DEAS-PIIVTNDDFNNASTTIFN 641
+                                                       5544.455677777776666665 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.0046
+                                       8602at50557 632 rreqvremievfesreel...................vcltkkeyyglvsa 663
+                                                         e+vremiev++sr+++                   +c+t++eyyglv+a
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 655 EEEHVREMIEVLDSRMNIeedsivekqtkasklllenICITQNEYYGLVTA 705
+                                                       5799**********9876333333333333333333356666666666666 PP
+
+  == domain 3  score: 4.6 bits;  conditional E-value: 0.0098
+                                       8602at50557 665 vdpsepiytdps.fe 678
+                                                       +dpsepiytdps fe
+  8602at50557_34720_0:0017b2|STRG.11808.1:1-2523|+ 808 FDPSEPIYTDPSlFE 822
+                                                       69*********9455 PP
+
+>> 8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  634.1  14.0  3.2e-193  1.5e-191     315     666 ..     254     644 ..     249     652 .. 0.91
+   2 !    5.5   1.5    0.0052      0.25     632     663 ..     658     708 ..     649     711 .. 0.63
+   3 !    4.6   0.0    0.0097      0.47     665     678 ..     799     813 ..     792     816 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 634.1 bits;  conditional E-value: 3.2e-193
+                                       8602at50557 315 dsfkqvg...rvrkqfvrr.....slaqcerec...rdfvcrsfnyr...........nce 353
+                                                       d+f+qvg   rvrk+fvrr     slaqcerec   rdfvcrsfnyr           nce
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 254 DNFRQVGsrtRVRKPFVRRyttasSLAQCERECadaRDFVCRSFNYRpytapygaerdNCE 314
+                                                       78999865559*******97777789******966678********8888888888889** PP
+
+                                       8602at50557 354 lsdrdsrdldlnnpayfe....ydfyers........ecldvsqvcnedGmeftlrtpegf 402
+                                                       lsdrdsrd+d+ np y++    ydfyer+        ecldvsqvc+edGmeftlrtpegf
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 315 LSDRDSRDMDMGNPVYYDtgsdYDFYERNngrqgadgECLDVSQVCSEDGMEFTLRTPEGF 375
+                                                       ****************9544449****97555555557*********************** PP
+
+                                       8602at50557 403 lGriytyGfydrcffrgnGgtvnvlrisGaqGypecgtqrygdtltnivvvqfsdyvqtgr 463
+                                                       +GriytyG+ydrcffrgnG tvn lrisG+qGypecgtqrygdt+tnivvvqfsdyvqtgr
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 376 IGRIYTYGYYDRCFFRGNGRTVNKLRISGPQGYPECGTQRYGDTMTNIVVVQFSDYVQTGR 436
+                                                       ************************************************************* PP
+
+                                       8602at50557 464 dkrfnltclfrGpgeavvtsgyigag...sgspipieylpaenslsskvrllilyqgrptt 521
+                                                       dkrfnltc+frGp+eavvtsgyigag   sgspipieylpaen+lss+vrllilyqgrptt
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 437 DKRFNLTCMFRGPDEAVVTSGYIGAGyarSGSPIPIEYLPAENTLSSRVRLLILYQGRPTT 497
+                                                       ************************876669******************************* PP
+
+                                       8602at50557 522 tiavGdpltfrleaqdgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeldrs 582
+                                                       tiavGdpltfrleaqdgynyvtdifatnviardpysg+svqlidrygcpvdnyvfp+ldr+
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 498 TIAVGDPLTFRLEAQDGYNYVTDIFATNVIARDPYSGKSVQLIDRYGCPVDNYVFPGLDRL 558
+                                                       ************************************************************* PP
+
+                                       8602at50557 583 regdslearfnafkipesnflvfeatvrtcrdgcqpaycg...rsepsfgrrrreqvremi 640
+                                                       r+gdslearfnafkipesnflvfea+vrtcrdgcqpaycg   rsepsfgrrrr+   + +
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 559 RDGDSLEARFNAFKIPESNFLVFEANVRTCRDGCQPAYCGgtgRSEPSFGRRRRDVNNDTV 619
+                                                       ***************************************55559**********9888877 PP
+
+                                       8602at50557 641 evfesreelvcltkkeyyglvsavvd 666
+                                                          ++ +  +++t++++++  +++++
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 620 TDEDEAS-PIIVTNDDFNNASTTIFN 644
+                                                       6655544.455677777776666665 PP
+
+  == domain 2  score: 5.5 bits;  conditional E-value: 0.0052
+                                       8602at50557 632 rreqvremievfesreel...................vcltkkeyyglvsa 663
+                                                         e+vremiev++sr+++                   +c+t++eyyglv+a
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 658 EEEHVREMIEVLDSRMNIeedsivekqtkasklllenICITQNEYYGLVTA 708
+                                                       5799**********9876333333333333333333356666666666666 PP
+
+  == domain 3  score: 4.6 bits;  conditional E-value: 0.0097
+                                       8602at50557 665 vdpsepiytdps.fe 678
+                                                       +dpsepiytdps fe
+  8602at50557_34720_0:0017b2|STRG.11808.2:1-2496|+ 799 FDPSEPIYTDPSlFE 813
+                                                       69*********9455 PP
+
+>> 8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  634.0  14.1  3.5e-193  1.7e-191     315     666 ..     254     644 ..     249     652 .. 0.91
+   2 !    5.4   1.5    0.0056      0.27     632     663 ..     658     708 ..     651     711 .. 0.62
+   3 !    4.6   0.0    0.0098      0.48     665     678 ..     811     825 ..     804     828 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 634.0 bits;  conditional E-value: 3.5e-193
+                                       8602at50557 315 dsfkqvg...rvrkqfvrr.....slaqcerec...rdfvcrsfnyr...........nce 353
+                                                       d+f+qvg   rvrk+fvrr     slaqcerec   rdfvcrsfnyr           nce
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 254 DNFRQVGsrtRVRKPFVRRyttasSLAQCERECadaRDFVCRSFNYRpytapygaerdNCE 314
+                                                       78999865559*******97777789******966678********8888888888889** PP
+
+                                       8602at50557 354 lsdrdsrdldlnnpayfe....ydfyers........ecldvsqvcnedGmeftlrtpegf 402
+                                                       lsdrdsrd+d+ np y++    ydfyer+        ecldvsqvc+edGmeftlrtpegf
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 315 LSDRDSRDMDMGNPVYYDtgsdYDFYERNngrqgadgECLDVSQVCSEDGMEFTLRTPEGF 375
+                                                       ****************9544449****97555555557*********************** PP
+
+                                       8602at50557 403 lGriytyGfydrcffrgnGgtvnvlrisGaqGypecgtqrygdtltnivvvqfsdyvqtgr 463
+                                                       +GriytyG+ydrcffrgnG tvn lrisG+qGypecgtqrygdt+tnivvvqfsdyvqtgr
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 376 IGRIYTYGYYDRCFFRGNGRTVNKLRISGPQGYPECGTQRYGDTMTNIVVVQFSDYVQTGR 436
+                                                       ************************************************************* PP
+
+                                       8602at50557 464 dkrfnltclfrGpgeavvtsgyigag...sgspipieylpaenslsskvrllilyqgrptt 521
+                                                       dkrfnltc+frGp+eavvtsgyigag   sgspipieylpaen+lss+vrllilyqgrptt
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 437 DKRFNLTCMFRGPDEAVVTSGYIGAGyarSGSPIPIEYLPAENTLSSRVRLLILYQGRPTT 497
+                                                       ************************876669******************************* PP
+
+                                       8602at50557 522 tiavGdpltfrleaqdgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeldrs 582
+                                                       tiavGdpltfrleaqdgynyvtdifatnviardpysg+svqlidrygcpvdnyvfp+ldr+
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 498 TIAVGDPLTFRLEAQDGYNYVTDIFATNVIARDPYSGKSVQLIDRYGCPVDNYVFPGLDRL 558
+                                                       ************************************************************* PP
+
+                                       8602at50557 583 regdslearfnafkipesnflvfeatvrtcrdgcqpaycg...rsepsfgrrrreqvremi 640
+                                                       r+gdslearfnafkipesnflvfea+vrtcrdgcqpaycg   rsepsfgrrrr+   + +
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 559 RDGDSLEARFNAFKIPESNFLVFEANVRTCRDGCQPAYCGgtgRSEPSFGRRRRDVNNDTV 619
+                                                       ***************************************55559**********9888877 PP
+
+                                       8602at50557 641 evfesreelvcltkkeyyglvsavvd 666
+                                                          ++ +  +++t++++++  +++++
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 620 TDEDEAS-PIIVTNDDFNNASTTIFN 644
+                                                       6655544.455677777776666665 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.0056
+                                       8602at50557 632 rreqvremievfesreel...................vcltkkeyyglvsa 663
+                                                         e+vremiev++sr+++                   +c+t++eyyglv+a
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 658 EEEHVREMIEVLDSRMNIeedsivekqtkasklllenICITQNEYYGLVTA 708
+                                                       5799**********9876333333333333333333356666666666666 PP
+
+  == domain 3  score: 4.6 bits;  conditional E-value: 0.0098
+                                       8602at50557 665 vdpsepiytdps.fe 678
+                                                       +dpsepiytdps fe
+  8602at50557_34720_0:0017b2|STRG.11808.3:1-2532|+ 811 FDPSEPIYTDPSlFE 825
+                                                       69*********9455 PP
+
+>> 8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  539.6  27.1  1.3e-164  6.4e-163       1     316 [.      63     431 ..      63     432 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 539.6 bits;  conditional E-value: 1.3e-164
+                                        8602at50557   1 pfrvlekcqdlcl......nnlvractsfdfqpgsria......eyeestcyltreqakp 48 
+                                                        pfrvlekcq+lcl      nnlvractsfdfqpgsria      eyeestcyltreqa+p
+  8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+  63 PFRVLEKCQELCLrdrtatNNLVRACTSFDFQPGSRIAsfsgaaEYEESTCYLTREQAQP 122
+                                                        89**********866666689***************954444449*************** PP
+
+                                        8602at50557  49 egignlllvpns...........rierecpnrryvferhprkklklpasdik...aanrt 94 
+                                                        egignl+lvpns           rierecpnrryvferhprkklklp +dik   aanrt
+  8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+ 123 EGIGNLMLVPNSvhftevcltsdRIERECPNRRYVFERHPRKKLKLPLTDIKevsAANRT 182
+                                                        **********97666666666669*************************99866689*** PP
+
+                                        8602at50557  95 dcedkclnefsfvcrsatyd...rscslsrftrrthpelleddpnsdylentclnaerrc 151
+                                                        dced+clnefsfvcrsatyd   rscslsrftrrthpelleddpnsdylentcln+errc
+  8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+ 183 DCEDRCLNEFSFVCRSATYDtalRSCSLSRFTRRTHPELLEDDPNSDYLENTCLNTERRC 242
+                                                        ********************77779*********************************** PP
+
+                                        8602at50557 152 dglavfvkeenkrlggpfevdifsnltleecqalclraekyfcrsveyd.qtrqcvlsee 210
+                                                        dgl+vfvkeenkrl+gpfevdi++nltleecqalc raekyfcrsve+d qtrqcv+see
+  8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+ 243 DGLIVFVKEENKRLRGPFEVDIYTNLTLEECQALCPRAEKYFCRSVEFDeQTRQCVISEE 302
+                                                        ************************************************8579******** PP
+
+                                        8602at50557 211 dsvsqkddl...................rgseypdnv.tshlf..grrpdtafqryrnsr 248
+                                                        dsvsqkdd+                   rgseypd++ +shlf  grrpdtafqryrnsr
+  8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+ 303 DSVSQKDDIgvssspshhfydlvcldnpRGSEYPDSSsSSHLFsdGRRPDTAFQRYRNSR 362
+                                                        *******987777777766666777777799****86268***777************** PP
+
+                                        8602at50557 249 lggefhseitgrslsecldeclrqtsfqcrsavysdr.rtcrlsrfnqkdglriiydady 307
+                                                        l+gefhseitgrslsecldeclrqtsfqcrsavys++ +tcrlsrfnq+dg+riiydady
+  8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+ 363 LSGEFHSEITGRSLSECLDECLRQTSFQCRSAVYSEHyHTCRLSRFNQRDGNRIIYDADY 422
+                                                        ***********************************97589******************** PP
+
+                                        8602at50557 308 dyyenlmds 316
+                                                        dyyenlm +
+  8602at50557_67767_0:000e44|STRG.11810.1:57-1352|+ 423 DYYENLMRE 431
+                                                        *******86 PP
+
+>> 8602at50557_108931_0:003521|STRG.15075.1:865-1938|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  119.3   0.0   1.9e-37   9.5e-36     328     634 ..       8     346 ..       6     356 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 119.3 bits;  conditional E-value: 1.9e-37
+                                          8602at50557 328 vrrslaqcerecrdfvcrsfnyrn......celsdrdsrdldlnnpayf.eydfyers 378
+                                                          v++  ++c+r++  f+cr++ +        c l    +  l +++     +  + e++
+  8602at50557_108931_0:003521|STRG.15075.1:865-1938|+   8 VKQCEERCDRSMDGFICRAYTVDYleekplCLLHSDTTIGLGVSSLIARpNVVYKEQE 65 
+                                                          566778999999*******986542233336677777778888876654267788999 PP
+
+                                          8602at50557 379 ecldvsqvcnedGmeftlrtpegflGriytyGfyd..rcffrgnGgtvnvlrisGaq. 433
+                                                           c+d++  c e  m ++l t e+f+Gr+y+ G+ d   c   g G  v +lr+  ++ 
+  8602at50557_108931_0:003521|STRG.15075.1:865-1938|+  66 PCIDLKVECGESTMTIILTTAEPFIGRMYANGYGDitTCSVNGVGKNVTILRLPLPKk 123
+                                                          9*******************************998556999999999999**987652 PP
+
+                                          8602at50557 434 ...Gype..cg.........tqrygdtltnivvvqfsdyvqtgrdkrfnltclfr..G 475
+                                                               p+  cg          +r    +  i+v+q++  +q   d+   + c +   G
+  8602at50557_108931_0:003521|STRG.15075.1:865-1938|+ 124 eeiDKPDlvCGlipafsinnENRTHTLIWGIIVIQYNPIIQRLGDQSVRVGCTLDesG 181
+                                                          2224576668844333322224556666789*********************986332 PP
+
+                                          8602at50557 476 ...pgeavvtsgyigagsgspi.pieylpae.nslsskvrllilyqgrpttti.avGd 527
+                                                             p++  v s++   +  + + p+  +  + +s    v + il ++   + +  +G+
+  8602at50557_108931_0:003521|STRG.15075.1:865-1938|+ 182 lpePRNVTVHSNFSFEDPNAGVpPVGSIVVNvSSEVPVVTMRILNESNMDAVVtQLGQ 239
+                                                          43388999***997665555551455555440444556788999987765554269** PP
+
+                                          8602at50557 528 pltfrleaqdgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeldrs.re 584
+                                                           lt+r+e +   n + di a  ++a       s  l+d++gcp d+  fp l +   +
+  8602at50557_108931_0:003521|STRG.15075.1:865-1938|+ 240 KLTLRIEIHP-VNGTYDIAAGHLVASSASGESSYLLLDEIGCPTDPATFPALLKDpID 296
+                                                          *******976.59999**********99999999*****************9775269 PP
+
+                                          8602at50557 585 gdslearfnafkipesnflvfeatvrtcrdgcqpaycgrsepsfgrrrre 634
+                                                          + sl + f afk p+s+++ f+  vr c + c+pa c   +ps+gr+rr+
+  8602at50557_108931_0:003521|STRG.15075.1:865-1938|+ 297 NRSLISTFTAFKFPDSQIVRFNVIVRFCIEECEPAICRGGQPSYGRKRRS 346
+                                                          99**********************************************96 PP
+
+>> 8602at50557_108931_0:003521|STRG.15075.3:1260-2333|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  119.3   0.0   1.9e-37   9.5e-36     328     634 ..       8     346 ..       6     356 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 119.3 bits;  conditional E-value: 1.9e-37
+                                           8602at50557 328 vrrslaqcerecrdfvcrsfnyrn......celsdrdsrdldlnnpayf.eydfyer 377
+                                                           v++  ++c+r++  f+cr++ +        c l    +  l +++     +  + e+
+  8602at50557_108931_0:003521|STRG.15075.3:1260-2333|+   8 VKQCEERCDRSMDGFICRAYTVDYleekplCLLHSDTTIGLGVSSLIARpNVVYKEQ 64 
+                                                           566778999999*******98654223333667777777888887665426778899 PP
+
+                                           8602at50557 378 secldvsqvcnedGmeftlrtpegflGriytyGfyd..rcffrgnGgtvnvlrisGa 432
+                                                           + c+d++  c e  m ++l t e+f+Gr+y+ G+ d   c   g G  v +lr+  +
+  8602at50557_108931_0:003521|STRG.15075.3:1260-2333|+  65 EPCIDLKVECGESTMTIILTTAEPFIGRMYANGYGDitTCSVNGVGKNVTILRLPLP 121
+                                                           99*******************************998556999999999999**9876 PP
+
+                                           8602at50557 433 q....Gype..cg.........tqrygdtltnivvvqfsdyvqtgrdkrfnltclfr 474
+                                                           +      p+  cg          +r    +  i+v+q++  +q   d+   + c + 
+  8602at50557_108931_0:003521|STRG.15075.3:1260-2333|+ 122 KkeeiDKPDlvCGlipafsinnENRTHTLIWGIIVIQYNPIIQRLGDQSVRVGCTLD 178
+                                                           522224576668844333322224556666789*********************986 PP
+
+                                           8602at50557 475 ..G...pgeavvtsgyigagsgspi.pieylpae.nslsskvrllilyqgrpttti. 523
+                                                             G   p++  v s++   +  + + p+  +  + +s    v + il ++   + + 
+  8602at50557_108931_0:003521|STRG.15075.3:1260-2333|+ 179 esGlpePRNVTVHSNFSFEDPNAGVpPVGSIVVNvSSEVPVVTMRILNESNMDAVVt 235
+                                                           33243388999***9976655555514555554404445567889999877655542 PP
+
+                                           8602at50557 524 avGdpltfrleaqdgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeld 580
+                                                            +G+ lt+r+e +   n + di a  ++a       s  l+d++gcp d+  fp l 
+  8602at50557_108931_0:003521|STRG.15075.3:1260-2333|+ 236 QLGQKLTLRIEIHP-VNGTYDIAAGHLVASSASGESSYLLLDEIGCPTDPATFPALL 291
+                                                           69*********976.59999**********99999999*****************97 PP
+
+                                           8602at50557 581 rs.regdslearfnafkipesnflvfeatvrtcrdgcqpaycgrsepsfgrrrre 634
+                                                           +   ++ sl + f afk p+s+++ f+  vr c + c+pa c   +ps+gr+rr+
+  8602at50557_108931_0:003521|STRG.15075.3:1260-2333|+ 292 KDpIDNRSLISTFTAFKFPDSQIVRFNVIVRFCIEECEPAICRGGQPSYGRKRRS 346
+                                                           7526999**********************************************96 PP
+
+>> 8602at50557_139723_0:0015bd|STRG.693.1:1010-2131|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.1      0.27        13     332     350 ..      11      32 ..       2      50 .. 0.63
+   2 !  116.8   3.0   1.1e-36   5.3e-35     360     637 ..     100     370 ..      95     374 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.27
+                                         8602at50557 332 laqcerec...rdfvcrsfnyr 350
+                                                          ++c+ +c   ++f+crsf yr
+  8602at50557_139723_0:0015bd|STRG.693.1:1010-2131|+  11 ESACRLACeieNEFLCRSFLYR 32 
+                                                         4444444422236777777766 PP
+
+  == domain 2  score: 116.8 bits;  conditional E-value: 1.1e-36
+                                         8602at50557 360 rdldlnnpayfeydfyersecldvsqvcnedGmeftlrtpegflGriytyGfydrcffr 418
+                                                         +d  +nn +  + +  +   c dvs  c++  +   +rt+++f Griy+ G  + c   
+  8602at50557_139723_0:0015bd|STRG.693.1:1010-2131|+ 100 EDSTINNLTRNDINCDKTGTCYDVSVDCKDTRIAVQVRTNKPFNGRIYALGRSETCNID 158
+                                                         56667888888888888999************************************986 PP
+
+                                         8602at50557 419 gnGgtvnvlrisGaqGypecgtqrygdtltnivvvqfsdyvqtgrdkrfnltclfrGpg 477
+                                                               +++r+  +    +c tq  + + +n vv+q    v t  dk + + c +   +
+  8602at50557_139723_0:0015bd|STRG.693.1:1010-2131|+ 159 VI--NSDLFRLDLTMSGQDCNTQSVTGIYSNTVVLQHHSVVMTKADKIYKVKCTYDMSS 215
+                                                         54..56788888888889*************************************9887 PP
+
+                                         8602at50557 478 eavvtsgyigagsgspipieylpaenslsskvrllilyqgrptttiavGdpltfrleaq 536
+                                                         +  +t g +     + i i    a ++   ++r+l   ++r+  t+ +Gd ltfr+e  
+  8602at50557_139723_0:0015bd|STRG.693.1:1010-2131|+ 216 KN-ITFGMMPIRDPEMISITS--APEAPPPRIRIL-DSRSREVETVRIGDKLTFRIEIP 270
+                                                         76.577888877766666665..555667888865.4689******************9 PP
+
+                                         8602at50557 537 dgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeldrsregdslearfnaf 595
+                                                         +   y   ifa + +a    s  + q+id+ gcpvd+ +fp++    +g++l++ ++af
+  8602at50557_139723_0:0015bd|STRG.693.1:1010-2131|+ 271 EDTPY--GIFARSCVAMAKDSKSTFQIIDDEGCPVDPSIFPSFT--PDGNALQSVYEAF 325
+                                                         98777..7*********************************985..79*********** PP
+
+                                         8602at50557 596 kipesnflvfeatvrtcrdgcqpayc..gr.sepsfgrrrreqvr 637
+                                                         +  es  ++f+ +v+ c   c+pa c  gr s  s+g+rrr  + 
+  8602at50557_139723_0:0015bd|STRG.693.1:1010-2131|+ 326 RFTESYGVIFQCNVKYCLGPCEPAVCewGReSVESWGKRRRRSIA 370
+                                                         **************************666624579*****98876 PP
+
+>> 8602at50557_139723_0:0015bd|STRG.693.2:1010-2146|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.1      0.27        13     332     350 ..      11      32 ..       2      50 .. 0.63
+   2 !  110.8   3.2   7.1e-35   3.5e-33     360     637 ..     100     375 ..      95     379 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.27
+                                         8602at50557 332 laqcerec...rdfvcrsfnyr 350
+                                                          ++c+ +c   ++f+crsf yr
+  8602at50557_139723_0:0015bd|STRG.693.2:1010-2146|+  11 ESACRLACeieNEFLCRSFLYR 32 
+                                                         4444444422236777777766 PP
+
+  == domain 2  score: 110.8 bits;  conditional E-value: 7.1e-35
+                                         8602at50557 360 rdldlnnpayfeydfyersecldvsqvcnedGmeftlrtpegflGriytyGfydrcffr 418
+                                                         +d  +nn +  + +  +   c dvs  c++  +   +rt+++f Griy+ G  + c   
+  8602at50557_139723_0:0015bd|STRG.693.2:1010-2146|+ 100 EDSTINNLTRNDINCDKTGTCYDVSVDCKDTRIAVQVRTNKPFNGRIYALGRSETCNID 158
+                                                         56667888888888888999************************************987 PP
+
+                                         8602at50557 419 gnGgtvnvlrisGaqGypecgtqrygd.....tltnivvvqfsdyvqtgrdkrfnltcl 472
+                                                               +++r+  +    +c tq   d     + +n vv+q    v t  dk + + c 
+  8602at50557_139723_0:0015bd|STRG.693.2:1010-2146|+ 159 VI--NSDLFRLDLTMSGQDCNTQSVRDgfqtgIYSNTVVLQHHSVVMTKADKIYKVKCT 215
+                                                         64..456777777777789999987762222245799********************** PP
+
+                                         8602at50557 473 frGpgeavvtsgyigagsgspipieylpaenslsskvrllilyqgrptttiavGdpltf 531
+                                                         +   ++  +t g +     + i i    a ++   ++r+l   ++r+  t+ +Gd ltf
+  8602at50557_139723_0:0015bd|STRG.693.2:1010-2146|+ 216 YDMSSKN-ITFGMMPIRDPEMISITS--APEAPPPRIRIL-DSRSREVETVRIGDKLTF 270
+                                                         *988776.577888877766666665..555667888865.4689************** PP
+
+                                         8602at50557 532 rleaqdgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeldrsregdslea 590
+                                                         r+e  +   y   ifa + +a    s  + q+id+ gcpvd+ +fp++    +g++l++
+  8602at50557_139723_0:0015bd|STRG.693.2:1010-2146|+ 271 RIEIPEDTPY--GIFARSCVAMAKDSKSTFQIIDDEGCPVDPSIFPSFT--PDGNALQS 325
+                                                         ****998777..7*********************************985..79****** PP
+
+                                         8602at50557 591 rfnafkipesnflvfeatvrtcrdgcqpayc..gr.sepsfgrrrreqvr 637
+                                                          ++af+  es  ++f+ +v+ c   c+pa c  gr s  s+g+rrr  + 
+  8602at50557_139723_0:0015bd|STRG.693.2:1010-2146|+ 326 VYEAFRFTESYGVIFQCNVKYCLGPCEPAVCewGReSVESWGKRRRRSIA 375
+                                                         *******************************666624579*****98876 PP
+
+>> 8602at50557_139723_0:0015bd|STRG.693.3:435-1574|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.1      0.27        13     332     350 ..      11      32 ..       2      50 .. 0.63
+   2 !  109.3   3.2   2.1e-34     1e-32     360     637 ..     100     376 ..      95     380 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.27
+                                        8602at50557 332 laqcerec...rdfvcrsfnyr 350
+                                                         ++c+ +c   ++f+crsf yr
+  8602at50557_139723_0:0015bd|STRG.693.3:435-1574|+  11 ESACRLACeieNEFLCRSFLYR 32 
+                                                        4444444422236777777766 PP
+
+  == domain 2  score: 109.3 bits;  conditional E-value: 2.1e-34
+                                        8602at50557 360 rdldlnnpayfeydfyersecldvsqvcnedGmeftlrtpegflGriytyGfydrcffrg 419
+                                                        +d  +nn +  + +  +   c dvs  c++  +   +rt+++f Griy+ G  + c    
+  8602at50557_139723_0:0015bd|STRG.693.3:435-1574|+ 100 EDSTINNLTRNDINCDKTGTCYDVSVDCKDTRIAVQVRTNKPFNGRIYALGRSETCNIDV 159
+                                                        56667888888888888999************************************9876 PP
+
+                                        8602at50557 420 nGgtvnvlrisGaqGypecgtq...ryg...dtltnivvvqfsdyvqtgrdkrfnltclf 473
+                                                             +++r+  +    +c tq   r g    + +n vv+q    v t  dk + + c +
+  8602at50557_139723_0:0015bd|STRG.693.3:435-1574|+ 160 IN--SDLFRLDLTMSGQDCNTQsvqRDGfqtGIYSNTVVLQHHSVVMTKADKIYKVKCTY 217
+                                                        44..4555665555556676651114332224578************************* PP
+
+                                        8602at50557 474 rGpgeavvtsgyigagsgspipieylpaenslsskvrllilyqgrptttiavGdpltfrl 533
+                                                           ++  +t g +     + i i    a ++   ++r+l   ++r+  t+ +Gd ltfr+
+  8602at50557_139723_0:0015bd|STRG.693.3:435-1574|+ 218 DMSSKN-ITFGMMPIRDPEMISITS--APEAPPPRIRIL-DSRSREVETVRIGDKLTFRI 273
+                                                        988776.577888877766666665..555667888865.4689**************** PP
+
+                                        8602at50557 534 eaqdgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeldrsregdslearfn 593
+                                                        e  +   y   ifa + +a    s  + q+id+ gcpvd+ +fp++    +g++l++ ++
+  8602at50557_139723_0:0015bd|STRG.693.3:435-1574|+ 274 EIPEDTPY--GIFARSCVAMAKDSKSTFQIIDDEGCPVDPSIFPSFT--PDGNALQSVYE 329
+                                                        **998777..7*********************************985..79********* PP
+
+                                        8602at50557 594 afkipesnflvfeatvrtcrdgcqpayc..gr.sepsfgrrrreqvr 637
+                                                        af+  es  ++f+ +v+ c   c+pa c  gr s  s+g+rrr  + 
+  8602at50557_139723_0:0015bd|STRG.693.3:435-1574|+ 330 AFRFTESYGVIFQCNVKYCLGPCEPAVCewGReSVESWGKRRRRSIA 376
+                                                        ****************************666624579*****98876 PP
+
+>> 8602at50557_108931_0:003521|STRG.15075.2:865-1933|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.0   0.0   1.9e-13   9.4e-12     328     431 ..       8     120 ..       6     178 .. 0.73
+   2 !   67.7   0.0     8e-22   3.9e-20     524     634 ..     175     285 ..     161     295 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 40.0 bits;  conditional E-value: 1.9e-13
+                                          8602at50557 328 vrrslaqcerecrdfvcrsfnyrn......celsdrdsrdldlnnpayf.eydfyers 378
+                                                          v++  ++c+r++  f+cr++ +        c l    +  l +++     +  + e++
+  8602at50557_108931_0:003521|STRG.15075.2:865-1933|+   8 VKQCEERCDRSMDGFICRAYTVDYleekplCLLHSDTTIGLGVSSLIARpNVVYKEQE 65 
+                                                          566778999999*******986542233336677777778888876654267788999 PP
+
+                                          8602at50557 379 ecldvsqvcnedGmeftlrtpegflGriytyGfyd..rcffrgnGgtvnvlrisG 431
+                                                           c+d++  c e  m ++l t e+f+Gr+y+ G+ d   c   g G  v +lr+  
+  8602at50557_108931_0:003521|STRG.15075.2:865-1933|+  66 PCIDLKVECGESTMTIILTTAEPFIGRMYANGYGDitTCSVNGVGKNVTILRLPL 120
+                                                          9********************************9844688888899999999864 PP
+
+  == domain 2  score: 67.7 bits;  conditional E-value: 8e-22
+                                          8602at50557 524 avGdpltfrleaqdgynyvtdifatnviardpysgrsvqlidrygcpvdnyvfpeldr 581
+                                                           +G+ lt+r+e +   n + di a  ++a       s  l+d++gcp d+  fp l +
+  8602at50557_108931_0:003521|STRG.15075.2:865-1933|+ 175 CLGQKLTLRIEIHP-VNGTYDIAAGHLVASSASGESSYLLLDEIGCPTDPATFPALLK 231
+                                                          57999******876.59999**********99999999*****************977 PP
+
+                                          8602at50557 582 s.regdslearfnafkipesnflvfeatvrtcrdgcqpaycgrsepsfgrrrre 634
+                                                             ++ sl + f afk p+s+++ f+  vr c + c+pa c   +ps+gr+rr+
+  8602at50557_108931_0:003521|STRG.15075.2:865-1933|+ 232 DpIDNRSLISTFTAFKFPDSQIVRFNVIVRFCIEECEPAICRGGQPSYGRKRRS 285
+                                                          526999**********************************************96 PP
+
+>> 8602at50557_108931_0:003521|STRG.16284.1:804-1793|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.6   0.6   8.7e-32   4.3e-30     342     635 ..      10     318 ..       1     330 [] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 100.6 bits;  conditional E-value: 8.7e-32
+                                          8602at50557 342 fvcrsfnyrn.....celsdrdsrdldlnnpayf...eydfyersecldvsqvcnedG 391
+                                                          f c+s++y +     c ls ++   l+  +  y+   e   ye s c +v+  c    
+  8602at50557_108931_0:003521|STRG.16284.1:804-1793|+  10 FRCHSYDYGDtgdmvCRLSHHSRATLSDIQEPYLdvpEAATYELSSCYNVTIDCRAGD 67 
+                                                          7788888753334448888887777755444444111567899*************** PP
+
+                                          8602at50557 392 meftlrtpegflGriytyGfydrcffrgnGgtvnvlrisGaqGypecgtqryg.dtlt 448
+                                                          m   ++t++ f+G++y+ G  + c    +G     lr++  +   ec  ++ g     
+  8602at50557_108931_0:003521|STRG.16284.1:804-1793|+  68 MVTRIQTSKLFYGKVYAKGSPNSCVQDIKGALEFELRMAYDDL--ECNIRQQGlGRYL 123
+                                                          *************************************987765..5655544423566 PP
+
+                                          8602at50557 449 nivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyigagsgspipieylpaensls 506
+                                                          n v++q  d + t+ d    +tc +   +++v +   +g   g   p   l +e  + 
+  8602at50557_108931_0:003521|STRG.16284.1:804-1793|+ 124 NDVIIQHHDTIVTSSDLGLAVTCQYDLTNKTVSNEVDLGVH-GDITP--ALSEEVIVD 178
+                                                          88999**********************99999776666653.33333..355555554 PP
+
+                                          8602at50557 507 s.kvrllilyqg..rptttiavGdpltfrleaqdgynyvtdifatnviardpysgrsv 561
+                                                          s +v ++i  ++      +  vGdpl++++e  d ++   +if+ +++a d   +  +
+  8602at50557_108931_0:003521|STRG.16284.1:804-1793|+ 179 SpNVAMKITDRSgnEAIPSAEVGDPLALKFEILDPHS-PYEIFVRELVAMDGVDSSEI 235
+                                                          426777776543113344667*************965.578***************** PP
+
+                                          8602at50557 562 qlidrygcpvdnyvfpeldrs.regdslearfnafkipesnflvfeatvrtcrdgcqp 618
+                                                           lid  gcp d+ ++  l +s   g  l ++f+afk p s+ + f a v  c   c+p
+  8602at50557_108931_0:003521|STRG.16284.1:804-1793|+ 236 VLIDSDGCPTDHVIMGPLYKSaTTGKILLSHFDAFKFPSSEVVQFRALVTPCMPTCEP 293
+                                                          **************98888762578999****************************** PP
+
+                                          8602at50557 619 aycgrsep........sfgrrrreq 635
+                                                            c ++e+        sfgrrrr +
+  8602at50557_108931_0:003521|STRG.16284.1:804-1793|+ 294 VQCDQEETtgelrsviSFGRRRRRR 318
+                                                          ***9888544444445899999865 PP
+
+>> 8602at50557_108931_0:003521|STRG.19592.1:567-1349|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.9   2.6   6.1e-18     3e-16     385     621 ..       3     254 ..       1     260 [. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 54.9 bits;  conditional E-value: 6.1e-18
+                                          8602at50557 385 qvcnedGmeftlrtpegflGriytyGf.yd.rcff.rgnGgtvnv....lrisGaqG. 434
+                                                            c++d m++ +  + +f G +y+ G+ yd  c++  g+G         l  +G+ G 
+  8602at50557_108931_0:003521|STRG.19592.1:567-1349|+   3 AECQDDYMKIRIGFNGSFAGLLYSAGYsYDpDCMYvNGTGRDYYEfyiqLNRCGTLGe 60 
+                                                          57**********************9997774577624555544331111344565551 PP
+
+                                          8602at50557 435 ...ypecgtqrygdtltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyigag 489
+                                                             + +   +   + + n v vq++  ++ + d  f +tc +       vt  ++  +
+  8602at50557_108931_0:003521|STRG.19592.1:567-1349|+  61 nthHQDSRKNPTKNLMWNTVTVQYNPLIEEEFDEHFKVTCEYGYDFWKTVTFPFLDVE 118
+                                                          111234444556788******************************9********8766 PP
+
+                                          8602at50557 490 ..sgspipieylpaenslsskvrlli.lyqgrptttiavGdpltfrleaqdgynyvtd 544
+                                                            +g+p+     p e  +  ++r       +r +  + vGdplt+ +  ++ y+   d
+  8602at50557_108931_0:003521|STRG.19592.1:567-1349|+ 119 vaTGNPVVFTLQPPECYM--EIRYGYgTTGTRVAGPVRVGDPLTLIIYMRSKYDG-FD 173
+                                                          115666666666666665..55554413456888899**************9986.59 PP
+
+                                          8602at50557 545 ifatnviardpysgrsvqlidrygcpvdnyvfpeldrsregdsl.e....arfnafki 597
+                                                          i + +  a++    + +qlid+ygcpvd+ ++  +  s +  +l e    a +++f+ 
+  8602at50557_108931_0:003521|STRG.19592.1:567-1349|+ 174 IVVNDCYAHNGG-NKRIQLIDQYGCPVDDKLISRFRGSWSESGLfEtqvfAYMKTFRF 230
+                                                          999999998875.567****************9998887777654422225678899* PP
+
+                                          8602at50557 598 pesnflvfeatvrtcrdgcqpayc 621
+                                                            s  l +e  vr c+  c    c
+  8602at50557_108931_0:003521|STRG.19592.1:567-1349|+ 231 TGSPALYIECDVRMCHGRCPSQPC 254
+                                                          *****************9987766 PP
+
+>> 8602at50557_108931_0:003521|STRG.19592.2:438-1220|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.9   2.6   6.1e-18     3e-16     385     621 ..       3     254 ..       1     260 [. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 54.9 bits;  conditional E-value: 6.1e-18
+                                          8602at50557 385 qvcnedGmeftlrtpegflGriytyGf.yd.rcff.rgnGgtvnv....lrisGaqG. 434
+                                                            c++d m++ +  + +f G +y+ G+ yd  c++  g+G         l  +G+ G 
+  8602at50557_108931_0:003521|STRG.19592.2:438-1220|+   3 AECQDDYMKIRIGFNGSFAGLLYSAGYsYDpDCMYvNGTGRDYYEfyiqLNRCGTLGe 60 
+                                                          57**********************9997774577624555544331111344565551 PP
+
+                                          8602at50557 435 ...ypecgtqrygdtltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyigag 489
+                                                             + +   +   + + n v vq++  ++ + d  f +tc +       vt  ++  +
+  8602at50557_108931_0:003521|STRG.19592.2:438-1220|+  61 nthHQDSRKNPTKNLMWNTVTVQYNPLIEEEFDEHFKVTCEYGYDFWKTVTFPFLDVE 118
+                                                          111234444556788******************************9********8766 PP
+
+                                          8602at50557 490 ..sgspipieylpaenslsskvrlli.lyqgrptttiavGdpltfrleaqdgynyvtd 544
+                                                            +g+p+     p e  +  ++r       +r +  + vGdplt+ +  ++ y+   d
+  8602at50557_108931_0:003521|STRG.19592.2:438-1220|+ 119 vaTGNPVVFTLQPPECYM--EIRYGYgTTGTRVAGPVRVGDPLTLIIYMRSKYDG-FD 173
+                                                          115666666666666665..55554413456888899**************9986.59 PP
+
+                                          8602at50557 545 ifatnviardpysgrsvqlidrygcpvdnyvfpeldrsregdsl.e....arfnafki 597
+                                                          i + +  a++    + +qlid+ygcpvd+ ++  +  s +  +l e    a +++f+ 
+  8602at50557_108931_0:003521|STRG.19592.2:438-1220|+ 174 IVVNDCYAHNGG-NKRIQLIDQYGCPVDDKLISRFRGSWSESGLfEtqvfAYMKTFRF 230
+                                                          999999998875.567****************9998887777654422225678899* PP
+
+                                          8602at50557 598 pesnflvfeatvrtcrdgcqpayc 621
+                                                            s  l +e  vr c+  c    c
+  8602at50557_108931_0:003521|STRG.19592.2:438-1220|+ 231 TGSPALYIECDVRMCHGRCPSQPC 254
+                                                          *****************9987766 PP
+
+>> 8602at50557_108931_0:003521|STRG.1881.1:120-1106|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.4   0.3   1.7e-17   8.2e-16     384     623 ..      43     300 ..      36     306 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 53.4 bits;  conditional E-value: 1.7e-17
+                                         8602at50557 384 sqvcnedGmeftlrtpegflGriytyGfyd..rcffr..gnGg...tvnv.lrisGaqG 434
+                                                         + +c++  m   +  + +f+G i++ Gfy   +c +   g+G    t ++ l  +G   
+  8602at50557_108931_0:003521|STRG.1881.1:120-1106|+  43 QVQCEKTHMRVNIEFDRPFYGMIFSKGFYSdpHCVHLkpGTGHlsaTFEIfLNSCGMSS 101
+                                                         4569999**********************634687652245542213333244456665 PP
+
+                                         8602at50557 435 ypecgtqry......gdtltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyig 487
+                                                           +     y      g  + n ++vq+  yvq   d+   l c +    e  vt     
+  8602at50557_108931_0:003521|STRG.1881.1:120-1106|+ 102 SANHNVAAYgaptpsGSYVENTIIVQYDPYVQEVWDQARKLRCTWYDFYEKAVTFRPFQ 160
+                                                         55555555511111256899*************************************** PP
+
+                                         8602at50557 488 agsgspipieylpaenslsskvrlli.lyqgrptttiavGdpltfrleaqdgynyvtdi 545
+                                                          +    +  ++l  +     ++++    + +  +  + +G+ +t+ l  +d  n   d+
+  8602at50557_108931_0:003521|STRG.1881.1:120-1106|+ 161 VDMLHAVTANFLGDNLQCWMQIQVGKgPWASEVSGIVKIGQTMTMVLAIKDDENK-FDM 218
+                                                         ************99888777777754257777888899*************9775.69* PP
+
+                                         8602at50557 546 fatnviardpysgrsvqlidrygcpvdnyvfpeldrsre...gdsle..arfnafkipe 599
+                                                         ++ n +a+d   +  +ql+d+ygc v + ++  +++ ++   + s+   a f+afk p+
+  8602at50557_108931_0:003521|STRG.1881.1:120-1106|+ 219 LVRNCVAHDGK-RAPIQLVDQYGCVVRPKIMSRFQKIKNfgpSASVVsfAYFQAFKFPD 276
+                                                         *********85.568******************999987422223323489******** PP
+
+                                         8602at50557 600 snflvfeatvrtcrdgcqpaycgr 623
+                                                         s  + f+  ++ cr  c    cg+
+  8602at50557_108931_0:003521|STRG.1881.1:120-1106|+ 277 SMNVHFQCVIQVCRYNCPEPKCGH 300
+                                                         *****************9999996 PP
+
+>> 8602at50557_56086_0:000070|STRG.12690.1:1049-2140|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   1.9   3.9e-13   1.9e-11     385     634 ..       8     269 ..       2     273 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 3.9e-13
+                                          8602at50557 385 qvcnedGmeftlrtpegflGriytyGfyd..rcff.rgnGgtv.nv....lrisGaqG 434
+                                                           +c++  m + +  + ++ G iy+ Gf+    c + + n g++       l  +G+q 
+  8602at50557_56086_0:000070|STRG.12690.1:1049-2140|+   8 VQCSKTMMTINIEFNRAYDGIIYSKGFFMnpECTYvKQNSGSTtYSftvnLESCGTQF 65 
+                                                          46*************************9523576536666644133111245567777 PP
+
+                                          8602at50557 435 ypecgtqrygdtltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyigagsgs 492
+                                                            +   +  +  l n++v+q    +q   d    + cl+ G  +  +t +       +
+  8602at50557_56086_0:000070|STRG.12690.1:1049-2140|+  66 INDFEGEAGQAYLENVLVLQNEPGIQEVWDTIRRVRCLWEGNINKALTVNLSVDMLNQ 123
+                                                          7777777777789****************************99988888765444444 PP
+
+                                          8602at50557 493 pipieylpaenslsskvrlli...lyqgrptttiavGdpltfrleaqdgynyvtdifa 547
+                                                           i + +    ++ ++k+ ++i    +       + +G+ +t+ +  +       d+ +
+  8602at50557_56086_0:000070|STRG.12690.1:1049-2140|+ 124 EI-VTFS--GDTATAKLDIQIgkgPFAPAADGLVKIGETMTLVVSVEGD--PGFDLQV 176
+                                                          43.3333..34555555555522246667777899****9997765443..4569999 PP
+
+                                          8602at50557 548 tnviardpysgrsvqlidrygcpvdnyvfpeldrsregds....l..earfnafkipe 599
+                                                           + +ard  s   +ql d+ gc + + +f  ++++ ++ +    +   a f+afk p+
+  8602at50557_56086_0:000070|STRG.12690.1:1049-2140|+ 177 RDCLARDEASTNMLQLTDERGCILKPKLFGAFQKTNDTGNtgasIigYAFFQAFKFPD 234
+                                                          ******************************99998875440111333478******** PP
+
+                                          8602at50557 600 snflvfeatvrtcrdgcqpaycgrsepsfgrrrre 634
+                                                             l +e +v  c+  c+p    +++   grrrr+
+  8602at50557_56086_0:000070|STRG.12690.1:1049-2140|+ 235 VMDLFIECNVELCKTNCEPCPEANQQIEPGRRRRS 269
+                                                          *******************9999999999***996 PP
+
+>> 8602at50557_56086_0:000070|STRG.12690.2:1019-2110|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   1.9   3.9e-13   1.9e-11     385     634 ..       8     269 ..       2     273 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 3.9e-13
+                                          8602at50557 385 qvcnedGmeftlrtpegflGriytyGfyd..rcff.rgnGgtv.nv....lrisGaqG 434
+                                                           +c++  m + +  + ++ G iy+ Gf+    c + + n g++       l  +G+q 
+  8602at50557_56086_0:000070|STRG.12690.2:1019-2110|+   8 VQCSKTMMTINIEFNRAYDGIIYSKGFFMnpECTYvKQNSGSTtYSftvnLESCGTQF 65 
+                                                          46*************************9523576536666644133111245567777 PP
+
+                                          8602at50557 435 ypecgtqrygdtltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyigagsgs 492
+                                                            +   +  +  l n++v+q    +q   d    + cl+ G  +  +t +       +
+  8602at50557_56086_0:000070|STRG.12690.2:1019-2110|+  66 INDFEGEAGQAYLENVLVLQNEPGIQEVWDTIRRVRCLWEGNINKALTVNLSVDMLNQ 123
+                                                          7777777777789****************************99988888765444444 PP
+
+                                          8602at50557 493 pipieylpaenslsskvrlli...lyqgrptttiavGdpltfrleaqdgynyvtdifa 547
+                                                           i + +    ++ ++k+ ++i    +       + +G+ +t+ +  +       d+ +
+  8602at50557_56086_0:000070|STRG.12690.2:1019-2110|+ 124 EI-VTFS--GDTATAKLDIQIgkgPFAPAADGLVKIGETMTLVVSVEGD--PGFDLQV 176
+                                                          43.3333..34555555555522246667777899****9997765443..4569999 PP
+
+                                          8602at50557 548 tnviardpysgrsvqlidrygcpvdnyvfpeldrsregds....l..earfnafkipe 599
+                                                           + +ard  s   +ql d+ gc + + +f  ++++ ++ +    +   a f+afk p+
+  8602at50557_56086_0:000070|STRG.12690.2:1019-2110|+ 177 RDCLARDEASTNMLQLTDERGCILKPKLFGAFQKTNDTGNtgasIigYAFFQAFKFPD 234
+                                                          ******************************99998875440111333478******** PP
+
+                                          8602at50557 600 snflvfeatvrtcrdgcqpaycgrsepsfgrrrre 634
+                                                             l +e +v  c+  c+p    +++   grrrr+
+  8602at50557_56086_0:000070|STRG.12690.2:1019-2110|+ 235 VMDLFIECNVELCKTNCEPCPEANQQIEPGRRRRS 269
+                                                          *******************9999999999***996 PP
+
+>> 8602at50557_56086_0:000070|STRG.12690.3:973-2064|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   1.9   3.9e-13   1.9e-11     385     634 ..       8     269 ..       2     273 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 3.9e-13
+                                         8602at50557 385 qvcnedGmeftlrtpegflGriytyGfyd..rcff.rgnGgtv.nv....lrisGaqGy 435
+                                                          +c++  m + +  + ++ G iy+ Gf+    c + + n g++       l  +G+q  
+  8602at50557_56086_0:000070|STRG.12690.3:973-2064|+   8 VQCSKTMMTINIEFNRAYDGIIYSKGFFMnpECTYvKQNSGSTtYSftvnLESCGTQFI 66 
+                                                         46*************************95235765366666441331112455677777 PP
+
+                                         8602at50557 436 pecgtqrygdtltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyigagsgspi 494
+                                                          +   +  +  l n++v+q    +q   d    + cl+ G  +  +t +       + i
+  8602at50557_56086_0:000070|STRG.12690.3:973-2064|+  67 NDFEGEAGQAYLENVLVLQNEPGIQEVWDTIRRVRCLWEGNINKALTVNLSVDMLNQEI 125
+                                                         777777777789****************************9998888876544444443 PP
+
+                                         8602at50557 495 pieylpaenslsskvrlli...lyqgrptttiavGdpltfrleaqdgynyvtdifatnv 550
+                                                          + +    ++ ++k+ ++i    +       + +G+ +t+ +  +       d+ + + 
+  8602at50557_56086_0:000070|STRG.12690.3:973-2064|+ 126 -VTFS--GDTATAKLDIQIgkgPFAPAADGLVKIGETMTLVVSVEGD--PGFDLQVRDC 179
+                                                         .3333..34555555555522246667777899****9997765443..4569999*** PP
+
+                                         8602at50557 551 iardpysgrsvqlidrygcpvdnyvfpeldrsregds....l..earfnafkipesnfl 603
+                                                         +ard  s   +ql d+ gc + + +f  ++++ ++ +    +   a f+afk p+   l
+  8602at50557_56086_0:000070|STRG.12690.3:973-2064|+ 180 LARDEASTNMLQLTDERGCILKPKLFGAFQKTNDTGNtgasIigYAFFQAFKFPDVMDL 238
+                                                         ***************************99998875440111333478************ PP
+
+                                         8602at50557 604 vfeatvrtcrdgcqpaycgrsepsfgrrrre 634
+                                                          +e +v  c+  c+p    +++   grrrr+
+  8602at50557_56086_0:000070|STRG.12690.3:973-2064|+ 239 FIECNVELCKTNCEPCPEANQQIEPGRRRRS 269
+                                                         ***************9999999999***996 PP
+
+>> 8602at50557_56086_0:000070|STRG.12690.4:911-2002|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   1.9   3.9e-13   1.9e-11     385     634 ..       8     269 ..       2     273 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 3.9e-13
+                                         8602at50557 385 qvcnedGmeftlrtpegflGriytyGfyd..rcff.rgnGgtv.nv....lrisGaqGy 435
+                                                          +c++  m + +  + ++ G iy+ Gf+    c + + n g++       l  +G+q  
+  8602at50557_56086_0:000070|STRG.12690.4:911-2002|+   8 VQCSKTMMTINIEFNRAYDGIIYSKGFFMnpECTYvKQNSGSTtYSftvnLESCGTQFI 66 
+                                                         46*************************95235765366666441331112455677777 PP
+
+                                         8602at50557 436 pecgtqrygdtltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyigagsgspi 494
+                                                          +   +  +  l n++v+q    +q   d    + cl+ G  +  +t +       + i
+  8602at50557_56086_0:000070|STRG.12690.4:911-2002|+  67 NDFEGEAGQAYLENVLVLQNEPGIQEVWDTIRRVRCLWEGNINKALTVNLSVDMLNQEI 125
+                                                         777777777789****************************9998888876544444443 PP
+
+                                         8602at50557 495 pieylpaenslsskvrlli...lyqgrptttiavGdpltfrleaqdgynyvtdifatnv 550
+                                                          + +    ++ ++k+ ++i    +       + +G+ +t+ +  +       d+ + + 
+  8602at50557_56086_0:000070|STRG.12690.4:911-2002|+ 126 -VTFS--GDTATAKLDIQIgkgPFAPAADGLVKIGETMTLVVSVEGD--PGFDLQVRDC 179
+                                                         .3333..34555555555522246667777899****9997765443..4569999*** PP
+
+                                         8602at50557 551 iardpysgrsvqlidrygcpvdnyvfpeldrsregds....l..earfnafkipesnfl 603
+                                                         +ard  s   +ql d+ gc + + +f  ++++ ++ +    +   a f+afk p+   l
+  8602at50557_56086_0:000070|STRG.12690.4:911-2002|+ 180 LARDEASTNMLQLTDERGCILKPKLFGAFQKTNDTGNtgasIigYAFFQAFKFPDVMDL 238
+                                                         ***************************99998875440111333478************ PP
+
+                                         8602at50557 604 vfeatvrtcrdgcqpaycgrsepsfgrrrre 634
+                                                          +e +v  c+  c+p    +++   grrrr+
+  8602at50557_56086_0:000070|STRG.12690.4:911-2002|+ 239 FIECNVELCKTNCEPCPEANQQIEPGRRRRS 269
+                                                         ***************9999999999***996 PP
+
+>> 8602at50557_108931_0:003521|STRG.6484.1:116-883|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.6   0.2   6.5e-11   3.2e-09     384     616 ..      18     256 .]       6     256 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 31.6 bits;  conditional E-value: 6.5e-11
+                                        8602at50557 384 sqvcnedGmeftlrtpegflGriytyGfyd..rcffr..gnGgtvnvlrisGaqGypecg 439
+                                                        + +c +d m+  l  +++f G + + G +   rc +   ++G t   +ri+    y  cg
+  8602at50557_108931_0:003521|STRG.6484.1:116-883|+  18 EVMCGKDHMDVHLSFSQPFEGIVSSKGQHAdpRCIYVppSTGQTFFSFRIA----YARCG 73 
+                                                        458************************873369**9733688899999996....88899 PP
+
+                                        8602at50557 440 tq..rygdtltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsgyigagsgspipie 497
+                                                        t+   +g+   n vvvq+   +    d    l c +    e   +   +  +    i ++
+  8602at50557_108931_0:003521|STRG.6484.1:116-883|+  74 TKpdMHGQFYENTVVVQYDKDLLEVWDEAKRLRCEWFNDYEKTASKPPMVIADLDVIQLD 133
+                                                        97446999**************************99888888888888888888999999 PP
+
+                                        8602at50557 498 ylpaenslsskvrllilyqgrpttt.iavGdpltfrleaqdgynyvtdifatnviardpy 556
+                                                        +   +     +++      + p +  + +G  lt+ + a + y    d+ + + +a d  
+  8602at50557_108931_0:003521|STRG.6484.1:116-883|+ 134 FRGDNVDCWMEIQHGKGPWAPPVSGiVPLGSTLTLVV-AINDYRGEFDMRVKSCVASDG- 191
+                                                        99888777777776655555666551579*****976.56679999************7. PP
+
+                                        8602at50557 557 sgrsvqlidrygcpvdnyvfpeldrsregds.....learfnafkipesnflvfeatvrt 611
+                                                         g+++ql d++gc + + ++  + ++r +d        a f+afk p++  + ++  v  
+  8602at50557_108931_0:003521|STRG.6484.1:116-883|+ 192 GGHTIQLSDEFGCVLRPKMISRFLKARGSDDratviTYAFFHAFKFPDALSVHIKCKVEI 251
+                                                        79********************999998886222223589******************** PP
+
+                                        8602at50557 612 crdgc 616
+                                                        cr+gc
+  8602at50557_108931_0:003521|STRG.6484.1:116-883|+ 252 CRHGC 256
+                                                        ****9 PP
+
+>> 8602at50557_1629725_0:000e58|STRG.4647.1:304-1653|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.6    0.0011     0.056     321     365 ..     267     324 ..     261     348 .. 0.67
+   2 !   11.4   0.0   8.4e-05    0.0041     323     377 ..     374     444 ..     362     447 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0011
+                                          8602at50557 321 grvrkqfvrrslaqcerec...rdfvcrsfnyr..........ncelsdrdsrdldln 365
+                                                          g vrk+++  ++ qce+ c   + +vc +f+yr          nc lsd + +dl+  
+  8602at50557_1629725_0:000e58|STRG.4647.1:304-1653|+ 267 GVVRKTYLTSNMDQCENLCiseKSYVCMTFSYRynvaptdptdNCLLSDVSYKDLNFY 324
+                                                          5578999999999999988666679999998884444444444555555555555543 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 8.4e-05
+                                          8602at50557 323 vrkqfvrrslaqcerec...rdfvcrsfnyr............ncelsdrdsrdldln 365
+                                                          vrk+ + + l +c+ ec   +df+crsf ++            nc lsd  s+d++ +
+  8602at50557_1629725_0:000e58|STRG.4647.1:304-1653|+ 374 VRKSLIVNDLGECQAECmttHDFMCRSFTFKyglehgrsdiltNCYLSDWPSQDINPT 431
+                                                          7899999999999999955569999999986444455555555788888888887754 PP
+
+                                          8602at50557 366 .npayfeydfyer 377
+                                                            p +   + yer
+  8602at50557_1629725_0:000e58|STRG.4647.1:304-1653|+ 432 hMPDMDGAEVYER 444
+                                                          1445555566665 PP
+
+>> 8602at50557_1629725_0:000e58|STRG.4647.2:822-2171|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.6    0.0011     0.056     321     365 ..     267     324 ..     261     348 .. 0.67
+   2 !   11.4   0.0   8.4e-05    0.0041     323     377 ..     374     444 ..     362     447 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.0011
+                                          8602at50557 321 grvrkqfvrrslaqcerec...rdfvcrsfnyr..........ncelsdrdsrdldln 365
+                                                          g vrk+++  ++ qce+ c   + +vc +f+yr          nc lsd + +dl+  
+  8602at50557_1629725_0:000e58|STRG.4647.2:822-2171|+ 267 GVVRKTYLTSNMDQCENLCiseKSYVCMTFSYRynvaptdptdNCLLSDVSYKDLNFY 324
+                                                          5578999999999999988666679999998884444444444555555555555543 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 8.4e-05
+                                          8602at50557 323 vrkqfvrrslaqcerec...rdfvcrsfnyr............ncelsdrdsrdldln 365
+                                                          vrk+ + + l +c+ ec   +df+crsf ++            nc lsd  s+d++ +
+  8602at50557_1629725_0:000e58|STRG.4647.2:822-2171|+ 374 VRKSLIVNDLGECQAECmttHDFMCRSFTFKyglehgrsdiltNCYLSDWPSQDINPT 431
+                                                          7899999999999999955569999999986444455555555788888888887754 PP
+
+                                          8602at50557 366 .npayfeydfyer 377
+                                                            p +   + yer
+  8602at50557_1629725_0:000e58|STRG.4647.2:822-2171|+ 432 hMPDMDGAEVYER 444
+                                                          1445555566665 PP
+
+>> 8602at50557_123851_0:00302a|STRG.12685.1:986-1549|+  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.0   0.8   4.3e-07   2.1e-05     387     484 ..       1     106 [.       1     188 [] 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 19.0 bits;  conditional E-value: 4.3e-07
+                                          8602at50557 387 cnedGmeftlrtpegflGriytyGfyd..rcff.rgnGgtvnvlrisGaqGypecgtq 441
+                                                          cn+  m + +  +  f G iyt G+y   +c + + n g++   r s +     cgtq
+  8602at50557_123851_0:00302a|STRG.12685.1:986-1549|+   1 CNKTMMTINIEFNRVFDGIIYTKGYYSnpKCIYvKQNSGSA---RYSFTVNLDSCGTQ 55 
+                                                          99999*********************745797736777765...88889999999999 PP
+
+                                          8602at50557 442 rygd........tltnivvvqfsdyvqtgrdkrfnltclfrGpgeavvtsg 484
+                                                           ++d         l n++v+q    +q   d    + cl+ G  +  ++ +
+  8602at50557_123851_0:00302a|STRG.12685.1:986-1549|+  56 FFNDfvgptgqaYLENVLVLQNEPSIQEVWDTVRRVQCLWEGNINQTLRMN 106
+                                                          9988333322224689************************99877665554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (681 nodes)
+Target sequences:                       1077  (247350 residues searched)
+Passed MSV filter:                        38  (0.0352832); expected 21.5 (0.02)
+Passed bias filter:                       35  (0.0324977); expected 21.5 (0.02)
+Passed Vit filter:                        22  (0.0204271); expected 1.1 (0.001)
+Passed Fwd filter:                        22  (0.0204271); expected 0.0 (1e-05)
+Initial search space (Z):               1077  [actual number of targets]
+Domain search space  (domZ):              22  [number of targets reported over threshold]
+# CPU time: 0.13u 0.00s 00:00:00.13 Elapsed: 00:00:00.13
+# Mc/sec: 1234.17
+//
+[ok]

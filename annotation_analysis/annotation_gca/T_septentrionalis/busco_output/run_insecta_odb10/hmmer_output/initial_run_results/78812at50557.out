@@ -1,0 +1,25 @@
+#                                                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+78812at50557_34720_0:002a41|STRG.20021.4:1-1113|+    -            371 78812at50557         -            224  6.7e-121  400.6   0.0   1   1  1.3e-123  9.1e-121  400.2   0.0    12   224   114   349   106   349 0.91 -
+78812at50557_34720_0:002a41|STRG.20021.3:0-1391|+    -            464 78812at50557         -            224  1.2e-120  399.8   0.0   1   1  2.4e-123  1.7e-120  399.3   0.0    12   224   207   442   199   442 0.91 -
+93865at50557_83485_0:001da3|STRG.16959.2:0-761|+     -            254 78812at50557         -            224   5.5e-51  172.0   0.0   1   1     1e-53   7.1e-51  171.6   0.0    34   197    80   249    59   253 0.91 -
+93865at50557_83485_0:001da3|STRG.16959.1:158-984|+   -            270 78812at50557         -            224   6.6e-51  171.7   0.0   1   1   1.2e-53   8.6e-51  171.4   0.0    34   197    96   265    75   269 0.91 -
+25910at50557_113334_0:002cfc|STRG.19051.1:440-940|+  -            167 78812at50557         -            224   6.3e-05   21.4   0.1   1   1   1.4e-07   9.7e-05   20.7   0.1    62   187    12   135     5   145 0.80 -
+25910at50557_113334_0:002cfc|STRG.19051.2:440-940|+  -            167 78812at50557         -            224   6.3e-05   21.4   0.1   1   1   1.4e-07   9.7e-05   20.7   0.1    62   187    12   135     5   145 0.80 -
+25910at50557_113334_0:002cfc|STRG.19051.4:440-940|+  -            167 78812at50557         -            224   6.3e-05   21.4   0.1   1   1   1.4e-07   9.7e-05   20.7   0.1    62   187    12   135     5   145 0.80 -
+25910at50557_113334_0:002cfc|STRG.19051.5:559-1059|+ -            167 78812at50557         -            224   6.3e-05   21.4   0.1   1   1   1.4e-07   9.7e-05   20.7   0.1    62   187    12   135     5   145 0.80 -
+78812at50557_88501_0:001459|STRG.2916.1:1344-1697|+  -            118 78812at50557         -            224    0.0019   16.5   0.2   1   1   1.2e-05    0.0082   14.4   0.2    70   104     4    38     1   118 0.60 -
+78812at50557_88501_0:001459|STRG.2916.6:1073-1426|+  -            118 78812at50557         -            224    0.0019   16.5   0.2   1   1   1.2e-05    0.0082   14.4   0.2    70   104     4    38     1   118 0.60 -
+28429at50557_520822_0:001067|STRG.2078.2:350-1432|+  -            341 78812at50557         -            224     0.083   11.2   0.1   1   1   0.00018      0.13   10.6   0.1    66   134   124   193   107   210 0.90 -
+28429at50557_520822_0:001067|STRG.2078.3:350-1372|+  -            341 78812at50557         -            224     0.083   11.2   0.1   1   1   0.00018      0.13   10.6   0.1    66   134   124   193   107   210 0.90 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/78812at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/78812at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/78812at50557.hmm annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Oct 13 13:56:47 2024
+# [ok]

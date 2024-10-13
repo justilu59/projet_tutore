@@ -1,0 +1,16 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+104265at50557_64793_0:000f5b|STRG.6065.2:116-857|+ -            203 104265at50557        -            177   1.2e-81  271.7   0.2   1   1   6.8e-85   1.9e-81  271.0   0.2     1   177     2   198     2   198 0.87 -
+104265at50557_64793_0:000f5b|STRG.6065.3:0-662|+   -            221 104265at50557        -            177   2.1e-80  267.7   2.7   1   1   2.3e-82   6.6e-79  262.7   2.7     1   177     2   216     2   216 0.88 -
+104265at50557_64793_0:000f5b|STRG.6065.1:222-707|+ -            162 104265at50557        -            177   1.2e-75  252.2   0.2   1   1   4.7e-79   1.3e-75  252.0   0.2    33   177     1   157     1   157 0.95 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/104265at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/104265at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/104265at50557.hmm annotation_analysis/annotation_gca/T_septentrionalis/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Oct 13 13:52:11 2024
+# [ok]
