@@ -80,11 +80,11 @@ multiqc /data/projet1/projet_tutore/mapping/map_gca/T_septentrionalis -o /data/p
 
 - 94,2 % des lectures se sont alignés donc la grande majorité des lectures se sont correctement alignées.
 - 92,6 % des lectures s'alignent à un endroit unique sur le génome, donc la majorité des lectures ont une correspondance claire et non ambigüe avec une région sur le génome de référence.
-La longueur moyenne des lectures mappée est de 178.5 bp, ce qui est correct pour des lectures paired end de 90 bp
+La longueur moyenne des lectures mappée est de 178.5 bp, ce qui est correct pour des lectures paired end de 90 bp.
 
-**Assemblage des reads à l'aide de l'assemblage de transcrits de T.septentrionalis basé sur l'annotation gcf avec l'outil stringtie version 2.2.3**:
+**Assemblage des transcrits de T.septentrionalis basé sur l'annotation gcf avec l'outil stringtie version 2.2.3**:
 
-en premier lieu, on a transformer le ficher d'alignement sam généré par star en fichier bam et on a trié ce fichier bam avec l'outil samtools version 1.21
+en premier lieu, on a transformé le ficher d'alignement sam généré par star en fichier bam et on a trié ce fichier bam avec l'outil samtools version 1.21
 
 samtools view -S -b SRR3270634_gcf_Aligned.out.sam > SRR3270634_gcf_Aligned.out.bam
 
@@ -97,7 +97,7 @@ stringtie mapping/map_gcf/T_septentrionalis/SRR3270634_gcf_sorted.bam -G genomes
 
 **12/10**
 
-**Evaluation de l'annotation de l'assemblage de transcrits de T.septentrionalis par rapport à annotation de référence gcf avec l'outil gffcompare version v0.12.6** 
+**Evaluation de l'annotation de l'assemblage des transcrits de T.septentrionalis par rapport à annotation de référence gcf avec l'outil gffcompare version v0.12.6** 
 
 gffcompare -r genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594115.1/genomic.gtf -o annotation_analysis/annotation_gcf/T_septentrionalis/comparison_output transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.gtf
 
@@ -121,7 +121,41 @@ gffread assembled_transcripts.gtf -g reference_genome.fasta -w assembled_transcr
 
 busco -i transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gcf/T_septentrionalis/busco_output -m transcriptome -f
 
+- L'analyse révèle que 1355 gènes complets ont été retrouvés sur 1367.
+- 656 ont été trouvé en une seule copie et 699 ont été trouvé dupliqués.
+- 4 gènes sont fragmentés et 8 sont manquants.
 
+**13/10**
+
+**Analyse de la qualité du mapping des reads SRR3270634 sur le génome gca de T.septentrionalis**
+
+- 94,2 % des lectures se sont alignés donc la grande majorité des lectures se sont correctement alignées.
+- 92,5 % des lectures s'alignent à un endroit unique sur le génome, donc la majorité des lectures ont une correspondance claire et non ambigüe avec une région sur le génome de référence.
+La longueur moyenne des lectures mappée est de 178.2 bp, ce qui est correct pour des lectures paired end de 90 bp.
+Donc ces valeurs se rapprochent fortement de celles obtenus pour le mapping sur le génome gcf de T.septentrionalis.
+
+**Assemblage des transcrits de T.septentrionalis basé sur l'annotation gca avec l'outil stringtie version 2.2.3**
+
+Comme pour l'annotation gcf, on a transformé le ficher d'alignement sam généré par star en fichier bam et on a trié ce fichier bam avec l'outil samtools version 1.21
+
+samtools view -S -b SRR3270634_gca_Aligned.out.sam > SRR3270634_gca_Aligned.out.bam
+
+samtools sort SRR3270634_gca_Aligned.out.bam -o SRR3270634_gca_sorted.bam
+
+On a transformé l'annotation de référence .gff en fichier .gtf avec l'outil gffread version 0.12.7
+gffread genomic.gff -T -o genomic.gtf
+
+stringtie mapping/map_gca/T_septentrionalis/SRR3270634_gca_sorted.bam -G genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594115.1/genomic.gtf -o transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.gtf
+
+**Evaluation de l'annotation de l'assemblage des transcrits de T.septentrionalis par rapport à annotation de référence gcf avec l'outil gffcompare version v0.12.6** 
+
+gffcompare -r genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594115.1/genomic.gtf -o annotation_analysis/annotation_gca/T_septentrionalis/comparison_output transcripts_assembly/gca_assembly/T_septentrionalis/assembled_transcripts.gtf
+
+**14/10**
+
+**Analyse du rapport généré par gffcompare concernant l'assemblage des transcrits de T.septentrionalis basé sur annotation gca**
+
+  
 
 
 
