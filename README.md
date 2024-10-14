@@ -132,6 +132,7 @@ L'analyse révèle que 1355 gènes complets ont été retrouvés sur 1367.
 - 94,2 % des lectures se sont alignés donc la grande majorité des lectures se sont correctement alignées.
 - 92,5 % des lectures s'alignent à un endroit unique sur le génome, donc la majorité des lectures ont une correspondance claire et non ambigüe avec une région sur le génome de référence.
 La longueur moyenne des lectures mappée est de 178.2 bp, ce qui est correct pour des lectures paired end de 90 bp.
+
 Donc ces valeurs se rapprochent fortement de celles obtenus pour le mapping sur le génome gcf de T.septentrionalis.
 
 **Assemblage des transcrits de T.septentrionalis basé sur l'annotation gca avec l'outil stringtie version 2.2.3**
@@ -164,6 +165,7 @@ gffcompare -r genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594
 - 10,6 % des introns de l'assemblage sont nouveaux.
 - 27,1 % des loci annotés sont absents de l'assemblage.
 - 40,1 % des loci trouvés dans l'assemblage sont nouveaux, ce qui est assez élevé et pourrait indiquer la découverte de nouveaux loci non annotés
+
 On constate globalement qu'un faible nombre de transcrits correspondent parfaitement à l'annotation de référence gca comparativement à l'annotaion gcf précedemment étudié.
 
 **Evaluation de la complétude de l'assemblage des transcrits de T.septentrionalis basé sur annotation gca avec l'outil BUSCO version 5.7.1**
