@@ -107,11 +107,11 @@ gffcompare -r genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594
 - 14 598 transcrits correspondent parfaitement à l'annotation de référence gcf.
 - 8690 loci correspondent à ceux de l'annotation gcf.
 - 7,7 % des exons annotés manquent dans l'assemblage (7205 exons manquants sur 93707)
-- 9,3% des exons détectés dans l'assemblage n'étaient pas présent dans l'annotation de référence (9907 nouveaux exons sur 107041)
+- 9,3% des exons détectés dans l'assemblage n'étaient pas présent dans l'annotation de référence (9907 nouveaux exons sur 107041).
 - 7,2 % des introns annotés sont manquants.
 - 2,3 % des introns de l'assemblage sont nouveaux.
 - 10,6 % des loci annotés sont absents de l'assemblage.
-- 33,2 % des loci trouvés dans l'assemblage sont nouveaux, ce qui est assez élevé et pourrait indiquer la découverte de nouveaux loci non annotés
+- 33,2 % des loci trouvés dans l'assemblage sont nouveaux, ce qui est assez élevé et pourrait indiquer la découverte de nouveaux loci non annotés.
 
 **Evaluation de la complétude de l'assemblage des transcrits de T.septentrionalis basé sur annotation gcf avec l'outil BUSCO version 5.7.1**
 
@@ -121,8 +121,8 @@ gffread assembled_transcripts.gtf -g reference_genome.fasta -w assembled_transcr
 
 busco -i transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gcf/T_septentrionalis/busco_output -m transcriptome -f
 
-- L'analyse révèle que 1355 gènes complets ont été retrouvés sur 1367.
-- 656 ont été trouvé en une seule copie et 699 ont été trouvé dupliqués.
+L'analyse révèle que 1355 gènes complets ont été retrouvés sur 1367.
+- 656 ont été trouvés en une seule copie et 699 ont été trouvés dupliqués.
 - 4 gènes sont fragmentés et 8 sont manquants.
 
 **13/10**
@@ -155,8 +155,29 @@ gffcompare -r genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594
 
 **Analyse du rapport généré par gffcompare concernant l'assemblage des transcrits de T.septentrionalis basé sur annotation gca**
 
-  
+- Il y a 33 833 transcrits dans l'assemblage au total.
+- 4510 transcrits correspondent parfaitement à l'annotation de référence gca.
+- 4510 loci correspondent à ceux de l'annotation gcf.
+- 23,5 % des exons annotés manquent dans l'assemblage.
+- 19,9 % des exons détectés dans l'assemblage n'étaient pas présent dans l'annotation de référence.
+- 21,2 % des introns annotés sont manquants.
+- 10,6 % des introns de l'assemblage sont nouveaux.
+- 27,1 % des loci annotés sont absents de l'assemblage.
+- 40,1 % des loci trouvés dans l'assemblage sont nouveaux, ce qui est assez élevé et pourrait indiquer la découverte de nouveaux loci non annotés
+On constate globalement qu'un faible nombre de transcrits correspondent parfaitement à l'annotation de référence gca comparativement à l'annotaion gcf précedemment étudié.
 
+**Evaluation de la complétude de l'assemblage des transcrits de T.septentrionalis basé sur annotation gca avec l'outil BUSCO version 5.7.1**
+
+au préalable on transforme l'assemblage des transcrits .gtf en .fasta
+
+gffread assembled_transcripts.gtf -g reference_genome.fasta -w assembled_transcripts.fasta
+
+busco -i transcripts_assembly/gca_assembly/T_septentrionalis/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gca/T_septentrionalis/busco_output -m transcriptome -f
+
+L'analyse révèle que 1328 gènes complets ont été retrouvés sur 1367.
+- 657 ont été trouvés en une seule copie et 671 ont été trouvés dupliqués.
+- 17 gènes sont fragmentés et 22 sont manquants.
+Donc globalement, l'annotation gca semble moins bonne que l'annotation gcf.
 
 
 
