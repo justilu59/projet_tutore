@@ -179,6 +179,7 @@ busco -i transcripts_assembly/gca_assembly/T_septentrionalis/assembled_transcrip
 L'analyse révèle que 1328 gènes complets ont été retrouvés sur 1367.
 - 657 ont été trouvés en une seule copie et 671 ont été trouvés dupliqués.
 - 17 gènes sont fragmentés et 22 sont manquants.
+
 Donc globalement, l'annotation gca semble moins bonne que l'annotation gcf.
 
 
