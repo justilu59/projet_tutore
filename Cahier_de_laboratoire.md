@@ -40,7 +40,7 @@ fastqc -o quality_reports/T_septentrionalis raw_reads/T_septentrionalis/SRR32706
 
 cutadapt -a GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAACCGGATCTCGTAT -o SRR3270634_1_trimmed.fastq.gz -z raw_reads/T_septentrionalis/SRR3270634_1.fastq.gz
 
-**Génération de l'index des génomes gcf et gca de T.septentrionalis ave l'outil STAR version 2.7.11b et les commandes** :
+**Génération de l'index des génomes gcf et gca de T.septentrionalis avec l'outil STAR version 2.7.11b et les commandes** :
 
 STAR --runMode genomeGenerate --genomeDir index_genomes/index_gcf/T_septentrionalis --genomeFastaFiles genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594115.1/GCF_001594115.1_Tsep1.0_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
 
