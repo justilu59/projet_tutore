@@ -182,6 +182,14 @@ L'analyse révèle que 1328 gènes complets ont été retrouvés sur 1367.
 
 Donc globalement, l'annotation gca semble moins bonne que l'annotation gcf.
 
+20/10/2024
+
+**Analyse de qualité des reads SRR3270378_1 et SRR3270378_2**
+- Longueur des reads: 90 pb  
+- 44% GC
+- per base sequence content : La distribution des 15 premiers nucléotides est non uniforme, ce qui est attendu en RNA-seq.
+- sequence duplication level :La courbe rouge montre que seulement 30,35 % des séquences restent uniques après suppression des duplicats, ce qui suggère qu'environ 70 % sont des copies. Un taux de duplication élevé peut indiquer un biais de séquençage, tel qu'une amplification excessive (PCR), ou la présence de régions répétées dans le génome. La courbe bleue montre qu'environ 10 % des séquences apparaissent une ou deux fois, mais des pics de duplication se manifestent à des niveaux plus élevés, notamment autour de 9 et 500, suggérant des séquences sur-représentées. Ces resultats sont attendus avoir des reads dupliqués pour les transcrits de forte abondance
+- overrepresented sequence : Le graphique représente le contenu en adapteurs dans les reads, en fonction de leur position le long des séquences. Aucun contenu adaptateur est détecté dans les reads, ce qui signifie qu'il n'y a pas de contamination significative par des séquences d'adapteurs. C'est bien.
 
 
 
