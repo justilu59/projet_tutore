@@ -182,9 +182,9 @@ L'analyse révèle que 1328 gènes complets ont été retrouvés sur 1367.
 
 Donc globalement, l'annotation gca semble moins bonne que l'annotation gcf.
 
-20/10/2024
+**20/10/2024**
 
-**Analyse de qualité des reads SRR3270378_1 et SRR3270378_2**
+**Analyse de qualité des reads SRR3270378_1 et SRR3270378_2 de T.cornetzi**
 - Longueur des reads: 90 pb  
 - 44% GC
 - per base sequence content : La distribution des 15 premiers nucléotides est non uniforme, ce qui est attendu en RNA-seq.
