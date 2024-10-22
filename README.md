@@ -27,5 +27,6 @@ Objectif : Aligner les lectures des séquences sur un génome de référence
 L'aligner STAR est utilisé pour mapper les lectures sur le génome de référence.
 
 En première étape, un indexage du génome de référence et réalisé et stocké dans le dossier index_genomes.
-Le mapping est effectué et les fichiers SAM sont stockés dans le dossier mapping
+
+Ensuite, le mapping est effectué et les fichiers SAM générés sont stockés dans le dossier mapping
 
