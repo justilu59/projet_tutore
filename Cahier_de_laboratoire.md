@@ -207,6 +207,18 @@ STAR --genomeDir index_genomes/index_gcf/T_cornetzi \
 --outFileNamePrefix mapping/map_gcf/T_cornetzi/SRR3270378_gcf_ \
 --readFilesCommand zcat
 
+**27/10/2024**
 
+**Développement d'un script report_annotation.py pour l'analyse du fichier summary de GFFcompare**
 
+Ce script extrait des informations spécifiques telles que les loci manquants, les exons manquants, les transcrits matchés, et les erreurs de bornes, et génère un rapport permettant d'estimer les gènes non supportés (approximation basée sur les loci manquants), les exons manquants, les transcrits manquants, et les erreurs de bornes.
+
+Le script utilise le module re pour la recherche de motifs dans le texte et argparse pour la gestion des arguments en ligne de commande.
+
+Plusieurs fonctions ont été définies :
+- **extract_data** qui parcourt le fichier summary de GFFCompare pour extraire les informations clés en utilisant des expressions régulières.
+- **generate_report** qui utilise les données extraites pour calculer les pourcentages de gènes non supportés, d'exons manquants, d'erreurs de bornes et de transcrits manquants.
+- **print_report** qui affiche les résultats en format clair et compréhensible.
+
+L'exécution du script se fait par la commande python script.py /chemin/comparison_output.stats
 
