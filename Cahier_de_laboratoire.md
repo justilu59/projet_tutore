@@ -223,5 +223,45 @@ Plusieurs fonctions ont été définies :
 L'exécution du script se fait par la commande python script.py /chemin/comparison_output.stats
 
  **29/10/2024**
+A faire : 
+Pour le génome de T. cornetzi, 
+**1. Assemblage des transcrits**
+   Outil **StringTie** pour assembler les transcrits de *T. cornetzi* en utilisant les fichiers BAM produits lors du mapping avec STAR.
+
+   # Conversion des fichiers SAM en BAM, tri et assemblage
+   samtools view -S -b mapping/map_gcf/T_cornetzi/SRR3270378_gcf_Aligned.out.sam > SRR3270378_gcf_Aligned.out.bam
+   samtools sort SRR3270378_gcf_Aligned.out.bam -o SRR3270378_gcf_sorted.bam
+   stringtie mapping/map_gcf/T_cornetzi/SRR3270378_gcf_sorted.bam -G genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gtf -o transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf
  
+
+**Évaluation de l'annotation des transcrits**
+   Utiliser **GFFcompare** pour évaluer l'assemblage obtenu par rapport à l'annotation de référence. Cette étape est essentielle pour valider la qualité de l’assemblage en comparant les transcrits assemblés aux transcrits annotés.
+
+   gffcompare -r genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gtf -o annotation_analysis/annotation_gcf/T_cornetzi/comparison_output transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf
+ 
+
+**Analyse de la complétude de l'assemblage des transcrits**
+   Utiliser **BUSCO** pour évaluer la complétude de l'assemblage en comparant les transcrits assemblés avec un jeu de gènes universel.
+
+   - Convertir le fichier d’assemblage `.gtf` en format `.fasta` :
+
+     gffread transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf -g reference_genome.fasta -w assembled_transcripts.fasta
+
+
+   - Lancer BUSCO :
+
+     busco -i transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gcf/T_cornetzi/busco_output -m transcriptome -f
+
+ **Validation et analyse du rapport d'annotation**
+   Utiliser le script `report_annotation.py` pour analyser le fichier `.stats` généré par **GFFcompare**. Cette étape vous permettra d’identifier les loci, exons et transcrits manquants, ainsi que les erreurs de bornes pour affiner l'annotation.
+
+
+   python report_annotation.py annotation_analysis/annotation_gcf/T_cornetzi/comparison_output.stats
+
+**Intégration des résultats et interprétation**
+   Comparer les résultats des analyses GFFcompare et BUSCO de *T. cornetzi* avec ceux des autres espèces, comme *T. septentrionalis*. Évaluer si l’annotation et l'assemblage présentent une complétude et une précision similaires ou si des améliorations spécifiques sont nécessaires pour *T. cornetzi*.
+
+**Eventuellement : Ré-analyse du RNA-seq pour des études d'expression génique**
+   Si l'objectif de l'étude inclut des analyses d'expression différentielle, préparer un pipeline d’analyse pour détecter les gènes différentsiellement exprimés en utilisant des outils comme **DESeq2** ou **edgeR** après la création de fichiers count matrix à partir des BAM. 
+
 
