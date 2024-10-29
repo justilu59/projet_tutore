@@ -222,3 +222,6 @@ Plusieurs fonctions ont été définies :
 
 L'exécution du script se fait par la commande python script.py /chemin/comparison_output.stats
 
+ **29/10/2024**
+ 
+
