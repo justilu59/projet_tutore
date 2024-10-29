@@ -226,6 +226,7 @@ Plusieurs fonctions ont été définies :
 L'exécution du script se fait par la commande python script.py /chemin/comparison_output.stats
 
  **29/10/2024**
+ 
 A faire : 
 Pour le génome de T. cornetzi, 
 **1. Assemblage des transcrits**
