@@ -1,0 +1,30 @@
+# gffcompare v0.12.6 | Command line was:
+#gffcompare -r genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gtf -o annotation_analysis/annotation_gcf/T_cornetzi/comparison_output transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf
+#
+
+#= Summary for dataset: transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf 
+#     Query mRNAs :   35626 in   20731 loci  (26696 multi-exon transcripts)
+#            (6145 multi-transcript loci, ~1.7 transcripts per locus)
+# Reference mRNAs :   22823 in   13690 loci  (21703 multi-exon)
+# Super-loci w/ reference transcripts:    11179
+#-----------------| Sensitivity | Precision  |
+        Base level:    87.5     |    67.5    |
+        Exon level:    79.3     |    73.5    |
+      Intron level:    83.6     |    89.2    |
+Intron chain level:    60.6     |    49.3    |
+  Transcript level:    57.7     |    36.9    |
+       Locus level:    63.3     |    41.3    |
+
+     Matching intron chains:   13161
+       Matching transcripts:   13161
+              Matching loci:    8666
+
+          Missed exons:   11199/98458	( 11.4%)
+           Novel exons:   11842/108502	( 10.9%)
+        Missed introns:    9215/82509	( 11.2%)
+         Novel introns:    1680/77351	(  2.2%)
+           Missed loci:    2186/13690	( 16.0%)
+            Novel loci:    8001/20731	( 38.6%)
+
+ Total union super-loci across all input datasets: 19179 
+35626 out of 35626 consensus transcripts written in annotation_analysis/annotation_gcf/T_cornetzi/comparison_output.annotated.gtf (0 discarded as redundant)
