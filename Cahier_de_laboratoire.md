@@ -254,19 +254,13 @@ Pour le génome de T. cornetzi,
 
    - Lancer BUSCO :
 
-     busco -i transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gcf/T_cornetzi/busco_output -m transcriptome -f
+     busco -i transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gcf/T_cornetzi/busco_output -m transcriptome -f 
 
  **Validation et analyse du rapport d'annotation**
    Utiliser le script `report_annotation.py` pour analyser le fichier `.stats` généré par **GFFcompare**. Cette étape vous permettra d’identifier les loci, exons et transcrits manquants, ainsi que les erreurs de bornes pour affiner l'annotation.
 
 
    python report_annotation.py annotation_analysis/annotation_gcf/T_cornetzi/comparison_output.stats
-
-**Intégration des résultats et interprétation**
-   Comparer les résultats des analyses GFFcompare et BUSCO de *T. cornetzi* avec ceux des autres espèces, comme *T. septentrionalis*. Évaluer si l’annotation et l'assemblage présentent une complétude et une précision similaires ou si des améliorations spécifiques sont nécessaires pour *T. cornetzi*.
-
-**Eventuellement : Ré-analyse du RNA-seq pour des études d'expression génique**
-   Si l'objectif de l'étude inclut des analyses d'expression différentielle, préparer un pipeline d’analyse pour détecter les gènes différentsiellement exprimés en utilisant des outils comme **DESeq2** ou **edgeR** après la création de fichiers count matrix à partir des BAM. 
 
 30/10/2024 
 contrôle qualité du mapping, puis analyse et annotation de GCF
