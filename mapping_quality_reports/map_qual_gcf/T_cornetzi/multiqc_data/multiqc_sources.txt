@@ -1,0 +1,2 @@
+Module	Section	Sample Name	Source
+STAR	SummaryLog	SRR3270378_gcf	/data/projet1/projet_tutore/mapping/map_gcf/T_cornetzi/SRR3270378_gcf_Log.final.out

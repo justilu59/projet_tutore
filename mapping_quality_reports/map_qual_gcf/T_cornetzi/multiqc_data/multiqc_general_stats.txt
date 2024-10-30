@@ -1,0 +1,2 @@
+Sample	STAR_uniquely_mapped_percent	STAR_uniquely_mapped
+SRR3270378_gcf	94.66	27162056.0
