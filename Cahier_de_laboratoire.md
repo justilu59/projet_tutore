@@ -268,4 +268,5 @@ Pour le génome de T. cornetzi,
 **Eventuellement : Ré-analyse du RNA-seq pour des études d'expression génique**
    Si l'objectif de l'étude inclut des analyses d'expression différentielle, préparer un pipeline d’analyse pour détecter les gènes différentsiellement exprimés en utilisant des outils comme **DESeq2** ou **edgeR** après la création de fichiers count matrix à partir des BAM. 
 
-
+30/10/2024 
+contrôle qualité du mapping, puis analyse et annotation de GCF
