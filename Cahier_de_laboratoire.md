@@ -188,6 +188,11 @@ Donc globalement, l'annotation gca semble moins bonne que l'annotation gcf.
 
 **20/10/2024**
 
+**Génération du rapport de qualité des reads forward et reverse de T.zeteki avec l'outil Fastqc version 0.11.9 et application des commandes:**
+
+fastqc -o quality_reports/T_zeteki raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_reads/T_zeteki/SRR3270377_2.fastq.gz
+
+
 **Analyse de qualité des reads SRR3270378_1 et SRR3270378_2 de T.cornetzi**
 - Longueur des reads: 90 pb  
 - 44% GC
@@ -281,3 +286,11 @@ Pour le génome de T. cornetzi,
 
 30/10/2024 
 contrôle qualité du mapping, puis analyse et annotation de GCF
+
+**Mapping des reads SRR3270377_1.fastq et SRR3270377_2.fastq de T.zeteki sur les génomes de références gca et gcf de T.zeteki avec l'outil STAR version 2.7.11b et les commandes :**
+
+STAR --genomeDir index_genomes/index_gcf/T_zeteki --sjdbGTFfile genomes/gcf_genomes/T_zeteki/ncbi_dataset/data/GCF_001594055.1/genomic.gff --readFilesIn raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_reads/T_zeteki/SRR3270377_2.fastq.gz --runThreadN 4 --outFileNamePrefix mapping/map_gcf/T_zeteki/SRR3270377_gcf_ --readFilesCommand zcat
+
+STAR --genomeDir index_genomes/index_gca/T_zeteki --sjdbGTFfile genomes/gca_genomes/T_zeteki/ncbi_dataset/data/GCA_001594055.1/genomic.gff --readFilesIn raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_reads/T_zeteki/SRR3270377_2.fastq.gz --runThreadN 4 --outFileNamePrefix mapping/map_gca/T_zeteki/SRR3270377_gca_ --readFilesCommand zcat
+
+--> Problème : la commande ne se finit jamais
