@@ -226,6 +226,23 @@ Plusieurs fonctions ont été définies :
 L'exécution du script se fait par la commande python script.py /chemin/comparison_output.stats
 
  **29/10/2024**
+
+**Analyse de qualité des reads de T. Zeteki, SRR3270377_1 et SRR3270377_2:**
+
+Longueur des reads : 90 pb
+GC Content : 42 %
+Contenu par position de séquence : Distribution non uniforme observée sur les 10-15 premiers nucléotides, ce qui est attendu en RNA-seq
+Niveau de duplication des séquences : Un certain nombre de reads sont présents en plusieurs copies. La duplication de reads est attendue pour les transcrits de forte abondance
+Séquences surreprésentées : Présence d'une séquence d'adaptateur TruSeq dans SRR3270377_1
+
+
+**Génération de l'index des génomes gcf et gca de T. zeteki avec l'outil STAR version 2.7.11b et les commandes:**
+
+STAR --runMode genomeGenerate --genomeDir index_genomes/index_gcf/T_zeteki --genomeFastaFiles genomes/gcf_genomes/T_zeteki/ncbi_dataset/data/GCF_001594055.1/GCF_001594055.1_Tzet1.0_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
+
+STAR --runMode genomeGenerate --genomeDir index_genomes/index_gca/T_zeteki --genomeFastaFiles genomes/gca_genomes/T_zeteki/ncbi_dataset/data/GCA_001594055.1/GCA_001594055.1_Tzet1.0_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
+
+
  
 A faire : 
 Pour le génome de T. cornetzi, 
