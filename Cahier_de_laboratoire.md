@@ -193,20 +193,19 @@ Donc globalement, l'annotation gca semble moins bonne que l'annotation gcf.
 fastqc -o quality_reports/T_zeteki raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_reads/T_zeteki/SRR3270377_2.fastq.gz
 
 
-**Analyse de qualité des reads SRR3270378_1 et SRR3270378_2 de T.cornetzi**
-- Longueur des reads: 90 pb  
-- 44% GC
+**Analyse de qualité des reads SRR3270378_1 et SRR3270378_2 de T.cornetzi avec FastQC v.0.11.9 pour verifier la qualité des séquences avant le mapping**
+- Longueur des reads: 90 pb avec un contenu GC de 44% 
 - per base sequence content : La distribution des 15 premiers nucléotides est non uniforme, ce qui est attendu en RNA-seq.
 - sequence duplication level :La courbe rouge montre que seulement 30,35 % des séquences restent uniques après suppression des duplicats, ce qui suggère qu'environ 70 % sont des copies. Un taux de duplication élevé peut indiquer un biais de séquençage, tel qu'une amplification excessive (PCR), ou la présence de régions répétées dans le génome. La courbe bleue montre qu'environ 10 % des séquences apparaissent une ou deux fois, mais des pics de duplication se manifestent à des niveaux plus élevés, notamment autour de 9 et 500, suggérant des séquences sur-représentées. Ces resultats sont attendus avoir des reads dupliqués pour les transcrits de forte abondance
 - overrepresented sequence : Le graphique représente le contenu en adapteurs dans les reads, en fonction de leur position le long des séquences. Aucun contenu adaptateur est détecté dans les reads, ce qui signifie qu'il n'y a pas de contamination significative par des séquences d'adapteurs. C'est bien.
 
 **21/10/2024**
 
-**Génération de l'index du génomes gcf de T.cornetzi avec l'outil STAR version 2.7.11b et les commandes** :
+**Génération de l'index du génomes gcf de T.cornetzi avec l'outil STAR version 2.7.11b pour permettre le mapping des reads** :
 
 STAR --runMode genomeGenerate --genomeDir index_genomes/index_gcf/T_cornetzi --genomeFastaFiles genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/GCF_001594075.2_Tcor1.1_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
 
-**Mapping des reads SRR3270378_1 et SRR3270378_2 de T.cornetzi sur le génome de référence gcf vec l'outil STAR version 2.7.11b** :
+**Mapping des reads SRR3270378_1 et SRR3270378_2 de T.cornetzi sur le génome de référence gcf vec l'outil STAR version 2.7.11b pour aligner les reads aux sequences de ref et permettre l'assemblage des transcrits** :
 
 STAR --genomeDir index_genomes/index_gcf/T_cornetzi \
 --sjdbGTFfile genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gff \
@@ -214,6 +213,28 @@ STAR --genomeDir index_genomes/index_gcf/T_cornetzi \
 --runThreadN 4 \
 --outFileNamePrefix mapping/map_gcf/T_cornetzi/SRR3270378_gcf_ \
 --readFilesCommand zcat
+
+Résumé des transcrits :
+Transcrits assemblés (Query) : 35,626 transcrits dans 20,731 loci.
+Transcrits de référence (Reference) : 22,823 transcrits dans 13,690 loci.
+En moyenne, il y a 1.7 transcrits par locus dans l'assemblage.
+
+Niveau	                   Sensibilité           	Précision
+Base                         	87.5 %	              67.5 %
+Exon                         	79.3 %              	73.5 %
+Intron	                       83.6 %	              89.2 %
+Transcript	                   57.7 %              	36.9 %
+Locus	                        63.3 %              	41.3 %
+
+Analyse des Exons et Introns: 
+Exons manqués : 11,199 sur 98,458 (11.4 %).
+Nouveaux exons : 11,842 sur 108,502 (10.9 %).
+Introns manqués : 9,215 sur 82,509 (11.2 %).
+Nouveaux introns : 1,680 sur 77,351 (2.2 %).
+Loci manqués : 2,186 sur 13,690 (16.0 %).
+Nouveaux loci : 8,001 sur 20,731 (38.6 %).
+
+Ces résultats montrent que l’assemblage offre une couverture incomplète de certains éléments de la référence (exons, introns, et loci). Il révèle surtout des nouveautés au niveau des exons et des loci, ce qui pourrait suggérer la présence de nouveaux gènes, isoformes, ou régulations d'épissage non encore documentés.
 
 **27/10/2024**
 
@@ -273,10 +294,6 @@ Pour le génome de T. cornetzi,
 
      gffread transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf -g reference_genome.fasta -w assembled_transcripts.fasta
 
-
-   - Lancer BUSCO :
-
-     busco -i transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gcf/T_cornetzi/busco_output -m transcriptome -f 
 
  **Validation et analyse du rapport d'annotation**
    Utiliser le script `report_annotation.py` pour analyser le fichier `.stats` généré par **GFFcompare**. Cette étape vous permettra d’identifier les loci, exons et transcrits manquants, ainsi que les erreurs de bornes pour affiner l'annotation.
