@@ -294,3 +294,6 @@ STAR --genomeDir index_genomes/index_gcf/T_zeteki --sjdbGTFfile genomes/gcf_geno
 STAR --genomeDir index_genomes/index_gca/T_zeteki --sjdbGTFfile genomes/gca_genomes/T_zeteki/ncbi_dataset/data/GCA_001594055.1/genomic.gff --readFilesIn raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_reads/T_zeteki/SRR3270377_2.fastq.gz --runThreadN 4 --outFileNamePrefix mapping/map_gca/T_zeteki/SRR3270377_gca_ --readFilesCommand zcat
 
 --> Problème : la commande ne se finit jamais
+
+01/11/2024
+Mapping des reads de T.cornetzi sur les génomes de références gca 
