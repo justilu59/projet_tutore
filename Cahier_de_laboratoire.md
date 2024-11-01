@@ -301,7 +301,8 @@ Pour le génome de T. cornetzi,
 
    python report_annotation.py annotation_analysis/annotation_gcf/T_cornetzi/comparison_output.stats
 
-30/10/2024 
+**30/10/2024** 
+
 contrôle qualité du mapping, puis analyse et annotation de GCF
 
 **Mapping des reads SRR3270377_1.fastq et SRR3270377_2.fastq de T.zeteki sur les génomes de références gca et gcf de T.zeteki avec l'outil STAR version 2.7.11b et les commandes :**
@@ -312,5 +313,12 @@ STAR --genomeDir index_genomes/index_gca/T_zeteki --sjdbGTFfile genomes/gca_geno
 
 --> Problème : la commande ne se finit jamais
 
-01/11/2024
+**01/11/2024**
+
 Mapping des reads de T.cornetzi sur les génomes de références gca 
+
+**Génération du rapport de qualité du mapping des reads SRR3270377 sur le génome de référence gcf et gca de T.zeteki avec l'outil multiqc version 1.25.1:**
+
+multiqc /data/projet1/projet_tutore/mapping/map_gcf/T_zeteki -o /data/projet1/projet_tutore/mapping_quality_reports/map_qual_gcf/T_zeteki
+
+multiqc /data/projet1/projet_tutore/mapping/map_gca/T_zeteki -o /data/projet1/projet_tutore/mapping_quality_reports/map_qual_gca/T_zeteki
