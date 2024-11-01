@@ -1,0 +1,2 @@
+Module	Section	Sample Name	Source
+STAR	SummaryLog	SRR3270377_gcf	/data/projet1/projet_tutore/mapping/map_gcf/T_zeteki/SRR3270377_gcf_Log.final.out

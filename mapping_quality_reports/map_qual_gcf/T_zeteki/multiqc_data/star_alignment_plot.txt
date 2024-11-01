@@ -1,0 +1,2 @@
+Sample	Uniquely mapped	Mapped to multiple loci	Mapped to too many loci	Unmapped: too short	Unmapped: other
+SRR3270377_gcf	26221466.0	438232.0	8727.0	3336759.0	12003.0
