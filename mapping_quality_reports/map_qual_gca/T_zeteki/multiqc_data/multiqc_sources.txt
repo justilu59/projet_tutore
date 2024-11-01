@@ -1,0 +1,2 @@
+Module	Section	Sample Name	Source
+STAR	SummaryLog	SRR3270377_gca	/data/projet1/projet_tutore/mapping/map_gca/T_zeteki/SRR3270377_gca_Log.final.out

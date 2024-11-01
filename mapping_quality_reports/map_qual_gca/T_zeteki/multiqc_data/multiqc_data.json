@@ -1,0 +1,3060 @@
+{
+    "report_data_sources": {
+        "STAR": {
+            "SummaryLog": {
+                "SRR3270377_gca": "/data/projet1/projet_tutore/mapping/map_gca/T_zeteki/SRR3270377_gca_Log.final.out"
+            }
+        }
+    },
+    "report_general_stats_data": [
+        {
+            "SRR3270377_gca": {
+                "total_reads": 30017187.0,
+                "avg_input_read_length": 180.0,
+                "uniquely_mapped": 26185487.0,
+                "uniquely_mapped_percent": 87.23,
+                "avg_mapped_read_length": 177.89,
+                "num_splices": 8151208.0,
+                "num_annotated_splices": 0.0,
+                "num_GTAG_splices": 8061393.0,
+                "num_GCAG_splices": 55070.0,
+                "num_ATAC_splices": 2641.0,
+                "num_noncanonical_splices": 32104.0,
+                "mismatch_rate": 0.36,
+                "deletion_rate": 0.01,
+                "deletion_length": 2.41,
+                "insertion_rate": 0.01,
+                "insertion_length": 1.66,
+                "multimapped": 455519.0,
+                "multimapped_percent": 1.52,
+                "multimapped_toomany": 17409.0,
+                "multimapped_toomany_percent": 0.06,
+                "unmapped_mismatches_percent": 0.0,
+                "unmapped_tooshort_percent": 11.16,
+                "unmapped_other_percent": 0.03,
+                "unmapped_mismatches": 0,
+                "unmapped_tooshort": 3349767,
+                "unmapped_other": 9005,
+                "mapped_percent": 88.75,
+                "mapped": 26641006.0
+            }
+        }
+    ],
+    "report_general_stats_headers": [
+        {
+            "total_reads": {
+                "title": "Total reads",
+                "description": "Number of input reads",
+                "scale": "Blues",
+                "shared_key": "read_count",
+                "hidden": true,
+                "namespace": "STAR",
+                "rid": "star-total_reads",
+                "modify": null,
+                "min": 0,
+                "suffix": " M",
+                "placement": 1000
+            },
+            "mapped": {
+                "title": "Aligned",
+                "description": "Mapped reads",
+                "scale": "PuRd",
+                "shared_key": "read_count",
+                "hidden": true,
+                "namespace": "STAR",
+                "rid": "star-mapped",
+                "modify": null,
+                "min": 0,
+                "suffix": " M",
+                "placement": 1000
+            },
+            "mapped_percent": {
+                "title": "Aligned",
+                "description": "% Mapped reads",
+                "suffix": "%",
+                "scale": "PuRd",
+                "namespace": "STAR",
+                "rid": "star-mapped_percent",
+                "min": null,
+                "placement": 1000
+            },
+            "uniquely_mapped": {
+                "title": "Uniq aligned",
+                "description": "Uniquely mapped reads",
+                "scale": "YlGn",
+                "shared_key": "read_count",
+                "hidden": true,
+                "namespace": "STAR",
+                "rid": "star-uniquely_mapped",
+                "modify": null,
+                "min": 0,
+                "suffix": " M",
+                "placement": 1000
+            },
+            "uniquely_mapped_percent": {
+                "title": "Uniq aligned",
+                "description": "% Uniquely mapped reads",
+                "suffix": "%",
+                "scale": "YlGn",
+                "namespace": "STAR",
+                "rid": "star-uniquely_mapped_percent",
+                "min": null,
+                "placement": 1000
+            },
+            "multimapped": {
+                "title": "Multimapped",
+                "description": "Multiple mapped reads",
+                "scale": "PuRd",
+                "shared_key": "read_count",
+                "hidden": true,
+                "namespace": "STAR",
+                "rid": "star-multimapped",
+                "modify": null,
+                "min": 0,
+                "suffix": " M",
+                "placement": 1000
+            }
+        }
+    ],
+    "report_multiqc_command": "/data/projet1/conda/can/multiqc_env/bin/multiqc /data/projet1/projet_tutore/mapping/map_gca/T_zeteki -o /data/projet1/projet_tutore/mapping_quality_reports/map_qual_gca/T_zeteki",
+    "report_plot_data": {
+        "star_summary_table": {
+            "id": "star_summary_table",
+            "anchor": "star_summary_table",
+            "plot_type": "violin",
+            "layout": {
+                "autosize": true,
+                "colorway": [
+                    "#7cb5ec",
+                    "#434348",
+                    "#90ed7d",
+                    "#f7a35c",
+                    "#8085e9",
+                    "#f15c80",
+                    "#e4d354",
+                    "#2b908f",
+                    "#f45b5b",
+                    "#91e8e1"
+                ],
+                "font": {
+                    "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+                },
+                "height": 500,
+                "hoverlabel": {
+                    "namelength": -1
+                },
+                "margin": {
+                    "b": 40,
+                    "l": 60,
+                    "pad": 0,
+                    "r": 15,
+                    "t": 50
+                },
+                "modebar": {
+                    "activecolor": "rgba(0, 0, 0, 1)",
+                    "bgcolor": "rgba(0, 0, 0, 0)",
+                    "color": "rgba(0, 0, 0, 0.5)"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "white",
+                "showlegend": false,
+                "title": {
+                    "font": {
+                        "size": 20
+                    },
+                    "text": "STAR: Summary Statistics",
+                    "x": 0.5,
+                    "xanchor": "center"
+                },
+                "xaxis": {
+                    "automargin": false,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.1)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,0.5)",
+                        "size": 9
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.1)"
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.1)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,0.5)",
+                        "size": 9
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.1)"
+                },
+                "violingap": 0,
+                "grid": {
+                    "columns": 1,
+                    "roworder": "top to bottom",
+                    "ygap": 0.4
+                }
+            },
+            "datasets": [
+                {
+                    "plot_id": "star_summary_table",
+                    "label": "1",
+                    "uid": "star_summary_table",
+                    "dconfig": {
+                        "ylab": "",
+                        "title": "STAR: Summary Statistics"
+                    },
+                    "layout": {
+                        "title": {
+                            "text": "STAR: Summary Statistics"
+                        },
+                        "xaxis": {
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "title": {
+                                "text": null
+                            },
+                            "rangemode": "normal",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        },
+                        "yaxis": {
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "title": {
+                                "text": ""
+                            },
+                            "rangemode": "normal",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        }
+                    },
+                    "trace_params": {
+                        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+                        "orientation": "h",
+                        "box": {
+                            "visible": true
+                        },
+                        "meanline": {
+                            "visible": true
+                        },
+                        "fillcolor": "#b5b5b5",
+                        "line": {
+                            "width": 2,
+                            "color": "#b5b5b5"
+                        },
+                        "opacity": 0.5,
+                        "points": false,
+                        "hoveron": "points"
+                    },
+                    "pct_range": {
+                        "xaxis": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "yaxis": {
+                            "min": 0,
+                            "max": 100
+                        }
+                    },
+                    "n_samples": 1,
+                    "metrics": [
+                        "star-total_reads",
+                        "star-mapped",
+                        "star-mapped_percent",
+                        "star-uniquely_mapped",
+                        "star-uniquely_mapped_percent",
+                        "star-multimapped",
+                        "star-avg_input_read_length",
+                        "star-avg_mapped_read_length",
+                        "star-num_splices",
+                        "star-num_annotated_splices",
+                        "star-num_GTAG_splices",
+                        "star-num_GCAG_splices",
+                        "star-num_ATAC_splices",
+                        "star-num_noncanonical_splices",
+                        "star-mismatch_rate",
+                        "star-deletion_rate",
+                        "star-deletion_length",
+                        "star-insertion_rate",
+                        "star-insertion_length"
+                    ],
+                    "header_by_metric": {
+                        "star-total_reads": {
+                            "title": "Total reads",
+                            "description": "Number of input reads",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-mapped": {
+                            "title": "Aligned",
+                            "description": "Mapped reads",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-mapped_percent": {
+                            "title": "Aligned",
+                            "description": "% Mapped reads",
+                            "suffix": "%",
+                            "dmin": 0,
+                            "dmax": 88.75,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -0.44375000000000003,
+                                    89.19596875
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-uniquely_mapped": {
+                            "title": "Uniq aligned",
+                            "description": "Uniquely mapped reads",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-uniquely_mapped_percent": {
+                            "title": "Uniq aligned",
+                            "description": "% Uniquely mapped reads",
+                            "suffix": "%",
+                            "dmin": 0,
+                            "dmax": 87.23,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -0.43615000000000004,
+                                    87.66833075000001
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-multimapped": {
+                            "title": "Multimapped",
+                            "description": "Multiple mapped reads",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-avg_input_read_length": {
+                            "title": "Avg. read len",
+                            "description": "Average input read length",
+                            "suffix": "bp",
+                            "dmin": 0,
+                            "dmax": 180.0,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": "bp",
+                                "tickvals": null,
+                                "range": [
+                                    -0.9,
+                                    180.9045
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-avg_mapped_read_length": {
+                            "title": "Avg. mapped len",
+                            "description": "Average mapped length",
+                            "suffix": "bp",
+                            "dmin": 0,
+                            "dmax": 177.89,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "bp",
+                                "tickvals": null,
+                                "range": [
+                                    -0.88945,
+                                    178.78389725
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-num_splices": {
+                            "title": "Splices",
+                            "description": "Number of splices: Total",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-num_annotated_splices": {
+                            "title": "Annotated splices",
+                            "description": "Number of splices: Annotated (sjdb)",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-num_GTAG_splices": {
+                            "title": "GT/AG splices",
+                            "description": "Number of splices: GT/AG",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-num_GCAG_splices": {
+                            "title": "GC/AG splices",
+                            "description": "Number of splices: GC/AG",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-num_ATAC_splices": {
+                            "title": "AT/AC splices",
+                            "description": "Number of splices: AT/AC",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-num_noncanonical_splices": {
+                            "title": "Non-canonical splices",
+                            "description": "Number of splices: Non-canonical",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-mismatch_rate": {
+                            "title": "Mismatch rate",
+                            "description": "Mismatch rate per base",
+                            "suffix": "%",
+                            "dmin": 0,
+                            "dmax": 0.36,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -0.0018,
+                                    0.361809
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-deletion_rate": {
+                            "title": "Del rate",
+                            "description": "Deletion rate per base",
+                            "suffix": "%",
+                            "dmin": 0,
+                            "dmax": 0.01,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -5e-05,
+                                    0.01005025
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-deletion_length": {
+                            "title": "Del len",
+                            "description": "Deletion average length",
+                            "suffix": "bp",
+                            "dmin": 0,
+                            "dmax": 2.41,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "bp",
+                                "tickvals": null,
+                                "range": [
+                                    -0.012050000000000002,
+                                    2.4221102500000002
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-insertion_rate": {
+                            "title": "Ins rate",
+                            "description": "Insertion rate per base",
+                            "suffix": "%",
+                            "dmin": 0,
+                            "dmax": 0.01,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -5e-05,
+                                    0.01005025
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-insertion_length": {
+                            "title": "Ins len",
+                            "description": "Insertion average length",
+                            "suffix": "bp",
+                            "dmin": 0,
+                            "dmax": 1.66,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "bp",
+                                "tickvals": null,
+                                "range": [
+                                    -0.0083,
+                                    1.6683415
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        }
+                    },
+                    "violin_value_by_sample_by_metric": {
+                        "star-total_reads": {
+                            "SRR3270377_gca": 30.017187
+                        },
+                        "star-mapped": {
+                            "SRR3270377_gca": 26.641005999999997
+                        },
+                        "star-mapped_percent": {
+                            "SRR3270377_gca": 88.75
+                        },
+                        "star-uniquely_mapped": {
+                            "SRR3270377_gca": 26.185487
+                        },
+                        "star-uniquely_mapped_percent": {
+                            "SRR3270377_gca": 87.23
+                        },
+                        "star-multimapped": {
+                            "SRR3270377_gca": 0.45551899999999995
+                        },
+                        "star-avg_input_read_length": {
+                            "SRR3270377_gca": 180.0
+                        },
+                        "star-avg_mapped_read_length": {
+                            "SRR3270377_gca": 177.89
+                        },
+                        "star-num_splices": {
+                            "SRR3270377_gca": 8.151208
+                        },
+                        "star-num_annotated_splices": {
+                            "SRR3270377_gca": 0.0
+                        },
+                        "star-num_GTAG_splices": {
+                            "SRR3270377_gca": 8.061392999999999
+                        },
+                        "star-num_GCAG_splices": {
+                            "SRR3270377_gca": 0.05507
+                        },
+                        "star-num_ATAC_splices": {
+                            "SRR3270377_gca": 0.0026409999999999997
+                        },
+                        "star-num_noncanonical_splices": {
+                            "SRR3270377_gca": 0.032104
+                        },
+                        "star-mismatch_rate": {
+                            "SRR3270377_gca": 0.36
+                        },
+                        "star-deletion_rate": {
+                            "SRR3270377_gca": 0.01
+                        },
+                        "star-deletion_length": {
+                            "SRR3270377_gca": 2.41
+                        },
+                        "star-insertion_rate": {
+                            "SRR3270377_gca": 0.01
+                        },
+                        "star-insertion_length": {
+                            "SRR3270377_gca": 1.66
+                        }
+                    },
+                    "scatter_value_by_sample_by_metric": {
+                        "star-total_reads": {},
+                        "star-mapped": {},
+                        "star-mapped_percent": {},
+                        "star-uniquely_mapped": {},
+                        "star-uniquely_mapped_percent": {},
+                        "star-multimapped": {},
+                        "star-avg_input_read_length": {},
+                        "star-avg_mapped_read_length": {},
+                        "star-num_splices": {},
+                        "star-num_annotated_splices": {},
+                        "star-num_GTAG_splices": {},
+                        "star-num_GCAG_splices": {},
+                        "star-num_ATAC_splices": {},
+                        "star-num_noncanonical_splices": {},
+                        "star-mismatch_rate": {},
+                        "star-deletion_rate": {},
+                        "star-deletion_length": {},
+                        "star-insertion_rate": {},
+                        "star-insertion_length": {}
+                    },
+                    "all_samples": [
+                        "SRR3270377_gca"
+                    ],
+                    "scatter_trace_params": {
+                        "mode": "markers",
+                        "marker": {
+                            "size": 4,
+                            "color": "#0b79e6"
+                        },
+                        "showlegend": false,
+                        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+                        "hoverlabel": {
+                            "bgcolor": "white"
+                        }
+                    }
+                }
+            ],
+            "pconfig": {
+                "id": "star_summary_table",
+                "title": "STAR: Summary Statistics",
+                "anchor": null,
+                "table_title": null,
+                "height": null,
+                "width": null,
+                "square": false,
+                "logswitch": false,
+                "logswitch_active": false,
+                "logswitch_label": "Log10",
+                "cpswitch": true,
+                "cpswitch_c_active": true,
+                "cpswitch_counts_label": "Counts",
+                "cpswitch_percent_label": "Percentages",
+                "xLog": null,
+                "yLog": null,
+                "xlog": false,
+                "ylog": false,
+                "data_labels": [],
+                "xTitle": null,
+                "yTitle": null,
+                "xlab": null,
+                "ylab": null,
+                "xsuffix": null,
+                "ysuffix": null,
+                "tt_suffix": null,
+                "xLabFormat": null,
+                "yLabFormat": null,
+                "xLabelFormat": null,
+                "yLabelFormat": null,
+                "xlab_format": null,
+                "ylab_format": null,
+                "tt_label": null,
+                "xDecimals": null,
+                "yDecimals": null,
+                "decimalPlaces": null,
+                "x_decimals": null,
+                "y_decimals": null,
+                "tt_decimals": null,
+                "xmin": null,
+                "xmax": null,
+                "ymin": null,
+                "ymax": null,
+                "xFloor": null,
+                "xCeiling": null,
+                "yFloor": null,
+                "yCeiling": null,
+                "x_clipmin": null,
+                "x_clipmax": null,
+                "y_clipmin": null,
+                "y_clipmax": null,
+                "save_data_file": true,
+                "showlegend": null,
+                "xMinRange": null,
+                "yMinRange": null,
+                "x_minrange": null,
+                "y_minrange": null,
+                "xPlotBands": null,
+                "yPlotBands": null,
+                "xPlotLines": null,
+                "yPlotLines": null,
+                "x_bands": null,
+                "y_bands": null,
+                "x_lines": null,
+                "y_lines": null,
+                "namespace": "STAR",
+                "save_file": false,
+                "raw_data_fn": null,
+                "defaultsort": null,
+                "sortRows": true,
+                "sort_rows": true,
+                "only_defined_headers": true,
+                "col1_header": "Sample Name",
+                "no_beeswarm": false,
+                "no_violin": false,
+                "scale": "GnBu",
+                "min": null
+            },
+            "add_log_tab": false,
+            "add_pct_tab": false,
+            "l_active": false,
+            "p_active": false,
+            "pct_axis_update": {
+                "ticksuffix": "%",
+                "hoverformat": ".1f"
+            },
+            "axis_controlled_by_switches": [],
+            "square": false,
+            "flat": false,
+            "defer_render": false,
+            "violin_height": 70,
+            "extra_height": 63,
+            "no_violin": false,
+            "show_table": true,
+            "show_table_by_default": true,
+            "n_samples": 1,
+            "main_table_dt": {
+                "id": "star_summary_table",
+                "anchor": "star_summary_table_table",
+                "pconfig": {
+                    "id": "star_summary_table",
+                    "title": "STAR: Summary Statistics",
+                    "anchor": null,
+                    "table_title": null,
+                    "height": null,
+                    "width": null,
+                    "square": false,
+                    "logswitch": false,
+                    "logswitch_active": false,
+                    "logswitch_label": "Log10",
+                    "cpswitch": true,
+                    "cpswitch_c_active": true,
+                    "cpswitch_counts_label": "Counts",
+                    "cpswitch_percent_label": "Percentages",
+                    "xLog": null,
+                    "yLog": null,
+                    "xlog": false,
+                    "ylog": false,
+                    "data_labels": [],
+                    "xTitle": null,
+                    "yTitle": null,
+                    "xlab": null,
+                    "ylab": null,
+                    "xsuffix": null,
+                    "ysuffix": null,
+                    "tt_suffix": null,
+                    "xLabFormat": null,
+                    "yLabFormat": null,
+                    "xLabelFormat": null,
+                    "yLabelFormat": null,
+                    "xlab_format": null,
+                    "ylab_format": null,
+                    "tt_label": null,
+                    "xDecimals": null,
+                    "yDecimals": null,
+                    "decimalPlaces": null,
+                    "x_decimals": null,
+                    "y_decimals": null,
+                    "tt_decimals": null,
+                    "xmin": null,
+                    "xmax": null,
+                    "ymin": null,
+                    "ymax": null,
+                    "xFloor": null,
+                    "xCeiling": null,
+                    "yFloor": null,
+                    "yCeiling": null,
+                    "x_clipmin": null,
+                    "x_clipmax": null,
+                    "y_clipmin": null,
+                    "y_clipmax": null,
+                    "save_data_file": true,
+                    "showlegend": null,
+                    "xMinRange": null,
+                    "yMinRange": null,
+                    "x_minrange": null,
+                    "y_minrange": null,
+                    "xPlotBands": null,
+                    "yPlotBands": null,
+                    "xPlotLines": null,
+                    "yPlotLines": null,
+                    "x_bands": null,
+                    "y_bands": null,
+                    "x_lines": null,
+                    "y_lines": null,
+                    "namespace": "STAR",
+                    "save_file": false,
+                    "raw_data_fn": null,
+                    "defaultsort": null,
+                    "sortRows": true,
+                    "sort_rows": true,
+                    "only_defined_headers": true,
+                    "col1_header": "Sample Name",
+                    "no_beeswarm": false,
+                    "no_violin": false,
+                    "scale": "GnBu",
+                    "min": null
+                },
+                "sections": [
+                    {
+                        "column_by_key": {
+                            "total_reads": {
+                                "rid": "star-total_reads",
+                                "title": "Total reads",
+                                "description": "Number of input reads",
+                                "scale": "Blues",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "mapped": {
+                                "rid": "star-mapped",
+                                "title": "Aligned",
+                                "description": "Mapped reads",
+                                "scale": "PuRd",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "mapped_percent": {
+                                "rid": "star-mapped_percent",
+                                "title": "Aligned",
+                                "description": "% Mapped reads",
+                                "scale": "PuRd",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 88.75,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "%",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "uniquely_mapped": {
+                                "rid": "star-uniquely_mapped",
+                                "title": "Uniq aligned",
+                                "description": "Uniquely mapped reads",
+                                "scale": "YlGn",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "uniquely_mapped_percent": {
+                                "rid": "star-uniquely_mapped_percent",
+                                "title": "Uniq aligned",
+                                "description": "% Uniquely mapped reads",
+                                "scale": "YlGn",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 87.23,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "%",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "multimapped": {
+                                "rid": "star-multimapped",
+                                "title": "Multimapped",
+                                "description": "Multiple mapped reads",
+                                "scale": "PuRd",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "avg_input_read_length": {
+                                "rid": "star-avg_input_read_length",
+                                "title": "Avg. read len",
+                                "description": "Average input read length",
+                                "scale": "Blues",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 180.0,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "bp",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "avg_mapped_read_length": {
+                                "rid": "star-avg_mapped_read_length",
+                                "title": "Avg. mapped len",
+                                "description": "Average mapped length",
+                                "scale": "Blues",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 177.89,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "bp",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "num_splices": {
+                                "rid": "star-num_splices",
+                                "title": "Splices",
+                                "description": "Number of splices: Total",
+                                "scale": "Blues",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "num_annotated_splices": {
+                                "rid": "star-num_annotated_splices",
+                                "title": "Annotated splices",
+                                "description": "Number of splices: Annotated (sjdb)",
+                                "scale": "Blues",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "num_GTAG_splices": {
+                                "rid": "star-num_GTAG_splices",
+                                "title": "GT/AG splices",
+                                "description": "Number of splices: GT/AG",
+                                "scale": "Blues",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "num_GCAG_splices": {
+                                "rid": "star-num_GCAG_splices",
+                                "title": "GC/AG splices",
+                                "description": "Number of splices: GC/AG",
+                                "scale": "Blues",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "num_ATAC_splices": {
+                                "rid": "star-num_ATAC_splices",
+                                "title": "AT/AC splices",
+                                "description": "Number of splices: AT/AC",
+                                "scale": "Blues",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "num_noncanonical_splices": {
+                                "rid": "star-num_noncanonical_splices",
+                                "title": "Non-canonical splices",
+                                "description": "Number of splices: Non-canonical",
+                                "scale": "Blues",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "mismatch_rate": {
+                                "rid": "star-mismatch_rate",
+                                "title": "Mismatch rate",
+                                "description": "Mismatch rate per base",
+                                "scale": "Blues",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 0.36,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "%",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "deletion_rate": {
+                                "rid": "star-deletion_rate",
+                                "title": "Del rate",
+                                "description": "Deletion rate per base",
+                                "scale": "Blues",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 0.01,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "%",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "deletion_length": {
+                                "rid": "star-deletion_length",
+                                "title": "Del len",
+                                "description": "Deletion average length",
+                                "scale": "Blues",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 2.41,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "bp",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "insertion_rate": {
+                                "rid": "star-insertion_rate",
+                                "title": "Ins rate",
+                                "description": "Insertion rate per base",
+                                "scale": "Blues",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 0.01,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "%",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "insertion_length": {
+                                "rid": "star-insertion_length",
+                                "title": "Ins len",
+                                "description": "Insertion average length",
+                                "scale": "Blues",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 1.66,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "bp",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            }
+                        },
+                        "rows_by_sgroup": {
+                            "SRR3270377_gca": [
+                                {
+                                    "sample": "SRR3270377_gca",
+                                    "raw_data": {
+                                        "total_reads": 30.017187,
+                                        "avg_input_read_length": 180.0,
+                                        "uniquely_mapped": 26.185487,
+                                        "uniquely_mapped_percent": 87.23,
+                                        "avg_mapped_read_length": 177.89,
+                                        "num_splices": 8.151208,
+                                        "num_annotated_splices": 0.0,
+                                        "num_GTAG_splices": 8.061392999999999,
+                                        "num_GCAG_splices": 0.05507,
+                                        "num_ATAC_splices": 0.0026409999999999997,
+                                        "num_noncanonical_splices": 0.032104,
+                                        "mismatch_rate": 0.36,
+                                        "deletion_rate": 0.01,
+                                        "deletion_length": 2.41,
+                                        "insertion_rate": 0.01,
+                                        "insertion_length": 1.66,
+                                        "multimapped": 0.45551899999999995,
+                                        "mapped_percent": 88.75,
+                                        "mapped": 26.641005999999997
+                                    },
+                                    "formatted_data": {
+                                        "total_reads": "30.0",
+                                        "avg_input_read_length": "180.0",
+                                        "uniquely_mapped": "26.2",
+                                        "uniquely_mapped_percent": "87.2",
+                                        "avg_mapped_read_length": "177.9",
+                                        "num_splices": "8.2",
+                                        "num_annotated_splices": "0.0",
+                                        "num_GTAG_splices": "8.1",
+                                        "num_GCAG_splices": "0.1",
+                                        "num_ATAC_splices": "0.0",
+                                        "num_noncanonical_splices": "0.0",
+                                        "mismatch_rate": "0.4",
+                                        "deletion_rate": "0.0",
+                                        "deletion_length": "2.4",
+                                        "insertion_rate": "0.0",
+                                        "insertion_length": "1.7",
+                                        "multimapped": "0.5",
+                                        "mapped_percent": "88.8",
+                                        "mapped": "26.6"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "headers_in_order": {
+                    "1000.0": [
+                        [
+                            0,
+                            "total_reads"
+                        ],
+                        [
+                            0,
+                            "mapped"
+                        ],
+                        [
+                            0,
+                            "mapped_percent"
+                        ],
+                        [
+                            0,
+                            "uniquely_mapped"
+                        ],
+                        [
+                            0,
+                            "uniquely_mapped_percent"
+                        ],
+                        [
+                            0,
+                            "multimapped"
+                        ],
+                        [
+                            0,
+                            "avg_input_read_length"
+                        ],
+                        [
+                            0,
+                            "avg_mapped_read_length"
+                        ],
+                        [
+                            0,
+                            "num_splices"
+                        ],
+                        [
+                            0,
+                            "num_annotated_splices"
+                        ],
+                        [
+                            0,
+                            "num_GTAG_splices"
+                        ],
+                        [
+                            0,
+                            "num_GCAG_splices"
+                        ],
+                        [
+                            0,
+                            "num_ATAC_splices"
+                        ],
+                        [
+                            0,
+                            "num_noncanonical_splices"
+                        ],
+                        [
+                            0,
+                            "mismatch_rate"
+                        ],
+                        [
+                            0,
+                            "deletion_rate"
+                        ],
+                        [
+                            0,
+                            "deletion_length"
+                        ],
+                        [
+                            0,
+                            "insertion_rate"
+                        ],
+                        [
+                            0,
+                            "insertion_length"
+                        ]
+                    ]
+                }
+            }
+        },
+        "star_alignment_plot": {
+            "id": "star_alignment_plot",
+            "anchor": "star_alignment_plot",
+            "plot_type": "bar_graph",
+            "layout": {
+                "autosize": true,
+                "colorway": [
+                    "#7cb5ec",
+                    "#434348",
+                    "#90ed7d",
+                    "#f7a35c",
+                    "#8085e9",
+                    "#f15c80",
+                    "#e4d354",
+                    "#2b908f",
+                    "#f45b5b",
+                    "#91e8e1"
+                ],
+                "font": {
+                    "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+                },
+                "height": 300,
+                "hoverlabel": {
+                    "namelength": -1,
+                    "bgcolor": "rgba(255, 255, 255, 0.8)",
+                    "font": {
+                        "color": "black"
+                    }
+                },
+                "margin": {
+                    "b": 65,
+                    "l": 60,
+                    "pad": 5,
+                    "r": 15,
+                    "t": 50
+                },
+                "modebar": {
+                    "activecolor": "rgba(0, 0, 0, 1)",
+                    "bgcolor": "rgba(0, 0, 0, 0)",
+                    "color": "rgba(0, 0, 0, 0.5)"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "white",
+                "showlegend": true,
+                "title": {
+                    "font": {
+                        "size": 20
+                    },
+                    "text": "STAR: Alignment Scores",
+                    "x": 0.5,
+                    "xanchor": "center"
+                },
+                "xaxis": {
+                    "automargin": true,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.05)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,1)",
+                        "size": 10
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.05)"
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.05)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,1)",
+                        "size": 10
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.05)",
+                    "showgrid": false,
+                    "categoryorder": "trace",
+                    "type": "category"
+                },
+                "barmode": "relative",
+                "bargroupgap": 0,
+                "bargap": 0.2,
+                "legend": {
+                    "tracegroupgap": 0,
+                    "traceorder": "normal"
+                },
+                "hovermode": "y unified"
+            },
+            "datasets": [
+                {
+                    "plot_id": "star_alignment_plot",
+                    "label": "1",
+                    "uid": "star_alignment_plot",
+                    "dconfig": {
+                        "title": "STAR: Alignment Scores"
+                    },
+                    "layout": {
+                        "title": {
+                            "text": "STAR: Alignment Scores"
+                        },
+                        "xaxis": {
+                            "title": {
+                                "text": "# Reads"
+                            },
+                            "hoverformat": ",.2f",
+                            "ticksuffix": "",
+                            "autorangeoptions": {
+                                "minallowed": 0,
+                                "maxallowed": 30017187.0
+                            }
+                        },
+                        "yaxis": {
+                            "title": null,
+                            "hoverformat": null,
+                            "ticksuffix": ""
+                        },
+                        "showlegend": true
+                    },
+                    "trace_params": {
+                        "hovertemplate": "<b></b>%{meta}: <b>%{x}</b><extra></extra>",
+                        "orientation": "h",
+                        "marker": {
+                            "line": {
+                                "width": 0
+                            }
+                        },
+                        "textposition": "inside",
+                        "insidetextanchor": "start"
+                    },
+                    "pct_range": {
+                        "xaxis": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "yaxis": {
+                            "min": 0,
+                            "max": 100
+                        }
+                    },
+                    "n_samples": 1,
+                    "cats": [
+                        {
+                            "name": "Uniquely mapped",
+                            "color": "67,123,177",
+                            "data": [
+                                26185487.0
+                            ],
+                            "data_pct": [
+                                87.23497974676975
+                            ]
+                        },
+                        {
+                            "name": "Mapped to multiple loci",
+                            "color": "124,181,236",
+                            "data": [
+                                455519.0
+                            ],
+                            "data_pct": [
+                                1.5175272752906528
+                            ]
+                        },
+                        {
+                            "name": "Mapped to too many loci",
+                            "color": "247,163,92",
+                            "data": [
+                                17409.0
+                            ],
+                            "data_pct": [
+                                0.05799677364837684
+                            ]
+                        },
+                        {
+                            "name": "Unmapped: too short",
+                            "color": "177,8,76",
+                            "data": [
+                                3349767.0
+                            ],
+                            "data_pct": [
+                                11.159496724326633
+                            ]
+                        },
+                        {
+                            "name": "Unmapped: other",
+                            "color": "127,0,0",
+                            "data": [
+                                9005.0
+                            ],
+                            "data_pct": [
+                                0.029999479964594948
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "SRR3270377_gca"
+                    ]
+                }
+            ],
+            "pconfig": {
+                "id": "star_alignment_plot",
+                "title": "STAR: Alignment Scores",
+                "anchor": null,
+                "table_title": null,
+                "height": null,
+                "width": null,
+                "square": false,
+                "logswitch": false,
+                "logswitch_active": false,
+                "logswitch_label": "Log10",
+                "cpswitch": true,
+                "cpswitch_c_active": true,
+                "cpswitch_counts_label": "Number of Reads",
+                "cpswitch_percent_label": "Percentages",
+                "xLog": null,
+                "yLog": null,
+                "xlog": false,
+                "ylog": false,
+                "data_labels": [],
+                "xTitle": null,
+                "yTitle": null,
+                "xlab": null,
+                "ylab": "# Reads",
+                "xsuffix": null,
+                "ysuffix": null,
+                "tt_suffix": null,
+                "xLabFormat": null,
+                "yLabFormat": null,
+                "xLabelFormat": null,
+                "yLabelFormat": null,
+                "xlab_format": null,
+                "ylab_format": null,
+                "tt_label": null,
+                "xDecimals": null,
+                "yDecimals": null,
+                "decimalPlaces": null,
+                "x_decimals": null,
+                "y_decimals": null,
+                "tt_decimals": null,
+                "xmin": null,
+                "xmax": null,
+                "ymin": null,
+                "ymax": null,
+                "xFloor": null,
+                "xCeiling": null,
+                "yFloor": null,
+                "yCeiling": null,
+                "x_clipmin": null,
+                "x_clipmax": null,
+                "y_clipmin": null,
+                "y_clipmax": null,
+                "save_data_file": true,
+                "showlegend": null,
+                "xMinRange": null,
+                "yMinRange": null,
+                "x_minrange": null,
+                "y_minrange": null,
+                "xPlotBands": null,
+                "yPlotBands": null,
+                "xPlotLines": null,
+                "yPlotLines": null,
+                "x_bands": null,
+                "y_bands": null,
+                "x_lines": null,
+                "y_lines": null,
+                "stacking": "relative",
+                "hide_zero_cats": true,
+                "sort_samples": true,
+                "use_legend": true,
+                "suffix": null,
+                "lab_format": null
+            },
+            "add_log_tab": false,
+            "add_pct_tab": true,
+            "l_active": false,
+            "p_active": false,
+            "pct_axis_update": {
+                "ticksuffix": "%",
+                "hoverformat": ".1f"
+            },
+            "axis_controlled_by_switches": [
+                "xaxis"
+            ],
+            "square": false,
+            "flat": false,
+            "defer_render": false
+        },
+        "general_stats_table": {
+            "id": "general_stats_table",
+            "anchor": "general_stats_table",
+            "plot_type": "violin",
+            "layout": {
+                "autosize": true,
+                "colorway": [
+                    "#7cb5ec",
+                    "#434348",
+                    "#90ed7d",
+                    "#f7a35c",
+                    "#8085e9",
+                    "#f15c80",
+                    "#e4d354",
+                    "#2b908f",
+                    "#f45b5b",
+                    "#91e8e1"
+                ],
+                "font": {
+                    "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+                },
+                "height": 500,
+                "hoverlabel": {
+                    "namelength": -1
+                },
+                "margin": {
+                    "b": 40,
+                    "l": 60,
+                    "pad": 0,
+                    "r": 15,
+                    "t": 50
+                },
+                "modebar": {
+                    "activecolor": "rgba(0, 0, 0, 1)",
+                    "bgcolor": "rgba(0, 0, 0, 0)",
+                    "color": "rgba(0, 0, 0, 0.5)"
+                },
+                "paper_bgcolor": "white",
+                "plot_bgcolor": "white",
+                "showlegend": false,
+                "title": {
+                    "font": {
+                        "size": 20
+                    },
+                    "text": "General Statistics",
+                    "x": 0.5,
+                    "xanchor": "center"
+                },
+                "xaxis": {
+                    "automargin": false,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.1)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,0.5)",
+                        "size": 9
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.1)"
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.1)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,0.5)",
+                        "size": 9
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.1)"
+                },
+                "violingap": 0,
+                "grid": {
+                    "columns": 1,
+                    "roworder": "top to bottom",
+                    "ygap": 0.4
+                }
+            },
+            "datasets": [
+                {
+                    "plot_id": "general_stats_table",
+                    "label": "1",
+                    "uid": "general_stats_table",
+                    "dconfig": {
+                        "ylab": "",
+                        "title": "General Statistics"
+                    },
+                    "layout": {
+                        "title": {
+                            "text": "General Statistics"
+                        },
+                        "xaxis": {
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "title": {
+                                "text": null
+                            },
+                            "rangemode": "normal",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        },
+                        "yaxis": {
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "title": {
+                                "text": ""
+                            },
+                            "rangemode": "normal",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        }
+                    },
+                    "trace_params": {
+                        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+                        "orientation": "h",
+                        "box": {
+                            "visible": true
+                        },
+                        "meanline": {
+                            "visible": true
+                        },
+                        "fillcolor": "#b5b5b5",
+                        "line": {
+                            "width": 2,
+                            "color": "#b5b5b5"
+                        },
+                        "opacity": 0.5,
+                        "points": false,
+                        "hoveron": "points"
+                    },
+                    "pct_range": {
+                        "xaxis": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "yaxis": {
+                            "min": 0,
+                            "max": 100
+                        }
+                    },
+                    "n_samples": 1,
+                    "metrics": [
+                        "star-total_reads",
+                        "star-mapped",
+                        "star-mapped_percent",
+                        "star-uniquely_mapped",
+                        "star-uniquely_mapped_percent",
+                        "star-multimapped"
+                    ],
+                    "header_by_metric": {
+                        "star-total_reads": {
+                            "title": "Total reads",
+                            "description": "Number of input reads",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "STAR",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-mapped": {
+                            "title": "Aligned",
+                            "description": "Mapped reads",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "STAR",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-mapped_percent": {
+                            "title": "Aligned",
+                            "description": "% Mapped reads",
+                            "suffix": "%",
+                            "dmin": 0,
+                            "dmax": 88.75,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -0.44375000000000003,
+                                    89.19596875
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "STAR",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-uniquely_mapped": {
+                            "title": "Uniq aligned",
+                            "description": "Uniquely mapped reads",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "STAR",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-uniquely_mapped_percent": {
+                            "title": "Uniq aligned",
+                            "description": "% Uniquely mapped reads",
+                            "suffix": "%",
+                            "dmin": 0,
+                            "dmax": 87.23,
+                            "hidden": false,
+                            "xaxis": {
+                                "ticksuffix": "%",
+                                "tickvals": null,
+                                "range": [
+                                    -0.43615000000000004,
+                                    87.66833075000001
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "STAR",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        },
+                        "star-multimapped": {
+                            "title": "Multimapped",
+                            "description": "Multiple mapped reads",
+                            "suffix": " M",
+                            "dmin": 0.0,
+                            "dmax": 30.017187,
+                            "hidden": true,
+                            "xaxis": {
+                                "ticksuffix": " M",
+                                "tickvals": null,
+                                "range": [
+                                    -0.150085935,
+                                    30.168023364675
+                                ]
+                            },
+                            "show_only_outliers": false,
+                            "show_points": true,
+                            "namespace": "STAR",
+                            "color": null,
+                            "hoverformat": ".2f"
+                        }
+                    },
+                    "violin_value_by_sample_by_metric": {
+                        "star-total_reads": {
+                            "SRR3270377_gca": 30.017187
+                        },
+                        "star-mapped": {
+                            "SRR3270377_gca": 26.641005999999997
+                        },
+                        "star-mapped_percent": {
+                            "SRR3270377_gca": 88.75
+                        },
+                        "star-uniquely_mapped": {
+                            "SRR3270377_gca": 26.185487
+                        },
+                        "star-uniquely_mapped_percent": {
+                            "SRR3270377_gca": 87.23
+                        },
+                        "star-multimapped": {
+                            "SRR3270377_gca": 0.45551899999999995
+                        }
+                    },
+                    "scatter_value_by_sample_by_metric": {
+                        "star-total_reads": {},
+                        "star-mapped": {},
+                        "star-mapped_percent": {},
+                        "star-uniquely_mapped": {},
+                        "star-uniquely_mapped_percent": {},
+                        "star-multimapped": {}
+                    },
+                    "all_samples": [
+                        "SRR3270377_gca"
+                    ],
+                    "scatter_trace_params": {
+                        "mode": "markers",
+                        "marker": {
+                            "size": 4,
+                            "color": "#0b79e6"
+                        },
+                        "showlegend": false,
+                        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+                        "hoverlabel": {
+                            "bgcolor": "white"
+                        }
+                    }
+                }
+            ],
+            "pconfig": {
+                "id": "general_stats_table",
+                "title": "General Statistics",
+                "anchor": null,
+                "table_title": null,
+                "height": null,
+                "width": null,
+                "square": false,
+                "logswitch": false,
+                "logswitch_active": false,
+                "logswitch_label": "Log10",
+                "cpswitch": true,
+                "cpswitch_c_active": true,
+                "cpswitch_counts_label": "Counts",
+                "cpswitch_percent_label": "Percentages",
+                "xLog": null,
+                "yLog": null,
+                "xlog": false,
+                "ylog": false,
+                "data_labels": [],
+                "xTitle": null,
+                "yTitle": null,
+                "xlab": null,
+                "ylab": null,
+                "xsuffix": null,
+                "ysuffix": null,
+                "tt_suffix": null,
+                "xLabFormat": null,
+                "yLabFormat": null,
+                "xLabelFormat": null,
+                "yLabelFormat": null,
+                "xlab_format": null,
+                "ylab_format": null,
+                "tt_label": null,
+                "xDecimals": null,
+                "yDecimals": null,
+                "decimalPlaces": null,
+                "x_decimals": null,
+                "y_decimals": null,
+                "tt_decimals": null,
+                "xmin": null,
+                "xmax": null,
+                "ymin": null,
+                "ymax": null,
+                "xFloor": null,
+                "xCeiling": null,
+                "yFloor": null,
+                "yCeiling": null,
+                "x_clipmin": null,
+                "x_clipmax": null,
+                "y_clipmin": null,
+                "y_clipmax": null,
+                "save_data_file": true,
+                "showlegend": null,
+                "xMinRange": null,
+                "yMinRange": null,
+                "x_minrange": null,
+                "y_minrange": null,
+                "xPlotBands": null,
+                "yPlotBands": null,
+                "xPlotLines": null,
+                "yPlotLines": null,
+                "x_bands": null,
+                "y_bands": null,
+                "x_lines": null,
+                "y_lines": null,
+                "namespace": "",
+                "save_file": true,
+                "raw_data_fn": "multiqc_general_stats",
+                "defaultsort": null,
+                "sortRows": true,
+                "sort_rows": true,
+                "only_defined_headers": true,
+                "col1_header": "Sample Name",
+                "no_beeswarm": false,
+                "no_violin": false,
+                "scale": "GnBu",
+                "min": null
+            },
+            "add_log_tab": false,
+            "add_pct_tab": false,
+            "l_active": false,
+            "p_active": false,
+            "pct_axis_update": {
+                "ticksuffix": "%",
+                "hoverformat": ".1f"
+            },
+            "axis_controlled_by_switches": [],
+            "square": false,
+            "flat": false,
+            "defer_render": false,
+            "violin_height": 70,
+            "extra_height": 63,
+            "no_violin": false,
+            "show_table": true,
+            "show_table_by_default": true,
+            "n_samples": 1,
+            "main_table_dt": {
+                "id": "general_stats_table",
+                "anchor": "general_stats_table_table",
+                "pconfig": {
+                    "id": "general_stats_table",
+                    "title": "General Statistics",
+                    "anchor": null,
+                    "table_title": null,
+                    "height": null,
+                    "width": null,
+                    "square": false,
+                    "logswitch": false,
+                    "logswitch_active": false,
+                    "logswitch_label": "Log10",
+                    "cpswitch": true,
+                    "cpswitch_c_active": true,
+                    "cpswitch_counts_label": "Counts",
+                    "cpswitch_percent_label": "Percentages",
+                    "xLog": null,
+                    "yLog": null,
+                    "xlog": false,
+                    "ylog": false,
+                    "data_labels": [],
+                    "xTitle": null,
+                    "yTitle": null,
+                    "xlab": null,
+                    "ylab": null,
+                    "xsuffix": null,
+                    "ysuffix": null,
+                    "tt_suffix": null,
+                    "xLabFormat": null,
+                    "yLabFormat": null,
+                    "xLabelFormat": null,
+                    "yLabelFormat": null,
+                    "xlab_format": null,
+                    "ylab_format": null,
+                    "tt_label": null,
+                    "xDecimals": null,
+                    "yDecimals": null,
+                    "decimalPlaces": null,
+                    "x_decimals": null,
+                    "y_decimals": null,
+                    "tt_decimals": null,
+                    "xmin": null,
+                    "xmax": null,
+                    "ymin": null,
+                    "ymax": null,
+                    "xFloor": null,
+                    "xCeiling": null,
+                    "yFloor": null,
+                    "yCeiling": null,
+                    "x_clipmin": null,
+                    "x_clipmax": null,
+                    "y_clipmin": null,
+                    "y_clipmax": null,
+                    "save_data_file": true,
+                    "showlegend": null,
+                    "xMinRange": null,
+                    "yMinRange": null,
+                    "x_minrange": null,
+                    "y_minrange": null,
+                    "xPlotBands": null,
+                    "yPlotBands": null,
+                    "xPlotLines": null,
+                    "yPlotLines": null,
+                    "x_bands": null,
+                    "y_bands": null,
+                    "x_lines": null,
+                    "y_lines": null,
+                    "namespace": "",
+                    "save_file": true,
+                    "raw_data_fn": "multiqc_general_stats",
+                    "defaultsort": null,
+                    "sortRows": true,
+                    "sort_rows": true,
+                    "only_defined_headers": true,
+                    "col1_header": "Sample Name",
+                    "no_beeswarm": false,
+                    "no_violin": false,
+                    "scale": "GnBu",
+                    "min": null
+                },
+                "sections": [
+                    {
+                        "column_by_key": {
+                            "total_reads": {
+                                "rid": "star-total_reads",
+                                "title": "Total reads",
+                                "description": "Number of input reads",
+                                "scale": "Blues",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "STAR",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "mapped": {
+                                "rid": "star-mapped",
+                                "title": "Aligned",
+                                "description": "Mapped reads",
+                                "scale": "PuRd",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "STAR",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "mapped_percent": {
+                                "rid": "star-mapped_percent",
+                                "title": "Aligned",
+                                "description": "% Mapped reads",
+                                "scale": "PuRd",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "STAR",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 88.75,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "%",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "uniquely_mapped": {
+                                "rid": "star-uniquely_mapped",
+                                "title": "Uniq aligned",
+                                "description": "Uniquely mapped reads",
+                                "scale": "YlGn",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "STAR",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "uniquely_mapped_percent": {
+                                "rid": "star-uniquely_mapped_percent",
+                                "title": "Uniq aligned",
+                                "description": "% Uniquely mapped reads",
+                                "scale": "YlGn",
+                                "hidden": false,
+                                "placement": 1000.0,
+                                "namespace": "STAR",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 87.23,
+                                "min": null,
+                                "dmin": 0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": null,
+                                "tt_decimals": null,
+                                "suffix": "%",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            },
+                            "multimapped": {
+                                "rid": "star-multimapped",
+                                "title": "Multimapped",
+                                "description": "Multiple mapped reads",
+                                "scale": "PuRd",
+                                "hidden": true,
+                                "placement": 1000.0,
+                                "namespace": "STAR",
+                                "colour": null,
+                                "color": null,
+                                "max": null,
+                                "dmax": 30.017187,
+                                "min": 0.0,
+                                "dmin": 0.0,
+                                "ceiling": null,
+                                "floor": null,
+                                "minRange": null,
+                                "minrange": null,
+                                "shared_key": "read_count",
+                                "tt_decimals": null,
+                                "suffix": " M",
+                                "cond_formatting_colours": [
+                                    {
+                                        "blue": "#337ab7"
+                                    },
+                                    {
+                                        "lbue": "#5bc0de"
+                                    },
+                                    {
+                                        "pass": "#5cb85c"
+                                    },
+                                    {
+                                        "warn": "#f0ad4e"
+                                    },
+                                    {
+                                        "fail": "#d9534f"
+                                    }
+                                ],
+                                "cond_formatting_rules": {},
+                                "bgcols": {},
+                                "bars_zero_centrepoint": false
+                            }
+                        },
+                        "rows_by_sgroup": {
+                            "SRR3270377_gca": [
+                                {
+                                    "sample": "SRR3270377_gca",
+                                    "raw_data": {
+                                        "total_reads": 30.017187,
+                                        "uniquely_mapped": 26.185487,
+                                        "uniquely_mapped_percent": 87.23,
+                                        "multimapped": 0.45551899999999995,
+                                        "mapped_percent": 88.75,
+                                        "mapped": 26.641005999999997
+                                    },
+                                    "formatted_data": {
+                                        "total_reads": "30.0",
+                                        "uniquely_mapped": "26.2",
+                                        "uniquely_mapped_percent": "87.2",
+                                        "multimapped": "0.5",
+                                        "mapped_percent": "88.8",
+                                        "mapped": "26.6"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "headers_in_order": {
+                    "1000.0": [
+                        [
+                            0,
+                            "total_reads"
+                        ],
+                        [
+                            0,
+                            "mapped"
+                        ],
+                        [
+                            0,
+                            "mapped_percent"
+                        ],
+                        [
+                            0,
+                            "uniquely_mapped"
+                        ],
+                        [
+                            0,
+                            "uniquely_mapped_percent"
+                        ],
+                        [
+                            0,
+                            "multimapped"
+                        ]
+                    ]
+                }
+            }
+        }
+    },
+    "report_saved_raw_data": {
+        "multiqc_star": {
+            "SRR3270377_gca": {
+                "total_reads": 30017187.0,
+                "avg_input_read_length": 180.0,
+                "uniquely_mapped": 26185487.0,
+                "uniquely_mapped_percent": 87.23,
+                "avg_mapped_read_length": 177.89,
+                "num_splices": 8151208.0,
+                "num_annotated_splices": 0.0,
+                "num_GTAG_splices": 8061393.0,
+                "num_GCAG_splices": 55070.0,
+                "num_ATAC_splices": 2641.0,
+                "num_noncanonical_splices": 32104.0,
+                "mismatch_rate": 0.36,
+                "deletion_rate": 0.01,
+                "deletion_length": 2.41,
+                "insertion_rate": 0.01,
+                "insertion_length": 1.66,
+                "multimapped": 455519.0,
+                "multimapped_percent": 1.52,
+                "multimapped_toomany": 17409.0,
+                "multimapped_toomany_percent": 0.06,
+                "unmapped_mismatches_percent": 0.0,
+                "unmapped_tooshort_percent": 11.16,
+                "unmapped_other_percent": 0.03,
+                "unmapped_mismatches": 0,
+                "unmapped_tooshort": 3349767,
+                "unmapped_other": 9005,
+                "mapped_percent": 88.75,
+                "mapped": 26641006.0
+            }
+        },
+        "multiqc_general_stats": {
+            "SRR3270377_gca": {
+                "star-total_reads": 30.017187,
+                "star-mapped": 26.641005999999997,
+                "star-mapped_percent": 88.75,
+                "star-uniquely_mapped": 26.185487,
+                "star-uniquely_mapped_percent": 87.23,
+                "star-multimapped": 0.45551899999999995
+            }
+        }
+    },
+    "config_analysis_dir_abs": [
+        "/data/projet1/projet_tutore/mapping/map_gca/T_zeteki"
+    ],
+    "config_analysis_dir": [
+        "/data/projet1/projet_tutore/mapping/map_gca/T_zeteki"
+    ],
+    "config_creation_date": "2024-11-01, 14:40 UTC",
+    "config_git_hash": null,
+    "config_intro_text": null,
+    "config_report_comment": null,
+    "config_report_header_info": null,
+    "config_script_path": "/data/projet1/conda/can/multiqc_env/lib/python3.13/site-packages/multiqc",
+    "config_short_version": "1.25.1",
+    "config_subtitle": null,
+    "config_title": null,
+    "config_version": "1.25.1",
+    "config_output_dir": "/data/projet1/projet_tutore/mapping_quality_reports/map_qual_gca/T_zeteki"
+}
