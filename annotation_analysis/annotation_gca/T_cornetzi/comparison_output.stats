@@ -3,9 +3,28 @@
 #
 
 #= Summary for dataset: transcripts_assembly/gca_assembly/T_cornetzi/assembled_transcripts.gtf 
-#     Query mRNAs :       0 in       0 loci  (0 multi-exon transcripts)
-#            (0 multi-transcript loci, ~-nan transcripts per locus)
+#     Query mRNAs :   36862 in   24121 loci  (23685 multi-exon transcripts)
+#            (6145 multi-transcript loci, ~1.5 transcripts per locus)
 # Reference mRNAs :   18729 in   18729 loci  (15278 multi-exon)
+# Super-loci w/ reference transcripts:    11422
+#-----------------| Sensitivity | Precision  |
+        Base level:    73.6     |    47.2    |
+        Exon level:    54.8     |    51.3    |
+      Intron level:    63.6     |    70.5    |
+Intron chain level:    28.7     |    18.5    |
+  Transcript level:    23.4     |    11.9    |
+       Locus level:    23.4     |    18.0    |
 
- Total union super-loci across all input datasets: 0 
-0 out of 0 consensus transcripts written in annotation_analysis/annotation_gca/T_cornetzi/comparison_output.annotated.gtf (0 discarded as redundant)
+     Matching intron chains:    4379
+       Matching transcripts:    4379
+              Matching loci:    4379
+
+          Missed exons:   25981/92170	( 28.2%)
+           Novel exons:   21173/99437	( 21.3%)
+        Missed introns:   19125/73441	( 26.0%)
+         Novel introns:    6983/66204	( 10.5%)
+           Missed loci:    6442/18729	( 34.4%)
+            Novel loci:   10504/24121	( 43.5%)
+
+ Total union super-loci across all input datasets: 21925 
+36862 out of 36862 consensus transcripts written in annotation_analysis/annotation_gca/T_cornetzi/comparison_output.annotated.gtf (0 discarded as redundant)
