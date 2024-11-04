@@ -328,5 +328,7 @@ multiqc /data/projet1/projet_tutore/mapping/map_gca/T_zeteki -o /data/projet1/pr
 
 **Analyse de la qualité du mapping des reads SRR3270377 sur le génome gcf de T.zeteki :**
 
-Le mapping des lectures SRR3270377 sur le génome de T. zeteki montre une bonne qualité. Environ 88,8 % des lectures se sont alignées, dont 87,35 % de manière unique, suggérant un alignement précis. La longueur moyenne des lectures alignées (178,17 nucléotides) est très proche de la longueur moyenne initiale, montrant peu de perte de données. La plupart des jonctions suivent le motif canonique GT/AG, avec des taux d’erreurs, de délétions et d'insertions très faibles (tous inférieurs à 0,4 %), ce qui atteste de la fidélité du mapping.
+Le mapping des lectures SRR3270377 sur le génome de T. zeteki montre une bonne qualité. 
+Environ 88,8 % des lectures se sont alignées, dont 87,35 % de manière unique, suggérant un alignement précis. 
+La longueur moyenne des lectures alignées (178,17 nucléotides) est très proche de la longueur moyenne initiale, montrant peu de perte de données. La plupart des jonctions suivent le motif canonique GT/AG, avec des taux d’erreurs, de délétions et d'insertions très faibles (tous inférieurs à 0,4 %), ce qui atteste de la fidélité du mapping.
 
