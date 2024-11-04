@@ -273,12 +273,15 @@ STAR --runMode genomeGenerate --genomeDir index_genomes/index_gca/T_zeteki --gen
 A faire : 
 Pour le génome de T. cornetzi, 
 **1. Assemblage des transcrits**
-   Outil **StringTie** pour assembler les transcrits de *T. cornetzi* en utilisant les fichiers BAM produits lors du mapping avec STAR.
+Outil **StringTie** pour assembler les transcrits de *T. cornetzi* en utilisant les fichiers BAM produits lors du mapping avec STAR.
 
-   Conversion des fichiers SAM en BAM, tri et assemblage
-   samtools view -S -b mapping/map_gcf/T_cornetzi/SRR3270378_gcf_Aligned.out.sam > SRR3270378_gcf_Aligned.out.bam
-   samtools sort SRR3270378_gcf_Aligned.out.bam -o SRR3270378_gcf_sorted.bam
-   stringtie mapping/map_gcf/T_cornetzi/SRR3270378_gcf_sorted.bam -G genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gtf -o transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf
+Conversion des fichiers SAM en BAM, tri et assemblage
+
+samtools view -S -b mapping/map_gcf/T_cornetzi/SRR3270378_gcf_Aligned.out.sam > SRR3270378_gcf_Aligned.out.bam
+
+samtools sort SRR3270378_gcf_Aligned.out.bam -o SRR3270378_gcf_sorted.bam
+
+stringtie mapping/map_gcf/T_cornetzi/SRR3270378_gcf_sorted.bam -G genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gtf -o transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf
  
 
 Évaluation de l'annotation des transcrits**
