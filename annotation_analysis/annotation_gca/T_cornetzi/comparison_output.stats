@@ -1,0 +1,11 @@
+# gffcompare v0.12.6 | Command line was:
+#gffcompare -r genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594075.2/genomic.gtf -o annotation_analysis/annotation_gca/T_cornetzi/comparison_output transcripts_assembly/gca_assembly/T_cornetzi/assembled_transcripts.gtf
+#
+
+#= Summary for dataset: transcripts_assembly/gca_assembly/T_cornetzi/assembled_transcripts.gtf 
+#     Query mRNAs :       0 in       0 loci  (0 multi-exon transcripts)
+#            (0 multi-transcript loci, ~-nan transcripts per locus)
+# Reference mRNAs :   18729 in   18729 loci  (15278 multi-exon)
+
+ Total union super-loci across all input datasets: 0 
+0 out of 0 consensus transcripts written in annotation_analysis/annotation_gca/T_cornetzi/comparison_output.annotated.gtf (0 discarded as redundant)
