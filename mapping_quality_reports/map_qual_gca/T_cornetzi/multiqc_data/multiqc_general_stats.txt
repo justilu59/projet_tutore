@@ -1,0 +1,2 @@
+Sample	STAR_uniquely_mapped_percent	STAR_uniquely_mapped
+SRR3270378_gca	94.56	27134471.0
