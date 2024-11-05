@@ -370,11 +370,43 @@ Par exemple, la sensibilité et précision sont relativement élevées au niveau
 Ces différences pourraient indiquer des variantes d’épissage ou des erreurs d'assemblage.
 
 **Amélioration du code report_annotation.py pour la prise en compte des gènes non supportés** :
+
 Modification du script report_annotation.py pour intégrer l'analyse des gènes non supportés (non alignés) en extrayant ces informations du fichier .tracking. 
 
 En ajoutant une fonction de comptage des gènes non supportés, basée sur les transcrits de type 'u' dans le fichier .tracking, le rapport final génère désormais également un comptage précis des gènes non supportés.
 
 Ajout d'une fonction count_unsupported_genes pour compter et extraire les gènes non supportés du fichier .tracking.
 
-Génération d'un fichier de rapport .txt contenant un résumé complet des gènes et transcrits analysés, y compris les gènes non supportés.
+Génération d'un fichier de rapport .txt contenant un résumé complet des gènes et transcrits analysés, y compris les gènes non supportés :
+
+python report_annotation.py annotation_gcf/T_septentrionalis/comparison_output.stats annotation_gcf/T_septentrionalis/comparison_output.tracking annotation_gcf/T_septentrionalis/report_gcf_T_septentrionalis.txt
+
+python report_annotation.py annotation_gca/T_septentrionalis/comparison_output.stats annotation_gca/T_septentrionalis/comparison_output.tracking annotation_gca/T_septentrionalis/report_gca_T_septentrionalis.txt
+
+Pour l'annotation gcf de T.septentrionalis, les résultats obtenus sont :
+
+Gènes non-supportés (approximés sur les loci) : 1262 sur 11929 (10.58%)
+
+Nombre total de gènes non supportés (fichier .tracking) : 2832
+
+Exons manquants : 7205 sur 93707 (7.69%)
+
+Erreurs de bornes : 30.70%
+
+Transcrits manquants : 7202 sur 21800 (33.04%)
+
+Pour l'annotation gca de T.septentrionalis, les résultats obtenus sont :
+
+Gènes non-supportés (approximés sur les loci) : 4127 sur 15221 (27.11%)
+
+Nombre total de gènes non supportés (fichier .tracking) : 4583
+
+Exons manquants : 20277 sur 86362 (23.48%)
+
+Erreurs de bornes : 66.00%
+
+Transcrits manquants : 10711 sur 15221 (70.37%)
+
+
+
 
