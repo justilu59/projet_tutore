@@ -409,6 +409,13 @@ Transcrits manquants : 10711 sur 15221 (70.37%)
 
 En conclusion,l'annotation gcf semble offrir être plus robuste, avec moins de gènes et d’exons manquants, une meilleure précision des bornes introniques, et une meilleure correspondance des transcrits avec les données d’expression.
 
+Il pourrait être intéressant d’explorer davantage les transcrits non appariés notamment en intégrant de nouvelles informations issues du fichier .tmap généré par StringTie. 
+
+Le fichier .tmap contient des codes de correspondance détaillés (u pour les transcrits non appariés, p pour les correspondances partielles) qui peuvent compléter l’analyse.
+
+On pourrait adapter le script report_annotation.py pour extraire et inclure les informations de transcrits non appariés (u) et partiellement appariés (p) du fichier comparison_output.assembled_transcripts.gtf.tmap. 
+
+En parallèle, on pourrait pousser l'analyse des transcrits non appariés en utilisant un alignement secondaire, par exemple avec Exonerate ou BLAST, pour tenter de caractériser leur origine ou leur fonction potentielle.
 
 
 
