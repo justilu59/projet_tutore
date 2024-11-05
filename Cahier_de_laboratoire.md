@@ -338,6 +338,7 @@ La longueur moyenne des lectures alignées (178,17 nucléotides) est très proch
 
 On va d'abord transformé le ficher d'alignement sam généré par star en fichier bam : 
 
+
 samtools view -S -b SRR3270377_gcf_Aligned.out.sam > SRR3270377_gcf_Aligned.out.bam
 
 et on va trié ce fichier bam avec l'outil samtools version 1.21 : 
