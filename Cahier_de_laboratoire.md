@@ -377,13 +377,13 @@ En ajoutant une fonction de comptage des gènes non supportés, basée sur les t
 
 Ajout d'une fonction count_unsupported_genes pour compter et extraire les gènes non supportés du fichier .tracking.
 
-Génération d'un fichier de rapport .txt contenant un résumé complet des gènes et transcrits analysés, y compris les gènes non supportés :
+**Génération d'un fichier de rapport .txt contenant un résumé complet des gènes et transcrits analysés, y compris les gènes non supportés pour T_septentrionalis** :
 
 python report_annotation.py annotation_gcf/T_septentrionalis/comparison_output.stats annotation_gcf/T_septentrionalis/comparison_output.tracking annotation_gcf/T_septentrionalis/report_gcf_T_septentrionalis.txt
 
 python report_annotation.py annotation_gca/T_septentrionalis/comparison_output.stats annotation_gca/T_septentrionalis/comparison_output.tracking annotation_gca/T_septentrionalis/report_gca_T_septentrionalis.txt
 
-Pour l'annotation gcf de T.septentrionalis, les résultats obtenus sont :
+**Pour l'annotation gcf de T.septentrionalis, les résultats obtenus sont** :
 
 Gènes non-supportés (approximés sur les loci) : 1262 sur 11929 (10.58%)
 
@@ -395,7 +395,7 @@ Erreurs de bornes : 30.70%
 
 Transcrits manquants : 7202 sur 21800 (33.04%)
 
-Pour l'annotation gca de T.septentrionalis, les résultats obtenus sont :
+**Pour l'annotation gca de T.septentrionalis, les résultats obtenus sont** :
 
 Gènes non-supportés (approximés sur les loci) : 4127 sur 15221 (27.11%)
 
@@ -406,6 +406,8 @@ Exons manquants : 20277 sur 86362 (23.48%)
 Erreurs de bornes : 66.00%
 
 Transcrits manquants : 10711 sur 15221 (70.37%)
+
+En conclusion,l'annotation gcf semble offrir être plus robuste, avec moins de gènes et d’exons manquants, une meilleure précision des bornes introniques, et une meilleure correspondance des transcrits avec les données d’expression.
 
 
 
