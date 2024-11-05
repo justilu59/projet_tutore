@@ -352,11 +352,11 @@ gffread genomic.gff -T -o genomic.gtf
 
 stringtie mapping/map_gcf/T_zeteki/SRR3270377_gcf_sorted.bam -G genomes/gcf_genomes/T_zeteki/ncbi_dataset/data/GCF_001594055.1/genomic.gtf -o transcripts_assembly/gcf_assembly/T_zeteki/assembled_transcripts.gtf
 
-**Evaluation de l'annotation de l'assemblage des transcrits de T.zeteki par rapport à annotation de référence gcf avec l'outil gffcompare version v0.12.6 :**
+**Evaluation de l'annotation de l'assemblage des transcrits de T.zeteki par rapport à l'annotation de référence gcf avec l'outil gffcompare version v0.12.6 :**
 
 gffcompare -r genomes/gcf_genomes/T_zeteki/ncbi_dataset/data/GCF_001594055.1/genomic.gtf -o annotation_analysis/annotation_gcf/T_zeteki/comparison_output transcripts_assembly/gcf_assembly/T_zeteki/assembled_transcripts.gtf
 
-**Analyse du rapport généré par gffcompare concernant l'assemblage des transcrits de T.zeteki basé sur annotation gcf : **
+**Analyse du rapport généré par gffcompare concernant l'assemblage des transcrits de T.zeteki basé sur l'annotation gcf : **
 
 Le rapport de gffcompare pour l'assemblage des transcrits de T. zeteki montre que cet assemblage contient 30 066 transcrits répartis sur 16 697 loci, alors que l'annotation de référence GCF en inclut 19 870 transcrits et 11 927 loci. Parmi les transcrits de l'assemblage, 12 119 correspondent exactement aux transcrits de la référence, et 7 906 loci correspondent parfaitement à ceux annotés dans GCF.
 On observe également une proportion significative de nouveaux éléments dans l'assemblage : 32,3 % des loci et 8,9 % des exons sont nouveaux, ce qui pourrait indiquer des transcrits ou loci propres à T. zeteki. Par ailleurs, 11,2 % des exons et 13,4 % des loci annotés dans GCF sont absents dans cet assemblage.
