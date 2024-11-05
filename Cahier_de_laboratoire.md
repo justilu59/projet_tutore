@@ -121,7 +121,7 @@ gffcompare -r genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594
 
 au préalable on transforme l'assemblage des transcrits .gtf en .fasta
 
-gffread assembled_transcripts.gtf -g reference_genome.fasta -w assembled_transcripts.fasta
+gffread transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.gtf -g genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594115.1/GCF_001594115.1_Tsep1.0_genomic.fna -w transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.fasta
 
 busco -i transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.fasta -l insecta_odb10 -o annotation_analysis/annotation_gcf/T_septentrionalis/busco_output -m transcriptome -f
 
