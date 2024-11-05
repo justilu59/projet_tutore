@@ -188,7 +188,7 @@ Donc globalement, l'annotation gca semble moins bonne que l'annotation gcf.
 
 **20/10/2024**
 
-**Génération du rapport de qualité des reads forward et reverse de T.zeteki avec l'outil Fastqc version 0.11.9 et application des commandes:**
+**Génération du rapport de qualité des reads forward et reverse de T.zeteki avec l'outil Fastqc version 0.11.9 :**
 
 fastqc -o quality_reports/T_zeteki raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_reads/T_zeteki/SRR3270377_2.fastq.gz
 
@@ -253,16 +253,16 @@ L'exécution du script se fait par la commande python script.py /chemin/comparis
 
  **29/10/2024**
 
-**Analyse de qualité des reads de T. Zeteki, SRR3270377_1 et SRR3270377_2:**
+**Analyse de qualité des reads de T. Zeteki, SRR3270377_1 et SRR3270377_2 avant le mapping :**
 
 Longueur des reads : 90 pb
 GC Content : 42 %
-Contenu par position de séquence : Distribution non uniforme observée sur les 10-15 premiers nucléotides, ce qui est attendu en RNA-seq
+Contenu par position de séquence : Distribution non uniforme observée sur les 15 premiers nucléotides, ce qui est attendu en RNA-seq
 Niveau de duplication des séquences : Un certain nombre de reads sont présents en plusieurs copies. La duplication de reads est attendue pour les transcrits de forte abondance
 Séquences surreprésentées : Présence d'une séquence d'adaptateur TruSeq dans SRR3270377_1
 
 
-**Génération de l'index des génomes gcf et gca de T. zeteki avec l'outil STAR version 2.7.11b et les commandes:**
+**Génération de l'index des génomes gcf et gca de T. zeteki avec l'outil STAR version 2.7.11b pour le mapping :**
 
 STAR --runMode genomeGenerate --genomeDir index_genomes/index_gcf/T_zeteki --genomeFastaFiles genomes/gcf_genomes/T_zeteki/ncbi_dataset/data/GCF_001594055.1/GCF_001594055.1_Tzet1.0_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
 
@@ -308,7 +308,7 @@ stringtie mapping/map_gcf/T_cornetzi/SRR3270378_gcf_sorted.bam -G genomes/gcf_ge
 
 contrôle qualité du mapping, puis analyse et annotation de GCF
 
-**Mapping des reads SRR3270377_1.fastq et SRR3270377_2.fastq de T.zeteki sur les génomes de références gca et gcf de T.zeteki avec l'outil STAR version 2.7.11b et les commandes :**
+**Mapping des reads SRR3270377_1.fastq et SRR3270377_2.fastq de T.zeteki sur les génomes de références gca et gcf de T.zeteki avec l'outil STAR version 2.7.11b :**
 
 STAR --genomeDir index_genomes/index_gcf/T_zeteki --sjdbGTFfile genomes/gcf_genomes/T_zeteki/ncbi_dataset/data/GCF_001594055.1/genomic.gff --readFilesIn raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_reads/T_zeteki/SRR3270377_2.fastq.gz --runThreadN 4 --outFileNamePrefix mapping/map_gcf/T_zeteki/SRR3270377_gcf_ --readFilesCommand zcat
 
