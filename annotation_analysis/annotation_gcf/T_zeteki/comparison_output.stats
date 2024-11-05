@@ -1,0 +1,30 @@
+# gffcompare v0.12.6 | Command line was:
+#gffcompare -r genomes/gcf_genomes/T_zeteki/ncbi_dataset/data/GCF_001594055.1/genomic.gtf -o annotation_analysis/annotation_gcf/T_zeteki/comparison_output transcripts_assembly/gcf_assembly/T_zeteki/assembled_transcripts.gtf
+#
+
+#= Summary for dataset: transcripts_assembly/gcf_assembly/T_zeteki/assembled_transcripts.gtf 
+#     Query mRNAs :   30066 in   16697 loci  (23944 multi-exon transcripts)
+#            (5442 multi-transcript loci, ~1.8 transcripts per locus)
+# Reference mRNAs :   19870 in   11927 loci  (19104 multi-exon)
+# Super-loci w/ reference transcripts:    10050
+#-----------------| Sensitivity | Precision  |
+        Base level:    88.9     |    70.6    |
+        Exon level:    80.4     |    76.3    |
+      Intron level:    84.2     |    90.0    |
+Intron chain level:    63.4     |    50.6    |
+  Transcript level:    61.0     |    40.3    |
+       Locus level:    66.3     |    46.8    |
+
+     Matching intron chains:   12119
+       Matching transcripts:   12119
+              Matching loci:    7906
+
+          Missed exons:   10133/90807	( 11.2%)
+           Novel exons:    8665/97572	(  8.9%)
+        Missed introns:    8768/77065	( 11.4%)
+         Novel introns:    1234/72153	(  1.7%)
+           Missed loci:    1602/11927	( 13.4%)
+            Novel loci:    5395/16697	( 32.3%)
+
+ Total union super-loci across all input datasets: 15445 
+30066 out of 30066 consensus transcripts written in annotation_analysis/annotation_gcf/T_zeteki/comparison_output.annotated.gtf (0 discarded as redundant)
