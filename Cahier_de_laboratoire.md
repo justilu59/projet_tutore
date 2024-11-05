@@ -425,7 +425,8 @@ En parallèle, on pourrait pousser l'analyse des transcrits non appariés en uti
 
 
 **Interprétation des Résultats de transcrit pour GCA T_cornetzi**
-Résumé des Transcrits :
+
+cat comparison_output.stats
 
 Query mRNAs : 36,862 transcrits dans 24,121 loci.
 Reference mRNAs : 18,729 transcrits dans 18,729 loci.
