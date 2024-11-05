@@ -305,6 +305,7 @@ On Utilise GFFcompare pour évaluer l'assemblage obtenu par rapport à l'annotat
 Utilisation du script `report_annotation.py` pour analyser le fichier `.stats` généré par GFFcompare. Cette étape nous permet d’identifier les loci, exons et transcrits manquants, ainsi que les erreurs de bornes pour affiner l'annotation.
 
 python report_annotation.py annotation_analysis/annotation_gcf/T_cornetzi/comparison_output.stats
+cat comparison_output.stats
 
 
 **30/10/2024** 
@@ -421,6 +422,35 @@ Le fichier .tmap contient des codes de correspondance détaillés (u pour les tr
 On pourrait adapter le script report_annotation.py pour extraire et inclure les informations de transcrits non appariés (u) et partiellement appariés (p) du fichier comparison_output.assembled_transcripts.gtf.tmap. 
 
 En parallèle, on pourrait pousser l'analyse des transcrits non appariés en utilisant un alignement secondaire, par exemple avec Exonerate ou BLAST, pour tenter de caractériser leur origine ou leur fonction potentielle.
+
+
+**Interprétation des Résultats de transcrit pour GCA T_cornetzi**
+Résumé des Transcrits :
+
+Query mRNAs : 36,862 transcrits dans 24,121 loci.
+Reference mRNAs : 18,729 transcrits dans 18,729 loci.
+Il y a beaucoup plus de transcrits assemblés que de transcrits de référence, mais c'est normal dans les études d'annotation de novo où l'on cherche à capturer la diversité transcriptomique.
+
+**Loci et Transcrits :**
+
+Multi-transcript loci : 6,145, ce qui signifie qu’il y a des loci avec plusieurs transcrits, montrant une complexité d'expression.
+Environ 1.5 transcrits par locus en moyenne, ce qui est un indicateur de la diversité des isoformes.
+
+**Sensibilité et Précision :**
+
+Base level : Sensibilité de 73.6 % et précision de 47.2 %. Cela signifie que la majorité des bases sont identifiées correctement par rapport à la référence, mais la précision est inférieure, indiquant que de nombreux transcrits identifiés ne sont pas des correspondances exactes.
+Les niveaux d'exon, d'intron, de transcrit et de locus montrent tous des performances similaires, avec des sensibilités plus élevées pour les introns et des précisions plus faibles pour les transcrits.
+
+**Exons et Introns :**
+
+Missed exons : 25,981, ce qui représente 28.2 % des exons manquants par rapport à la référence.
+Novel exons : 21,173, ce qui signifie qu’il y a beaucoup d’exons qui n’étaient pas présents dans l'annotation de référence.
+Cela montre que l'assemblage a identifié de nombreux nouveaux éléments.
+
+**Loci Manqués et Nouveaux :**
+
+Missed loci : 6,442 (34.4 %), ce qui indique que beaucoup de loci présents dans la référence ne sont pas retrouvés dans votre assemblage.
+Novel loci : 10,504, indiquant encore une fois une richesse d'annotations qui ne figurent pas dans le génome de référence.
 
 
 
