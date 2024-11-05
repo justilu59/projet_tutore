@@ -345,3 +345,5 @@ et on va trié ce fichier bam avec l'outil samtools version 1.21 :
 samtools sort SRR3270377_gcf_Aligned.out.bam -o SRR3270377_gcf_sorted.bam
 
 
+**On a ensuite transformé l'annotation de référence .gff en fichier .gtf avec l'outil gffread version 0.12.7 :** 
+gffread genomic.gff -T -o genomic.gtf
