@@ -452,5 +452,23 @@ Cela montre que l'assemblage a identifié de nombreux nouveaux éléments.
 Missed loci : 6,442 (34.4 %), ce qui indique que beaucoup de loci présents dans la référence ne sont pas retrouvés dans votre assemblage.
 Novel loci : 10,504, indiquant encore une fois une richesse d'annotations qui ne figurent pas dans le génome de référence.
 
+**Rapport d'alignement des transcrits pour T_cornetzi** 
+
+python report_annotation.py annotation_gca/T_cornetzi/comparison_output.stats annotation_gca/T_cornetzi/comparison_output.tracking annotation_gca/T_cornetzi/report_gca_T_cornetzi.txt
+
+Gènes non-supportés (approximés sur les loci) : 6442 sur 18729 (34.40%)
+
+
+Nombre total de gènes non supportés (selon le fichier .tracking) : 6816
+
+
+Exons manquants : 25981 sur 92170 (28.19%)
+
+
+Erreurs de bornes : 71.30%
+
+
+Transcrits manquants : 14350 sur 18729 (76.62%)
+
 
 
