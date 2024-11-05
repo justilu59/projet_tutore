@@ -1,0 +1,6 @@
+Rapport d'alignement des transcrits:
+Gènes non-supportés (approximation basée sur les loci) : 1262 sur 11929 (10.58%)
+Nombre total de gènes non supportés (fichier .tracking) : 2832
+Exons manquants : 7205 sur 93707 (7.69%)
+Erreurs de bornes : 30.70%
+Transcrits manquants : 7202 sur 21800 (33.04%)
