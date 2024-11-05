@@ -332,3 +332,16 @@ Le mapping des lectures SRR3270377 sur le génome de T. zeteki montre une bonne 
 Environ 88,8 % des lectures se sont alignées, dont 87,35 % de manière unique, suggérant un alignement précis. 
 La longueur moyenne des lectures alignées (178,17 nucléotides) est très proche de la longueur moyenne initiale, montrant peu de perte de données. La plupart des jonctions suivent le motif canonique GT/AG, avec des taux d’erreurs, de délétions et d'insertions très faibles (tous inférieurs à 0,4 %), ce qui atteste de la fidélité du mapping.
 
+**05/11/2024**
+
+**Assemblage des transcrits de T.zeteki basé sur l'annotation gcf avec l'outil stringtie version 2.2.3:**
+
+On va d'abord transformé le ficher d'alignement sam généré par star en fichier bam : 
+
+samtools view -S -b SRR3270377_gcf_Aligned.out.sam > SRR3270377_gcf_Aligned.out.bam
+
+et on va trié ce fichier bam avec l'outil samtools version 1.21 : 
+
+samtools sort SRR3270377_gcf_Aligned.out.bam -o SRR3270377_gcf_sorted.bam
+
+
