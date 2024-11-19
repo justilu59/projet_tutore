@@ -472,4 +472,28 @@ Erreurs de bornes : 71.30%
 Transcrits manquants : 14350 sur 18729 (76.62%)
 
 
+**Assemblage des transcrits de T.zeteki basé sur l'annotation gca avec l'outil stringtie version 2.2.3**
+
+On va reprendre les mêmes étapes que pour GCF, mais avec les fichier GCA : 
+
+Convertir fichier SAM en BAM : 
+
+samtools view -S -b SRR3270377_gca_Aligned.out.sam > SRR3270377_gca_Aligned.out.bam 
+
+Trié fichier BAM avec Samtools version 1.21 : 
+
+samtools sort SRR3270377_gca_Aligned.out.bam -o SRR3270377_gca_sorted.bam
+
+On transforme l'annotation de référence .gff en fichier .gtf avec gffread version 0.12.7 : 
+gffread genomic.gff -T -o genomic.gtf
+
+Et enfin, assemblage des transcrits basé sur l'annotation gca avec stringtie version 2.2.3: 
+
+stringtie mapping/map_gca/T_zeteki/SRR3270377_gca_sorted.bam -G genomes/gca_genomes/T_zeteki/ncbi_dataset/data/GCA_001594055.1/genomic.gtf -o transcripts_assembly/gca_assembly/T_zeteki/assembled_transcripts.gtf
+
+**Evaluation de l'annotation de l'assemblage des transcrits de T.zeteki par rapport à annotation de référence gcf avec l'outil gffcompare version v0.12.6**
+
+gffcompare -r genomes/gca_genomes/T_zeteki/ncbi_dataset/data/GCA_001594055.1/genomic.gtf -o annotation_analysis/annotation_gca/T_zeteki/comparison_output transcripts_assembly/gca_assembly/T_zeteki/assembled_transcripts.gtf
+
+**Analyse du rapport généré par gffcompare sur l'assemblage des transcrits de T_zeteki basé sur l'annotation gca**
 
