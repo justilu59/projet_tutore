@@ -497,7 +497,7 @@ stringtie mapping/map_gca/T_zeteki/SRR3270377_gca_sorted.bam -G genomes/gca_geno
 
 gffcompare -r genomes/gca_genomes/T_zeteki/ncbi_dataset/data/GCA_001594055.1/genomic.gtf -o annotation_analysis/annotation_gca/T_zeteki/comparison_output transcripts_assembly/gca_assembly/T_zeteki/assembled_transcripts.gtf
 
-**Analyse du rapport généré par gffcompare sur l'assemblage des transcrits de T_zeteki basé sur l'annotation gca**
+**Analyse du rapport généré par gffcompare sur l'assemblage des transcrits de T_zeteki basé sur l'annotation gca** : 
 
 Le rapport de gffcompare pour l'assemblage des transcrits de T. zeteki montre que cet assemblage contient 31 222 transcrits répartis sur 19 877 loci, alors que l'annotation de référence GCA en inclut 14 662 transcrits et 14 662 loci. Parmi les transcrits de l'assemblage, 4 011 correspondent exactement aux transcrits de la référence, et 4 011 loci correspondent parfaitement à ceux annotés dans GCA.
 
