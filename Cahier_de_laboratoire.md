@@ -497,5 +497,11 @@ stringtie mapping/map_gca/T_zeteki/SRR3270377_gca_sorted.bam -G genomes/gca_geno
 
 gffcompare -r genomes/gca_genomes/T_zeteki/ncbi_dataset/data/GCA_001594055.1/genomic.gtf -o annotation_analysis/annotation_gca/T_zeteki/comparison_output transcripts_assembly/gca_assembly/T_zeteki/assembled_transcripts.gtf
 
-**Analyse du rapport généré par gffcompare sur l'assemblage des transcrits de T_zeteki basé sur l'annotation gca**
+**Analyse du rapport généré par gffcompare sur l'assemblage des transcrits de T_zeteki basé sur l'annotation gca** : 
 
+Le rapport de gffcompare pour l'assemblage des transcrits de T. zeteki montre que cet assemblage contient 31 222 transcrits répartis sur 19 877 loci, alors que l'annotation de référence GCA en inclut 14 662 transcrits et 14 662 loci. Parmi les transcrits de l'assemblage, 4 011 correspondent exactement aux transcrits de la référence, et 4 011 loci correspondent parfaitement à ceux annotés dans GCA.
+
+On observe également une proportion significative de nouveaux éléments dans l'assemblage : 42,3 % des loci et 20,0 % des exons sont nouveaux, ce qui pourrait indiquer des transcrits ou loci propres à T. zeteki. Par ailleurs, 25,1 % des exons et 29,4 % des loci annotés dans GCA sont absents dans cet assemblage.
+
+Les scores de sensibilité et de précision varient selon les niveaux d’analyse. Par exemple, la sensibilité et précision sont relativement élevées au niveau des introns (66,0 % et 71,9 % respectivement), mais elles diminuent pour les chaînes d'introns (sensibilité de 31,9 % et précision de 18,9 %) et les transcrits (sensibilité de 27,4 % et précision de 12,8 %). Ces différences pourraient indiquer des variantes d’épissage ou des erreurs d'assemblage.
+En conclusion, le nombre de transcrits correspondant parfaitement à l'annotation de référence GCA est relativement faible, ce qui pourrait refléter une couverture partielle de l'assemblage ou des divergences potentielles entre les données assemblées et l'annotation de référence.
