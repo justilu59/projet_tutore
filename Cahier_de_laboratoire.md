@@ -472,6 +472,8 @@ Erreurs de bornes : 71.30%
 Transcrits manquants : 14350 sur 18729 (76.62%)
 
 
+**19/11/2024**
+
 **Assemblage des transcrits de T.zeteki basé sur l'annotation gca avec l'outil stringtie version 2.2.3**
 
 On va reprendre les mêmes étapes que pour GCF, mais avec les fichier GCA : 
