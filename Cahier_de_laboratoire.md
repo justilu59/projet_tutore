@@ -516,22 +516,24 @@ En conclusion, le nombre de transcrits correspondant parfaitement à l'annotatio
 python report_annotation.py annotation_gcf/T_zeteki/comparison_output.stats annotation_gcf/T_zeteki/comparison_output.tracking annotation_gcf/T_zeteki/report_gcf_T_zeteki.txt
 
 **Rapport d'alignement des transcrits pour l'annotation gcf de T.zeteki :**
-Gènes non-supportés (approximés sur les loci) : 1602 sur 11927 (13.43%)
-Nombre total de gènes non supportés (fichier .tracking) : 2633
-Exons manquants : 10133 sur 90807 (11.16%)
-Erreurs de bornes : 36.60%
-Transcrits manquants : 7751 sur 19870 (39.01%)
+
+- Gènes non-supportés (approximés sur les loci) : 1602 sur 11927 (13.43%)
+- Nombre total de gènes non supportés (fichier .tracking) : 2633
+- Exons manquants : 10133 sur 90807 (11.16%)
+- Erreurs de bornes : 36.60%
+- Transcrits manquants : 7751 sur 19870 (39.01%)
 
 **Rapport pour T. zeteki (GCA)**
 
 python report_annotation.py annotation_gca/T_zeteki/comparison_output.stats annotation_gca/T_zeteki/comparison_output.tracking annotation_gca/T_zeteki/report_gca_T_zeteki.txt
 
 **Rapport d'alignement des transcrits pour l'annotation gca de T.zeteki :**
-Gènes non-supportés (approximés sur les loci) : 4312 sur 14662 (29.41%)
-Nombre total de gènes non supportés (fichier .tracking) : 5283
-Exons manquants : 20460 sur 81648 (25.06%)
-Erreurs de bornes : 68.10%
-Transcrits manquants : 10651 sur 14662 (72.64%)
+
+- Gènes non-supportés (approximés sur les loci) : 4312 sur 14662 (29.41%)
+- Nombre total de gènes non supportés (fichier .tracking) : 5283
+- Exons manquants : 20460 sur 81648 (25.06%)
+- Erreurs de bornes : 68.10%
+- Transcrits manquants : 10651 sur 14662 (72.64%)
 
 En conclusion, l'annotation GCF apparaît plus fiable pour T_zeteki, présentant moins de gènes et d'exons absents, une délimitation des introns plus précise et une correspondance supérieure des transcrits avec les données d'expression.
 
