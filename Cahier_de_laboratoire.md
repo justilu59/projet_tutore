@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0f492f02-97d3-47a2-bcb1-b674252818bb)![image](https://github.com/user-attachments/assets/150b4c1e-2f89-4bc1-87a2-81fffb450001)# Projet_tutore
+# Projet_tutore
 
 Dans le cadre de notre projet tutoré, nous étudions les génomes de référence de trois espèces de fourmis : T. septentrionalis, T. cornetzi et T. zeteki. Justine se consacre à l'analyse de T. septentrionalis, Mina à celle de T. cornetzi, et Dilara à celle de T. zeteki.
 
