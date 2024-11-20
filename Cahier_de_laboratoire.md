@@ -505,3 +505,8 @@ On observe également une proportion significative de nouveaux éléments dans l
 
 Les scores de sensibilité et de précision varient selon les niveaux d’analyse. Par exemple, la sensibilité et précision sont relativement élevées au niveau des introns (66,0 % et 71,9 % respectivement), mais elles diminuent pour les chaînes d'introns (sensibilité de 31,9 % et précision de 18,9 %) et les transcrits (sensibilité de 27,4 % et précision de 12,8 %). Ces différences pourraient indiquer des variantes d’épissage ou des erreurs d'assemblage.
 En conclusion, le nombre de transcrits correspondant parfaitement à l'annotation de référence GCA est relativement faible, ce qui pourrait refléter une couverture partielle de l'assemblage ou des divergences potentielles entre les données assemblées et l'annotation de référence.
+
+
+**20/11/2024**
+
+
