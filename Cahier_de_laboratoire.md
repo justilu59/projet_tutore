@@ -515,7 +515,7 @@ En conclusion, le nombre de transcrits correspondant parfaitement à l'annotatio
 
 python report_annotation.py annotation_gcf/T_zeteki/comparison_output.stats annotation_gcf/T_zeteki/comparison_output.tracking annotation_gcf/T_zeteki/report_gcf_T_zeteki.txt
 
-\_Rapport d'alignement des transcrits pour l'annotation gcf de T.zeteki :\_
+**Rapport d'alignement des transcrits pour l'annotation gcf de T.zeteki :**
 
 - Gènes non-supportés (approximés sur les loci) : 1602 sur 11927 (13.43%)
 - Nombre total de gènes non supportés (fichier .tracking) : 2633
@@ -527,7 +527,7 @@ python report_annotation.py annotation_gcf/T_zeteki/comparison_output.stats anno
 
 python report_annotation.py annotation_gca/T_zeteki/comparison_output.stats annotation_gca/T_zeteki/comparison_output.tracking annotation_gca/T_zeteki/report_gca_T_zeteki.txt
 
-\_Rapport d'alignement des transcrits pour l'annotation gca de T.zeteki :\_
+**Rapport d'alignement des transcrits pour l'annotation gca de T.zeteki :**
 
 - Gènes non-supportés (approximés sur les loci) : 4312 sur 14662 (29.41%)
 - Nombre total de gènes non supportés (fichier .tracking) : 5283
