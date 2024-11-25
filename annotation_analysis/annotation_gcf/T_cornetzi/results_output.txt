@@ -1,0 +1,14 @@
+Gene counts by type: {'=': 13162, 'u': 4942, 'p': 2203, 'other': 15319}
+Total unique genes: 19179
+Unique match types in 'other': {'i', 'c', 'k', 'm', 'x', 'j', 'o', 'n', 'e'}
+Counts for other types: {'k': 1149, 'm': 1099, 'c': 1843, 'j': 8760, 'e': 145, 'n': 917, 'o': 411, 'i': 991, 'x': 4}
+Descriptions for 'other' categories:
+k: 1149 (Match with multiple reference loci)
+m: 1099 (Match to mitochondrial genome)
+c: 1843 (Contained within a reference locus)
+j: 8760 (Exact match of intron chain)
+e: 145 (Exonic overlap with reference, but no intron match)
+n: 917 (No match, intergenic region)
+o: 411 (Generic exonic overlap with reference on the opposite strand)
+i: 991 (Contained within a reference intron)
+x: 4 (Exonic overlap with reference at the boundary of a locus)
