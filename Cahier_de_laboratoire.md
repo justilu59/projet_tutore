@@ -564,7 +564,7 @@ Le script contient plusieurs fonctions :
 
 execution du script avec commande : python analysis_tracking_file.py annotation_gcf/T_septentrionalis/comparison_output.tracking annotation_gcf/T_septentrionalis/results_output.txt
 
-**Analyse des différentes correspondances obtenues pour les transcrits pour l'annotation GCA et GCF
+**Analyse des différentes correspondances obtenues pour les transcrits pour l'annotation GCA et GCF**
 
 GCF montre généralement une proportion plus élevée de transcrits parfaitement alignés (=) par rapport à GCA. Cela reflète une annotation potentiellement plus stricte ou mieux résolue.
 
