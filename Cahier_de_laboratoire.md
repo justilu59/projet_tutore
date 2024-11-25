@@ -566,55 +566,57 @@ execution du script avec commande : python analysis_tracking_file.py annotation_
 
 **Analyse des différentes correspondances obtenues pour les transcrits pour l'annotation GCA et GCF
 
-- GCF montre généralement une proportion plus élevée de transcrits parfaitement alignés (=) par rapport à GCA. Cela reflète une annotation potentiellement plus stricte ou mieux résolue.
+GCF montre généralement une proportion plus élevée de transcrits parfaitement alignés (=) par rapport à GCA. Cela reflète une annotation potentiellement plus stricte ou mieux résolue.
 
-- GCA présente davantage de transcrits dans les catégories u (non supportés) et other (ambiguïtés), suggérant une annotation moins spécifique ou une inclusion de transcrits potentiellement erronés.
+GCA présente davantage de transcrits dans les catégories u (non supportés) et other (ambiguïtés), suggérant une annotation moins spécifique ou une inclusion de transcrits potentiellement erronés.
 
-- La catégorie j (Exact match of intron chain) est la plus fréquente dans other pour toutes les espèces et annotations.
+La catégorie j (Exact match of intron chain) est la plus fréquente dans other pour toutes les espèces et annotations.
 
-- Cependant :
-        T. septentrionalis et T. zeteki montrent une proportion plus élevée de j dans GCF par rapport à GCA.
-        T. cornetzi, en revanche, présente une proportion relativement plus faible de j dans GCF (8760 sur 15319) par rapport à GCA (12200 sur 23345), ce qui reflète une complexité ou une variabilité intronique plus importante dans cette espèce.
+Cependant :
+        - T. septentrionalis et T. zeteki montrent une proportion plus élevée de j dans GCF par rapport à GCA.
+        - T. cornetzi, en revanche, présente une proportion relativement plus faible de j dans GCF (8760 sur 15319) par rapport à GCA (12200 sur 23345), ce qui reflète une complexité ou une variabilité intronique plus importante dans cette espèce.
 
-- Une proportion élevée de j dans GCF peut indiquer une annotation intronique mieux définie et plus précise.
-- GCA, en incluant davantage d'annotations ambiguës (k, n, o), pourrait ne pas capturer autant de correspondances introniques exactes.
+Une proportion élevée de j dans GCF peut indiquer une annotation intronique mieux définie et plus précise.
 
-- Les catégories k (loci multiples) et n (régions intergéniques) sont significativement plus élevées dans GCA pour toutes les espèces :
+GCA, en incluant davantage d'annotations ambiguës (k, n, o), pourrait ne pas capturer autant de correspondances introniques exactes.
 
-  T. septentrionalis :
+Les catégories k (loci multiples) et n (régions intergéniques) sont significativement plus élevées dans GCA pour toutes les espèces :
+
+  - T. septentrionalis :
 
    k : 3367 (GCA) vs 1142 (GCF).
 
    n : 1850 (GCA) vs 699 (GCF).
 
-  T. zeteki :
+  - T. zeteki :
 
    k : 2779 (GCA) vs 945 (GCF).
 
    n : 1977 (GCA) vs 858 (GCF).
 
-  T. cornetzi :
+  - T. cornetzi :
 
    k : 3773 (GCA) vs 1149 (GCF).
 
    n : 1998 (GCA) vs 917 (GCF).
 
-- GCA inclut probablement davantage de transcrits ambiguës, soit en raison d'annotations répétées non résolues (k), soit par l'inclusion de transcrits dans des régions intergéniques (n).
+GCA inclut probablement davantage de transcrits ambiguës, soit en raison d'annotations répétées non résolues (k), soit par l'inclusion de transcrits dans des régions intergéniques (n).
 
-- Ces ambiguïtés sont moins présentes dans GCF, ce qui suggère une annotation plus ciblée et stricte.
+Ces ambiguïtés sont moins présentes dans GCF, ce qui suggère une annotation plus ciblée et stricte.
 
-- Les annotations mitochondriales (m) sont globalement similaires entre GCA et GCF.
+Les annotations mitochondriales (m) sont globalement similaires entre GCA et GCF :
 
-   T. septentrionalis : 921 (GCA) vs 901 (GCF).
+   - T. septentrionalis : 921 (GCA) vs 901 (GCF).
 
-   T. zeteki : 970 (GCA) vs 943 (GCF).
+   - T. zeteki : 970 (GCA) vs 943 (GCF).
 
-   T. cornetzi : 1031 (GCA) vs 1099 (GCF).
+   - T. cornetzi : 1031 (GCA) vs 1099 (GCF).
 
-- Les annotations mitochondriales semblent bien représentées dans les deux bases de données. La légère différence pourrait être liée aux critères de filtration.
+Les annotations mitochondriales semblent bien représentées dans les deux bases de données. La légère différence pourrait être liée aux critères de filtration.
 
-- La catégorie y apparaît uniquement dans T. cornetzi (GCA) avec 2 occurrences, cela pourrait refléter une anomalie ou une spécificité de l'annotation dans cette espèce.
+La catégorie y apparaît uniquement dans T. cornetzi (GCA) avec 2 occurrences, cela pourrait refléter une anomalie ou une spécificité de l'annotation dans cette espèce.
 
+Globalement :
 
 - Pour T. septentrionalis :
 
@@ -630,7 +632,7 @@ GCA inclut davantage de transcrits dans des régions ambiguës (k, n) et a une p
 
 GCF montre une annotation plus stricte et mieux définie, notamment avec une proportion plus élevée de j.
 
--Pour T. cornetzi :
+- Pour T. cornetzi :
 
 Les résultats pour T. cornetzi diffèrent légèrement des autres espèces.
 
