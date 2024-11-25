@@ -450,8 +450,8 @@ Cela montre que l'assemblage a identifié de nombreux nouveaux éléments.
 
 **Loci Manqués et Nouveaux :**
 
-Missed loci : 6,442 (34.4 %), ce qui indique que beaucoup de loci présents dans la référence ne sont pas retrouvés dans votre assemblage.
-Novel loci : 10,504, indiquant encore une fois une richesse d'annotations qui ne figurent pas dans le génome de référence.
+Missed loci : 6,442 (34.4 %), ce qui montre que beaucoup de loci présents dans la référence ne sont pas retrouvés dans l'assemblage.
+Novel loci : 10,504, montrant encore une fois une richesse d'annotations qui ne figurent pas dans le génome de référence.
 
 **Rapport d'alignement des transcrits pour T_cornetzi** 
 
