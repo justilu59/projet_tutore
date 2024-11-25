@@ -537,5 +537,29 @@ python report_annotation.py annotation_gca/T_zeteki/comparison_output.stats anno
 
 En conclusion, l'annotation GCF apparaît plus fiable pour T_zeteki, présentant moins de gènes et d'exons absents, une délimitation des introns plus précise et une correspondance supérieure des transcrits avec les données d'expression.
 
+**25/11/2024**
+**Création du script analysis_tracking_file.py pour l'analyse plus approfondie de la correspondance des transcrits**
+
+L'objectif du script analysis_tracking_file.py est d'analyser les fichiers .tracking générés par GFFCompare pour comprendre la répartition des correspondances des transcrits par catégories (=, u, p, et other). 
+
+Le script permet :
+
+- de calculer le nombre total de transcrits par type (= : alignement exact, u : non supporté, p : partiel, other : catégories supplémentaires comme j, k, etc.).
+
+- de lister et compter les types spécifiques dans la catégorie other.
+
+- de générer un fichier de sortie contenant un résumé des résultats.
+
+- d'afficher les résultats dans le terminal pour une validation rapide.
+
+Le script contient plusieurs fonctions :
+
+- analyze_tracking_file : lit le fichier .tracking et compte le nombre de transcrits par catégorie (=, u, p, other) et retourne un dictionnaire contenant ces comptages ainsi que le nombre total de gènes uniques.
+
+- analyze_other_genes : identifie les types spécifiques dans la catégorie other.
+
+- count_other_types : compte le nombre d'occurrences pour chaque type dans other.
+
+- write_results_to_file : sauvegarde les résultats dans un fichier .txt.
 
 
