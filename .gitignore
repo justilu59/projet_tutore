@@ -3,3 +3,4 @@ genomes/
 index_genomes/
 mapping/
 transcripts_assembly/
+busco_downloads/lineages/insecta_odb10/refseq_db.faa
