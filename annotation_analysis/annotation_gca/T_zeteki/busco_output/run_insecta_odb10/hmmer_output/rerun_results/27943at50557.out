@@ -1,0 +1,16 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+27943at50557_51655_0:002027|STRG.11126.1:2-590|+   -            156 27943at50557         -            557     6e-64  213.4   8.2   1   1   7.4e-67   6.7e-64  213.2   8.2    67   212     1   156     1   156 0.93 -
+27943at50557_197043_0:007c1a|STRG.11128.1:18-635|+ -            159 27943at50557         -            557   7.4e-36  120.6   2.1   1   2   7.1e-08   6.4e-05   18.5   0.0   329   386    16    93     5    99 0.68 -
+27943at50557_197043_0:007c1a|STRG.11128.1:18-635|+ -            159 27943at50557         -            557   7.4e-36  120.6   2.1   2   2   3.5e-33   3.1e-30  102.1   0.5   368   429    98   159    91   159 0.94 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/27943at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/rerun_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_zeteki/busco_output/run_insecta_odb10/hmmer_output/rerun_results/27943at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/27943at50557.hmm annotation_analysis/annotation_gca/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/rerun_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Dec  1 18:09:06 2024
+# [ok]

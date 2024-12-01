@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/99751at50557.hmm
+# target sequence database:        annotation_analysis/annotation_gca/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/rerun_results/assembled_transcripts.fasta.modified.fas
+# per-dom hits tabular output:     annotation_analysis/annotation_gca/T_zeteki/busco_output/run_insecta_odb10/hmmer_output/rerun_results/99751at50557.out
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       99751at50557  [M=224]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                             Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                             -----------
+    2.3e-53  177.3   0.5    5.2e-46  153.3   0.1    2.0  2  99751at50557_103372_0:00001b|STRG.10226.1:2-627|-     
+    3.5e-35  117.8   1.0    3.8e-35  117.7   1.0    1.0  1  99751at50557_74869_0:003186|STRG.10225.1:3347-3562|-  
+
+
+Domain annotation for each sequence (and alignments):
+>> 99751at50557_103372_0:00001b|STRG.10226.1:2-627|-  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  153.3   0.1   5.8e-49   5.2e-46      29     141 ..      11     140 ..       3     146 .. 0.89
+   2 !   22.6   0.1     5e-09   4.5e-06     140     159 ..     158     177 .]     153     177 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 153.3 bits;  conditional E-value: 5.8e-49
+                                       99751at50557  29 gvplsvlevedpklcvlvhlmsplepidpllespl..Plvkqra.aaellsev.....eg 80 
+                                                        g plsvlevedpk+cvl+h+m+plep+dpl+esp+  Plv qr+ aael++e+     ++
+  99751at50557_103372_0:00001b|STRG.10226.1:2-627|-  11 GSPLSVLEVEDPKQCVLAHFMTPLEPLDPLMESPVsrPLVLQRDtAAELVAEIapsasQS 70 
+                                                        88********************************9889****96489*****97777679 PP
+
+                                       99751at50557  81 iLlanleknaefpfisyyvin...tdpeefy.....aslkkfdpkalrytaahtldlf.e 131
+                                                        iLl+n+ekna+fpfi+yy+in   tdp++fy     a+l+kfdp++lry+a+htldlf e
+  99751at50557_103372_0:00001b|STRG.10226.1:2-627|-  71 ILLTNMEKNADFPFITYYLINkqsTDPVDFYnevqcAALRKFDPRDLRYAASHTLDLFnE 130
+                                                        ********************965569****9444445789*****************988 PP
+
+                                       99751at50557 132 vatiarpPlk 141
+                                                        vatiarpPl+
+  99751at50557_103372_0:00001b|STRG.10226.1:2-627|- 131 VATIARPPLE 140
+                                                        ********95 PP
+
+  == domain 2  score: 22.6 bits;  conditional E-value: 5e-09
+                                       99751at50557 140 lkvfeGddgekfeknwlywt 159
+                                                        +kvfeGddg+kfe+nwlywt
+  99751at50557_103372_0:00001b|STRG.10226.1:2-627|- 158 FKVFEGDDGLKFEQNWLYWT 177
+                                                        79*****************8 PP
+
+>> 99751at50557_74869_0:003186|STRG.10225.1:3347-3562|-  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  117.7   1.0   4.2e-38   3.8e-35     159     224 .]       1      67 [.       1      67 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 117.7 bits;  conditional E-value: 4.2e-38
+                                          99751at50557 159 tGarmlyrylPksaglrritLhkslskgdklylLlcecsnle.dlsaaalllpalra 214
+                                                           tGarm+yrylPks+glrritLhks+s+gdk+ylL+cecs+l+ +lsaaa+llpalra
+  99751at50557_74869_0:003186|STRG.10225.1:3347-3562|-   1 TGARMMYRYLPKSVGLRRITLHKSMSQGDKMYLLICECSQLQdNLSAAAILLPALRA 57 
+                                                           8***************************************9636************* PP
+
+                                          99751at50557 215 rlcgytglyr 224
+                                                           rlcgytglyr
+  99751at50557_74869_0:003186|STRG.10225.1:3347-3562|-  58 RLCGYTGLYR 67 
+                                                           *********8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (224 nodes)
+Target sequences:                       1799  (483887 residues searched)
+Passed MSV filter:                        40  (0.0222346); expected 36.0 (0.02)
+Passed bias filter:                       34  (0.0188994); expected 36.0 (0.02)
+Passed Vit filter:                         3  (0.00166759); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00111173); expected 0.0 (1e-05)
+Initial search space (Z):               1799  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 16208.95
+//
+[ok]

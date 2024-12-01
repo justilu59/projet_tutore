@@ -1,0 +1,21 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+87750at50557_103372_0:000986|STRG.387.1:118-2868|+ -            917 87750at50557         -            370   4.5e-91  304.6 150.4   1   8      0.15   1.3e+03   -3.0  12.4    63   134    18    87     1   119 0.65 -
+87750at50557_103372_0:000986|STRG.387.1:118-2868|+ -            917 87750at50557         -            370   4.5e-91  304.6 150.4   2   8     0.044   3.9e+02   -1.3   0.2    27    63   217   253   207   257 0.79 -
+87750at50557_103372_0:000986|STRG.387.1:118-2868|+ -            917 87750at50557         -            370   4.5e-91  304.6 150.4   3   8   2.8e-12   2.4e-08   32.3   8.7     1    58   261   326   261   331 0.84 -
+87750at50557_103372_0:000986|STRG.387.1:118-2868|+ -            917 87750at50557         -            370   4.5e-91  304.6 150.4   4   8   1.1e-19   9.6e-16   56.7  38.5    32   174   328   499   325   510 0.77 -
+87750at50557_103372_0:000986|STRG.387.1:118-2868|+ -            917 87750at50557         -            370   4.5e-91  304.6 150.4   5   8   2.8e-28   2.4e-24   85.0  21.4   124   268   508   647   498   650 0.82 -
+87750at50557_103372_0:000986|STRG.387.1:118-2868|+ -            917 87750at50557         -            370   4.5e-91  304.6 150.4   6   8      0.93   8.2e+03   -5.6  10.6    27    75   653   702   640   735 0.46 -
+87750at50557_103372_0:000986|STRG.387.1:118-2868|+ -            917 87750at50557         -            370   4.5e-91  304.6 150.4   7   8   2.1e-45   1.8e-41  141.3  15.3   245   341   746   843   737   850 0.93 -
+87750at50557_103372_0:000986|STRG.387.1:118-2868|+ -            917 87750at50557         -            370   4.5e-91  304.6 150.4   8   8   3.6e-10   3.2e-06   25.4   0.1   337   370   877   917   871   917 0.86 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/87750at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/87750at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/87750at50557.hmm annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Dec  1 20:31:10 2024
+# [ok]

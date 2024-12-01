@@ -1,0 +1,19 @@
+#                                                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+90145at50557_456900_0:000eca|STRG.13125.1:286-1107|+ -            274 90145at50557         -            193   1.7e-48  163.7   7.7   1   1   1.3e-49   2.8e-46  156.5   7.7     1   173     1   235     1   272 0.81 -
+90145at50557_456900_0:000eca|STRG.13125.2:292-1287|+ -            274 90145at50557         -            193   1.3e-47  160.9   7.1   1   1     8e-49   1.8e-45  153.9   7.1     1   173     1   235     1   272 0.78 -
+69855at50557_6973_0:004c2c|STRG.5434.2:351-2087|+    -            579 90145at50557         -            193     0.085   11.3   4.7   1   2    0.0087        19    3.7   0.2     7    28    72    93    69   100 0.90 -
+69855at50557_6973_0:004c2c|STRG.5434.2:351-2087|+    -            579 90145at50557         -            193     0.085   11.3   4.7   2   2   0.00025      0.54    8.7   0.7   118   180   348   412   344   424 0.88 -
+69855at50557_6973_0:004c2c|STRG.5434.3:333-2069|+    -            579 90145at50557         -            193     0.085   11.3   4.7   1   2    0.0087        19    3.7   0.2     7    28    72    93    69   100 0.90 -
+69855at50557_6973_0:004c2c|STRG.5434.3:333-2069|+    -            579 90145at50557         -            193     0.085   11.3   4.7   2   2   0.00025      0.54    8.7   0.7   118   180   348   412   344   424 0.88 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/90145at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/90145at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/90145at50557.hmm annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Dec  1 20:31:18 2024
+# [ok]

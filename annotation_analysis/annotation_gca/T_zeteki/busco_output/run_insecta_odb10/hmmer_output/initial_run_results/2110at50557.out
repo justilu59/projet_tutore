@@ -1,0 +1,25 @@
+#                                                                                                          --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                      accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                              ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+2110at50557_103372_0:00114d|STRG.18693.1:2-5401|+  -           1800 2110at50557          -           1352         0 1602.9  42.9   1   4  2.3e-201  5.9e-198  658.9   4.7     3   561     1   725     1   743 0.83 -
+2110at50557_103372_0:00114d|STRG.18693.1:2-5401|+  -           1800 2110at50557          -           1352         0 1602.9  42.9   2   4   1.9e-22   4.9e-19   66.1   0.3   573   644   792   868   787   878 0.90 -
+2110at50557_103372_0:00114d|STRG.18693.1:2-5401|+  -           1800 2110at50557          -           1352         0 1602.9  42.9   3   4  6.9e-253  1.7e-249  829.7   9.5   644  1252   905  1618   887  1623 0.87 -
+2110at50557_103372_0:00114d|STRG.18693.1:2-5401|+  -           1800 2110at50557          -           1352         0 1602.9  42.9   4   4   4.6e-17   1.2e-13   48.3   6.7  1251  1352  1641  1799  1635  1799 0.73 -
+2110at50557_136037_0:001f3d|STRG.18693.2:2-5394|+  -           1796 2110at50557          -           1352         0 1587.0  42.8   1   4  2.3e-201  5.9e-198  658.9   4.7     3   561     1   725     1   743 0.83 -
+2110at50557_136037_0:001f3d|STRG.18693.2:2-5394|+  -           1796 2110at50557          -           1352         0 1587.0  42.8   2   4   1.9e-22   4.9e-19   66.1   0.3   573   644   792   868   787   878 0.90 -
+2110at50557_136037_0:001f3d|STRG.18693.2:2-5394|+  -           1796 2110at50557          -           1352         0 1587.0  42.8   3   4  4.3e-248  1.1e-244  813.8   9.4   644  1252   905  1615   887  1620 0.86 -
+2110at50557_136037_0:001f3d|STRG.18693.2:2-5394|+  -           1796 2110at50557          -           1352         0 1587.0  42.8   4   4   4.6e-17   1.2e-13   48.3   6.7  1251  1352  1638  1796  1632  1796 0.73 -
+2187at50557_34720_0:00065c|STRG.15842.4:221-3779|+ -           1159 2110at50557          -           1352     0.099    8.8   3.8   1   4   0.00026      0.66    6.0   0.1   791   955    14   186     7   282 0.65 -
+2187at50557_34720_0:00065c|STRG.15842.4:221-3779|+ -           1159 2110at50557          -           1352     0.099    8.8   3.8   2   4     0.023        58   -0.4   0.0   893   947   391   448   364   488 0.58 -
+2187at50557_34720_0:00065c|STRG.15842.4:221-3779|+ -           1159 2110at50557          -           1352     0.099    8.8   3.8   3   4      0.22   5.5e+02   -3.6   0.1   931   962   579   611   576   634 0.68 -
+2187at50557_34720_0:00065c|STRG.15842.4:221-3779|+ -           1159 2110at50557          -           1352     0.099    8.8   3.8   4   4      0.06   1.5e+02   -1.8   0.0   664   720   826   882   810   907 0.75 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/2110at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_zeteki/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/2110at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/2110at50557.hmm annotation_analysis/annotation_gca/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Dec  1 17:34:05 2024
+# [ok]

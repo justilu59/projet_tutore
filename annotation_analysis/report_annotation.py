@@ -165,4 +165,4 @@ if __name__ == "__main__":
     print_report(report)
     print(f"Report has been written to {args.output_file}")
 #python report_annotation.py /path/to/comparison_output.stats /path/to/comparison_output.tracking /path/to/output_report.txt
-#python report_annotation.py annotation_gcf/T_septentrionalis/comparison_output.stats annotation_gcf/T_septentrionalis/comparison_output.tracking annotation_gcf/T_septentrionalis/report_gcf_T_septentrionalis.txt
+#python report_annotation.py annotation_gcf/T_septentrionalis/comparison_output.s

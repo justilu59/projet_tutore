@@ -98,7 +98,7 @@ if __name__ == "__main__":
 
     # Analyse des fichiers
     tracking_file_path = args.tracking_file
-    output_file_path = args.output_file
+    output_file_path = "tracking_analysis_report.txt"
 
     gene_counts, total_genes = analyze_tracking_file(tracking_file_path)
     other_types = analyze_other_genes(tracking_file_path)

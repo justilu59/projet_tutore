@@ -1,0 +1,18 @@
+#                                                                                                             --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                         accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                 ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+119607at50557_34720_0:000e68|STRG.16234.1:107-754|+   -            216 119607at50557        -            124   7.9e-62  205.7   7.4   1   2   2.7e-65   7.9e-62  205.7   7.4     3   117     7   129     5   140 0.91 -
+119607at50557_34720_0:000e68|STRG.16234.1:107-754|+   -            216 119607at50557        -            124   7.9e-62  205.7   7.4   2   2     0.012        34    3.3   6.9    88   124   180   216   155   216 0.77 -
+119607at50557_411798_0:002013|STRG.16234.2:41-688|+   -            216 119607at50557        -            124   7.9e-62  205.7   7.4   1   2   2.7e-65   7.9e-62  205.7   7.4     3   117     7   129     5   140 0.91 -
+119607at50557_411798_0:002013|STRG.16234.2:41-688|+   -            216 119607at50557        -            124   7.9e-62  205.7   7.4   2   2     0.012        34    3.3   6.9    88   124   180   216   155   216 0.77 -
+134150at50557_103372_0:001e2d|STRG.11399.1:517-1242|+ -            242 119607at50557        -            124      0.83    8.5   9.8   1   1   0.00045       1.3    7.9   9.8    53   123   154   224   151   226 0.89 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/119607at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/119607at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/119607at50557.hmm annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Dec  1 20:22:14 2024
+# [ok]

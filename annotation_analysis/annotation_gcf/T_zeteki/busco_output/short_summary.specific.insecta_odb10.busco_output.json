@@ -1,0 +1,71 @@
+{
+    "parameters": {
+        "out_path": "/data/projet1/projet_tutore",
+        "cpu": "1",
+        "force": "True",
+        "restart": "False",
+        "quiet": "False",
+        "download_path": "/data/projet1/projet_tutore/busco_downloads",
+        "datasets_version": "odb10",
+        "offline": "False",
+        "download_base_url": "https://busco-data.ezlab.org/v5/data/",
+        "auto-lineage": "False",
+        "auto-lineage-prok": "False",
+        "auto-lineage-euk": "False",
+        "use_augustus": "False",
+        "use_miniprot": "False",
+        "use_metaeuk": "False",
+        "skip_bbtools": "False",
+        "batch_mode": "False",
+        "tar": "False",
+        "opt-out-run-stats": "False",
+        "in": "/data/projet1/projet_tutore/transcripts_assembly/gcf_assembly/T_zeteki/assembled_transcripts.fasta",
+        "out": "annotation_analysis/annotation_gcf/T_zeteki/busco_output",
+        "mode": "euk_tran",
+        "lineage_dataset": "/data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10",
+        "main_out": "annotation_analysis/annotation_gcf/T_zeteki/busco_output",
+        "lineage_results_dir": "run_insecta_odb10",
+        "domain": "eukaryota",
+        "max_intron": "130000",
+        "max_seq_len": "160000",
+        "orthodb_version": "10.1",
+        "metaeuk_parameters": "",
+        "metaeuk_rerun_parameters": ""
+    },
+    "lineage_dataset": {
+        "name": "insecta_odb10",
+        "creation_date": "2024-01-08",
+        "number_of_buscos": "1367",
+        "number_of_species": "75"
+    },
+    "versions": {
+        "hmmsearch": 3.4,
+        "metaeuk": "7.bba0d80",
+        "python": [
+            3,
+            10,
+            15,
+            "final",
+            0
+        ],
+        "busco": "5.7.1"
+    },
+    "results": {
+        "one_line_summary": "C:98.6%[S:52.9%,D:45.7%],F:0.7%,M:0.7%,n:1367",
+        "Complete percentage": 98.6,
+        "Complete BUSCOs": 1348,
+        "Single copy percentage": 52.9,
+        "Single copy BUSCOs": 723,
+        "Multi copy percentage": 45.7,
+        "Multi copy BUSCOs": 625,
+        "Fragmented percentage": 0.7,
+        "Fragmented BUSCOs": 9,
+        "Missing percentage": 0.7,
+        "Missing BUSCOs": 10,
+        "n_markers": 1367,
+        "avg_identity": null,
+        "domain": "eukaryota",
+        "internal_stop_codon_count": 0,
+        "internal_stop_codon_percent": 0
+    }
+}

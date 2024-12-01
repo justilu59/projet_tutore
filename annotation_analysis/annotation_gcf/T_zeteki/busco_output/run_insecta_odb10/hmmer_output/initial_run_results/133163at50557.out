@@ -1,0 +1,25 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+133163at50557_34720_0:0017d9|STRG.6005.1:266-925|+  -            220 133163at50557        -            154   4.8e-69  230.4  20.5   1   2     1e-67   1.5e-64  215.7  16.4     1   131    11   145    11   172 0.91 -
+133163at50557_34720_0:0017d9|STRG.6005.1:266-925|+  -            220 133163at50557        -            154   4.8e-69  230.4  20.5   2   2   1.6e-06    0.0024   17.0   0.1   124   151   175   202   167   205 0.86 -
+133163at50557_34720_0:0017d9|STRG.6005.2:125-796|+  -            224 133163at50557        -            154   5.3e-69  230.2  20.5   1   2   1.2e-67   1.8e-64  215.5  16.4     1   130    15   148    15   168 0.91 -
+133163at50557_34720_0:0017d9|STRG.6005.2:125-796|+  -            224 133163at50557        -            154   5.3e-69  230.2  20.5   2   2   1.6e-06    0.0024   17.0   0.1   124   151   179   206   171   209 0.86 -
+133163at50557_51655_0:002e92|STRG.14500.2:482-835|+ -            118 133163at50557        -            154     3e-18   65.4  24.4   1   2   8.7e-16   1.3e-12   47.1   6.8     1    49     1    51     1    58 0.89 -
+133163at50557_51655_0:002e92|STRG.14500.2:482-835|+ -            118 133163at50557        -            154     3e-18   65.4  24.4   2   2   5.4e-09     8e-06   25.0  10.3    84   130    54    97    48   114 0.79 -
+133163at50557_51655_0:002e92|STRG.14500.3:502-855|+ -            118 133163at50557        -            154     3e-18   65.4  24.4   1   2   8.7e-16   1.3e-12   47.1   6.8     1    49     1    51     1    58 0.89 -
+133163at50557_51655_0:002e92|STRG.14500.3:502-855|+ -            118 133163at50557        -            154     3e-18   65.4  24.4   2   2   5.4e-09     8e-06   25.0  10.3    84   130    54    97    48   114 0.79 -
+133163at50557_51655_0:002e92|STRG.14500.4:446-799|+ -            118 133163at50557        -            154     3e-18   65.4  24.4   1   2   8.7e-16   1.3e-12   47.1   6.8     1    49     1    51     1    58 0.89 -
+133163at50557_51655_0:002e92|STRG.14500.4:446-799|+ -            118 133163at50557        -            154     3e-18   65.4  24.4   2   2   5.4e-09     8e-06   25.0  10.3    84   130    54    97    48   114 0.79 -
+133163at50557_51655_0:002e92|STRG.14500.5:86-439|+  -            118 133163at50557        -            154     3e-18   65.4  24.4   1   2   8.7e-16   1.3e-12   47.1   6.8     1    49     1    51     1    58 0.89 -
+133163at50557_51655_0:002e92|STRG.14500.5:86-439|+  -            118 133163at50557        -            154     3e-18   65.4  24.4   2   2   5.4e-09     8e-06   25.0  10.3    84   130    54    97    48   114 0.79 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/133163at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/133163at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/133163at50557.hmm annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Dec  1 20:22:52 2024
+# [ok]

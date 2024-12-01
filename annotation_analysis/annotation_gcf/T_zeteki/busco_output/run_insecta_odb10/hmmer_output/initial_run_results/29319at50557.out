@@ -1,0 +1,21 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+29319at50557_103372_0:00277a|STRG.4988.1:308-2350|+ -            681 29319at50557         -            523  9.3e-171  567.9  37.8   1   4  2.5e-129  1.1e-125  419.1  16.6     2   341     9   393     8   414 0.88 -
+29319at50557_103372_0:00277a|STRG.4988.1:308-2350|+ -            681 29319at50557         -            523  9.3e-171  567.9  37.8   2   4   1.1e-12   4.9e-09   34.2   0.7   337   385   421   469   408   479 0.79 -
+29319at50557_103372_0:00277a|STRG.4988.1:308-2350|+ -            681 29319at50557         -            523  9.3e-171  567.9  37.8   3   4     0.018        79    0.6   0.1   366   399   478   511   475   517 0.82 -
+29319at50557_103372_0:00277a|STRG.4988.1:308-2350|+ -            681 29319at50557         -            523  9.3e-171  567.9  37.8   4   4   1.1e-39   4.8e-36  123.4   4.8   376   500   529   670   499   679 0.77 -
+29319at50557_103372_0:00277a|STRG.4988.2:450-2584|+ -            681 29319at50557         -            523  9.3e-171  567.9  37.8   1   4  2.5e-129  1.1e-125  419.1  16.6     2   341     9   393     8   414 0.88 -
+29319at50557_103372_0:00277a|STRG.4988.2:450-2584|+ -            681 29319at50557         -            523  9.3e-171  567.9  37.8   2   4   1.1e-12   4.9e-09   34.2   0.7   337   385   421   469   408   479 0.79 -
+29319at50557_103372_0:00277a|STRG.4988.2:450-2584|+ -            681 29319at50557         -            523  9.3e-171  567.9  37.8   3   4     0.018        79    0.6   0.1   366   399   478   511   475   517 0.82 -
+29319at50557_103372_0:00277a|STRG.4988.2:450-2584|+ -            681 29319at50557         -            523  9.3e-171  567.9  37.8   4   4   1.1e-39   4.8e-36  123.4   4.8   376   500   529   670   499   679 0.77 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/29319at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/29319at50557.out --cpu 1 /data/projet1/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/29319at50557.hmm annotation_analysis/annotation_gcf/T_zeteki/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /data/projet1/projet_tutore
+# Date:            Sun Dec  1 20:25:29 2024
+# [ok]
