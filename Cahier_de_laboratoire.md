@@ -642,4 +642,35 @@ Une proportion notable de k (3773) dans GCA suggère des loci multiples ou des d
 
 La catégorie y apparaît uniquement dans GCA, bien que marginale (2 occurrences).
 
+**01/12/2024**
+
+**Utilisation de l'outil BUSCO version 5.7.1 sur les annotations GCA et GCF pour les éspèces T.cornetzi et T.zeteki**
+
+L'objectif de cette étape est d'évaluer la complétude des annotations de transcrits obtenues pour les trois espèces de Trachymyrmex  en utilisant l'outil BUSCO (Benchmarking Universal Single-Copy Orthologs). 
+
+Cette analyse permet de mesurer la proportion d'orthologues universels présents, fragmentés ou manquants, afin d'évaluer la qualité et la complétude des transcrits annotés pour les bases GCF (RefSeq) et GCA (GenBank).
+
+Pour chaque espèce et chaque annotation (GCF et GCA), BUSCO a été exécuté en mode transcriptome avec la commande suivante :
+
+busco -i [chemin/vers/les/transcrits.fasta] -l insecta_odb10 -o [chemin/de/sortie/busco_output] -m transcriptome -f
+
+Les résultats de BUSCO sont enregistrés dans un fichier texte nommé short_summary.specific.insecta_odb10.busco_output.txt situé dans les dossiers respectifs des sorties, par exemple :
+
+    annotation_analysis/annotation_gcf/T_zeteki/busco_output/short_summary.specific.insecta_odb10.busco_output.txt
+
+Chaque analyse produit un rapport BUSCO contenant :
+
+    - Le pourcentage de gènes complets (C), répartis en gènes simple-copie (S) et dupliqués (D).
+    
+    - Le pourcentage de gènes fragmentés (F).
+    
+    - Le pourcentage de gènes manquants (M).
+    
+    - Le nombre total d'orthologues BUSCO recherchés dans la base insecta_odb10.
+
+Ces résultats permettent de comparer directement la complétude des annotations GCF et GCA pour chaque espèce.
+
+
+
+
 
