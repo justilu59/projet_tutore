@@ -1,0 +1,25 @@
+#                                                                                                              --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                          accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                  ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+38891at50557_34720_0:0025f9|STRG.9471.1:0-1553|+       -            518 38891at50557         -            400  7.5e-152  504.8   1.1   1   2   4.9e-82   6.6e-79  264.6   0.0     1   227     8   285     8   291 0.84 -
+38891at50557_34720_0:0025f9|STRG.9471.1:0-1553|+       -            518 38891at50557         -            400  7.5e-152  504.8   1.1   2   2   4.8e-74   6.5e-71  238.2   0.2   213   399   306   516   302   517 0.90 -
+38891at50557_34720_0:0025f9|STRG.9471.2:235-1761|+     -            509 38891at50557         -            400    5e-148  492.2   1.0   1   2   4.7e-82   6.3e-79  264.6   0.0     1   227     8   285     8   291 0.84 -
+38891at50557_34720_0:0025f9|STRG.9471.2:235-1761|+     -            509 38891at50557         -            400    5e-148  492.2   1.0   2   2   3.3e-70   4.5e-67  225.6   0.2   213   392   306   509   302   509 0.89 -
+38891at50557_1629725_0:000e59|STRG.10109.1:1567-2166|+ -            200 38891at50557         -            400   4.4e-16   57.7   0.2   1   1   4.6e-19   6.2e-16   57.2   0.2   217   361    11   188     4   200 0.66 -
+38891at50557_1629725_0:000e59|STRG.10109.2:1425-2024|+ -            200 38891at50557         -            400   4.4e-16   57.7   0.2   1   1   4.6e-19   6.2e-16   57.2   0.2   217   361    11   188     4   200 0.66 -
+38891at50557_110193_0:0008d3|STRG.8739.2:3-821|+       -            273 38891at50557         -            400   3.1e-06   25.3   0.8   1   3   1.7e-05     0.023   12.5   0.0     6    46     8    49     4    57 0.85 -
+38891at50557_110193_0:0008d3|STRG.8739.2:3-821|+       -            273 38891at50557         -            400   3.1e-06   25.3   0.8   2   3   0.00068      0.92    7.2   0.1    64   128    99   181    94   196 0.60 -
+38891at50557_110193_0:0008d3|STRG.8739.2:3-821|+       -            273 38891at50557         -            400   3.1e-06   25.3   0.8   3   3      0.15     2e+02   -0.4   0.0   134   182   211   264   185   269 0.72 -
+38891at50557_110193_0:0008d3|STRG.8739.1:178-1002|+    -            275 38891at50557         -            400   3.2e-06   25.2   0.8   1   3   1.7e-05     0.023   12.5   0.0     6    46    10    51     6    59 0.85 -
+38891at50557_110193_0:0008d3|STRG.8739.1:178-1002|+    -            275 38891at50557         -            400   3.2e-06   25.2   0.8   2   3   0.00069      0.93    7.2   0.1    64   128   101   183    96   198 0.60 -
+38891at50557_110193_0:0008d3|STRG.8739.1:178-1002|+    -            275 38891at50557         -            400   3.2e-06   25.2   0.8   3   3      0.15     2e+02   -0.5   0.0   134   182   213   266   187   271 0.72 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/38891at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/38891at50557.out --cpu 1 /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/38891at50557.hmm annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /home/justine/projet_tutore
+# Date:            Sun Dec  1 22:17:08 2024
+# [ok]

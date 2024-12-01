@@ -1,0 +1,17 @@
+#                                                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+78643at50557_103372_0:001af2|STRG.18288.1:784-1437|+ -            218 78643at50557         -            269   1.7e-85  285.8  26.5   1   2   8.9e-23   2.4e-19   68.9   6.6     2    62    10    74     9    80 0.88 -
+78643at50557_103372_0:001af2|STRG.18288.1:784-1437|+ -            218 78643at50557         -            269   1.7e-85  285.8  26.5   2   2   7.8e-70   2.1e-66  223.2  12.2    52   182    85   218    73   218 0.96 -
+78643at50557_6973_0:000054|STRG.20181.1:572-1168|+   -            199 78643at50557         -            269   7.1e-12   44.4  16.2   1   1   3.2e-15   8.6e-12   44.1  16.2    58   234     3   190     1   199 0.78 -
+78643at50557_6973_0:000054|STRG.20181.3:572-1168|+   -            199 78643at50557         -            269   7.1e-12   44.4  16.2   1   1   3.2e-15   8.6e-12   44.1  16.2    58   234     3   190     1   199 0.78 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/78643at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/78643at50557.out --cpu 1 /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/78643at50557.hmm annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /home/justine/projet_tutore
+# Date:            Sun Dec  1 22:20:06 2024
+# [ok]

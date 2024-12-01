@@ -1,0 +1,21 @@
+#                                                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+119123at50557_34720_0:0018c3|STRG.12485.1:226-1911|+ -            511 119123at50557        -            208   2.2e-79  264.5   4.1   1   4   3.5e-38   1.4e-34  118.1   0.3     2    98    45   152    44   167 0.87 -
+119123at50557_34720_0:0018c3|STRG.12485.1:226-1911|+ -            511 119123at50557        -            208   2.2e-79  264.5   4.1   2   4   2.7e-05      0.11   10.7   0.0    89   110   187   208   179   217 0.84 -
+119123at50557_34720_0:0018c3|STRG.12485.1:226-1911|+ -            511 119123at50557        -            208   2.2e-79  264.5   4.1   3   4     2e-42   8.1e-39  132.0   0.0   110   182   231   303   228   307 0.97 -
+119123at50557_34720_0:0018c3|STRG.12485.1:226-1911|+ -            511 119123at50557        -            208   2.2e-79  264.5   4.1   4   4     0.016        65    1.6   0.0   186   207   330   362   311   363 0.50 -
+119123at50557_34720_0:0018c3|STRG.12485.3:226-1758|+ -            511 119123at50557        -            208   2.2e-79  264.5   4.1   1   4   3.5e-38   1.4e-34  118.1   0.3     2    98    45   152    44   167 0.87 -
+119123at50557_34720_0:0018c3|STRG.12485.3:226-1758|+ -            511 119123at50557        -            208   2.2e-79  264.5   4.1   2   4   2.7e-05      0.11   10.7   0.0    89   110   187   208   179   217 0.84 -
+119123at50557_34720_0:0018c3|STRG.12485.3:226-1758|+ -            511 119123at50557        -            208   2.2e-79  264.5   4.1   3   4     2e-42   8.1e-39  132.0   0.0   110   182   231   303   228   307 0.97 -
+119123at50557_34720_0:0018c3|STRG.12485.3:226-1758|+ -            511 119123at50557        -            208   2.2e-79  264.5   4.1   4   4     0.016        65    1.6   0.0   186   207   330   362   311   363 0.50 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/119123at50557.hmm
+# Target file:     annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/119123at50557.out --cpu 1 /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/119123at50557.hmm annotation_analysis/annotation_gca/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /home/justine/projet_tutore
+# Date:            Sun Dec  1 22:14:40 2024
+# [ok]
