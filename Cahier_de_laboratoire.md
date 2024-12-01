@@ -670,7 +670,48 @@ Chaque analyse produit un rapport BUSCO contenant :
 
 Ces résultats permettent de comparer directement la complétude des annotations GCF et GCA pour chaque espèce.
 
+T. zeteki
 
+    Annotation GCA :
+        
+        93,1 % de gènes complets (47,5 % en copie unique, 45,6 % en copies dupliquées).
+        
+        4,7 % de gènes fragmentés.
+        
+        7,2 % de gènes manquants.
+
+    Annotation GCF :
+        
+        98,6 % de gènes complets (52,9 % en copie unique, 45,7 % en copies dupliquées).
+        
+        0,7 % de gènes fragmentés.
+        
+        0,7 % de gènes manquants.
+
+T. cornetzi
+
+    Annotation GCA :
+        
+        94,1 % de gènes complets (46,8 % en copie unique, 47,3 % en copies dupliquées).
+        
+        3,8 % de gènes fragmentés.
+        
+        2,1 % de gènes manquants.
+
+    Annotation GCF :
+        
+        98,0 % de gènes complets (50,4 % en copie unique, 47,6 % en copies dupliquées).
+        
+        1,1 % de gènes fragmentés.
+        
+        0,9 % de gènes manquants.
+
+
+Les annotations GCF présentent une proportion significativement plus élevée de gènes complets dans toutes les espèces étudiées (entre 98,0 % et 99,1 %) par rapport aux annotations GCA (entre 93,1 % et 97,2 %). Cette tendance est cohérente avec la réputation de RefSeq (GCF) en tant que base de données rigoureusement validée.
+
+Les annotations GCA montrent une proportion plus élevée de gènes fragmentés et manquants par rapport à GCF. Par exemple, pour T. zeteki, les gènes fragmentés représentent 4,7 % dans GCA contre 0,7 % dans GCF, et les gènes manquants 2,2 % contre 0,7 %.
+
+La proportion de gènes dupliqués est légèrement plus élevée dans les annotations GCF pour certaines espèces, notamment T. septentrionalis (51,1 % pour GCF contre 49,1 % pour GCA). Cela pourrait indiquer une meilleure capacité à capturer des duplications dans GCF.
 
 
 
