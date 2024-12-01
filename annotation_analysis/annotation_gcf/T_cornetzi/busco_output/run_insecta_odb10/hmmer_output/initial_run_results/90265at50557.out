@@ -1,0 +1,25 @@
+#                                                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+90265at50557_64793_0:001c66|STRG.20050.1:303-1007|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   1   2  5.2e-101     8e-98  324.6   8.9     1   173     1   188     1   201 0.95 -
+90265at50557_64793_0:001c66|STRG.20050.1:303-1007|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   2   2   3.1e-07   0.00048   18.9   0.4   161   184   209   232   195   232 0.91 -
+90265at50557_64793_0:001c66|STRG.20050.2:303-1007|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   1   2  5.2e-101     8e-98  324.6   8.9     1   173     1   188     1   201 0.95 -
+90265at50557_64793_0:001c66|STRG.20050.2:303-1007|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   2   2   3.1e-07   0.00048   18.9   0.4   161   184   209   232   195   232 0.91 -
+90265at50557_64793_0:001c66|STRG.20050.3:307-1011|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   1   2  5.2e-101     8e-98  324.6   8.9     1   173     1   188     1   201 0.95 -
+90265at50557_64793_0:001c66|STRG.20050.3:307-1011|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   2   2   3.1e-07   0.00048   18.9   0.4   161   184   209   232   195   232 0.91 -
+90265at50557_64793_0:001c66|STRG.20050.4:303-1007|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   1   2  5.2e-101     8e-98  324.6   8.9     1   173     1   188     1   201 0.95 -
+90265at50557_64793_0:001c66|STRG.20050.4:303-1007|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   2   2   3.1e-07   0.00048   18.9   0.4   161   184   209   232   195   232 0.91 -
+90265at50557_64793_0:001c66|STRG.20050.5:549-1263|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   1   2  5.2e-101     8e-98  324.6   8.9     1   173     1   188     1   201 0.95 -
+90265at50557_64793_0:001c66|STRG.20050.5:549-1263|+  -            235 90265at50557         -            184  1.1e-102  340.4  15.0   2   2   3.1e-07   0.00048   18.9   0.4   161   184   209   232   195   232 0.91 -
+90265at50557_64793_0:001c66|STRG.20050.6:2626-3000|+ -            125 90265at50557         -            184   1.6e-42  144.3   3.5   1   2   5.9e-40   9.1e-37  125.6   0.2   100   173     5    78     1    90 0.93 -
+90265at50557_64793_0:001c66|STRG.20050.6:2626-3000|+ -            125 90265at50557         -            184   1.6e-42  144.3   3.5   2   2   1.3e-07    0.0002   20.2   0.4   161   184    99   122    89   122 0.91 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/90265at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_cornetzi/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/90265at50557.out --cpu 1 /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/90265at50557.hmm annotation_analysis/annotation_gcf/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /home/justine/projet_tutore
+# Date:            Sun Dec  1 20:10:24 2024
+# [ok]

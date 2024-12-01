@@ -1,0 +1,29 @@
+#                                                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+80072at50557_103372_0:001f31|STRG.19541.1:106-1167|+ -            354 80072at50557         -            323  4.3e-162  537.4   3.4   1   1  5.8e-165  4.9e-162  537.2   3.4     1   323     2   346     2   346 0.95 -
+78395at50557_69004_0:0007d1|STRG.4359.1:35-985|+     -            317 80072at50557         -            323   6.4e-34  116.2   0.6   1   2   8.6e-15   7.2e-12   43.8   0.0     3    75    14    88    12    97 0.86 -
+78395at50557_69004_0:0007d1|STRG.4359.1:35-985|+     -            317 80072at50557         -            323   6.4e-34  116.2   0.6   2   2   3.5e-23     3e-20   71.3   0.3   108   222   100   214    74   226 0.86 -
+76116at50557_520822_0:00013b|STRG.10303.1:0-1067|+   -            356 80072at50557         -            323   2.5e-33  114.3   0.4   1   1   4.7e-33     4e-30  103.8   0.4     3   225    43   246    41   352 0.74 -
+78395at50557_103372_0:001bc6|STRG.7281.1:112-1179|+  -            356 80072at50557         -            323   2.6e-32  111.0   1.5   1   2   6.6e-13   5.5e-10   37.6   0.0     3    79    35   112    33   121 0.86 -
+78395at50557_103372_0:001bc6|STRG.7281.1:112-1179|+  -            356 80072at50557         -            323   2.6e-32  111.0   1.5   2   2   1.6e-23   1.4e-20   72.4   1.2   119   223   137   242    99   344 0.89 -
+78395at50557_103372_0:001bc6|STRG.7281.2:229-1327|+  -            342 80072at50557         -            323   6.6e-32  109.6   1.0   1   2   2.3e-12   1.9e-09   35.8   0.0     3    79    35   112    33   120 0.86 -
+78395at50557_103372_0:001bc6|STRG.7281.2:229-1327|+  -            342 80072at50557         -            323   6.6e-32  109.6   1.0   2   2   1.9e-23   1.6e-20   72.2   0.9   119   223   137   242   100   257 0.87 -
+78395at50557_103372_0:001bc6|STRG.7281.3:197-1105|+  -            303 80072at50557         -            323   2.4e-29  101.2   1.1   1   2   9.7e-10   8.1e-07   27.2   0.0    18    79    12    73     1    82 0.82 -
+78395at50557_103372_0:001bc6|STRG.7281.3:197-1105|+  -            303 80072at50557         -            323   2.4e-29  101.2   1.1   2   2   1.5e-23   1.2e-20   72.6   0.9   119   223    98   203    61   218 0.87 -
+59039at50557_79782_0:000c3a|STRG.3681.1:1492-2844|+  -            451 80072at50557         -            323   8.2e-05   20.6   0.8   1   1   8.6e-06    0.0072   14.2   0.8    28   235    68   261    49   269 0.69 -
+76116at50557_7213_0:000664|STRG.12923.1:513-1097|+   -            195 80072at50557         -            323   0.00012   20.1   0.2   1   1   2.2e-07   0.00018   19.4   0.2    23   162    29   165    21   190 0.70 -
+76116at50557_7213_0:000664|STRG.12923.2:348-932|+    -            195 80072at50557         -            323   0.00012   20.1   0.2   1   1   2.2e-07   0.00018   19.4   0.2    23   162    29   165    21   190 0.70 -
+78395at50557_535359_0:001efc|STRG.12025.1:302-1060|+ -            253 80072at50557         -            323    0.0011   16.9   0.0   1   2   6.5e-06    0.0054   14.6   0.0    24    69    24    72    19   112 0.80 -
+78395at50557_535359_0:001efc|STRG.12025.1:302-1060|+ -            253 80072at50557         -            323    0.0011   16.9   0.0   2   2      0.21   1.7e+02   -0.2   0.0   161   190   137   166   118   189 0.83 -
+51542at50557_103372_0:0027c7|STRG.15081.1:117-1469|+ -            451 80072at50557         -            323     0.018   12.9   0.0   1   1     4e-05     0.034   12.0   0.0    16    57    36    81    27    89 0.75 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/80072at50557.hmm
+# Target file:     annotation_analysis/annotation_gcf/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas
+# Option settings: hmmsearch --domtblout annotation_analysis/annotation_gcf/T_cornetzi/busco_output/run_insecta_odb10/hmmer_output/initial_run_results/80072at50557.out --cpu 1 /home/justine/projet_tutore/busco_downloads/lineages/insecta_odb10/hmms/80072at50557.hmm annotation_analysis/annotation_gcf/T_cornetzi/busco_output/run_insecta_odb10/metaeuk_output/initial_results/assembled_transcripts.fasta.modified.fas 
+# Current dir:     /home/justine/projet_tutore
+# Date:            Sun Dec  1 20:09:51 2024
+# [ok]
