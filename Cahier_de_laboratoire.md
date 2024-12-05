@@ -2,7 +2,7 @@
 
 Dans le cadre de notre projet tutoré, nous étudions les génomes de référence de trois espèces de fourmis : T. septentrionalis, T. cornetzi et T. zeteki. Justine se consacre à l'analyse de T. septentrionalis, Mina à celle de T. cornetzi, et Dilara à celle de T. zeteki.
 
-**03/10/2024**
+**03/10/2024** Justine
 
 **Importation des données des génomes de référence des 3 espèces de fourmis T.septentrionalis, T.cornetzi et T.zeteki avec l'outil ncbi-datasets-cli version 16.31.0**:
 
@@ -22,7 +22,7 @@ fastq-dump --split-files --gzip SRR3270378
 
 fastq-dump --split-files --gzip SRR3270377
 
-**04/10/2024** 
+**04/10/2024** Justine
 
 **Génération du rapport de qualité des reads forward et reverse de T.cornetzi et de T.septentrionalis avec l'outil Fastqc version 0.11.9 et application des commandes**:
 
@@ -30,7 +30,7 @@ fastqc -o quality_reports/T_cornetzi raw_reads/T_cornetzi/SRR3270378_1.fastq.gz 
 
 fastqc -o quality_reports/T_septentrionalis raw_reads/T_septentrionalis/SRR3270634_1.fastq.gz raw_reads/T_septentrionalis/SRR3270634_2.fastq.gz
 
-**06/10/2024** 
+**06/10/2024** Justine
 
 **Analyse de qualité des reads SRR3270634_1 et SRR3270634_2 de T.septentrionalis** : 
 - reads de longueur 90 pb 
@@ -50,7 +50,7 @@ STAR --runMode genomeGenerate --genomeDir index_genomes/index_gcf/T_septentriona
 STAR --runMode genomeGenerate --genomeDir index_genomes/index_gca/T_septentrionalis --genomeFastaFiles genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594115.1/GCA_001594115.1_Tsep1.0_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
 
 
-**8/10/2024**
+**8/10/2024** Justine
 
 Le trimming a induit des incohérences dans la longueur des séquences et qualité associées à SRR3270634_trimmed_1 donc utilisation des reads non trimmés pour le mapping.
 
@@ -69,7 +69,7 @@ STAR --genomeDir index_genomes/index_gca/T_septentrionalis \
 --outFileNamePrefix mapping/map_gca/T_septentrionalis/SRR3270634_gca_ \
 --readFilesCommand zcat
 
-**9/10/2024**
+**9/10/2024** Justine
 
 **Génération du rapport de qualité du mapping des reads SRR3270634 sur le génome de référence gcf et gca de T.septentrionalis avec l'outil multiqc version  1.25.1**:
 
@@ -78,7 +78,7 @@ multiqc /data/projet1/projet_tutore/mapping/map_gcf/T_septentrionalis -o /data/p
 multiqc /data/projet1/projet_tutore/mapping/map_gca/T_septentrionalis -o /data/projet1/projet_tutore/mapping_quality_reports/map_qual_gca/T_septentrionalis
 
 
-**10/10/2024**
+**10/10/2024** Justine
 
 **Analyse de la qualité du mapping des reads SRR3270634 sur le génome gcf de T.septentrionalis**
 
@@ -99,7 +99,7 @@ gffread genomic.gff -T -o genomic.gtf
 
 stringtie mapping/map_gcf/T_septentrionalis/SRR3270634_gcf_sorted.bam -G genomes/gcf_genomes/T_septentrionalis/ncbi_dataset/data/GCF_001594115.1/genomic.gtf -o transcripts_assembly/gcf_assembly/T_septentrionalis/assembled_transcripts.gtf
 
-**12/10/2024**
+**12/10/2024** Justine
 
 **Evaluation de l'annotation de l'assemblage des transcrits de T.septentrionalis par rapport à annotation de référence gcf avec l'outil gffcompare version v0.12.6** 
 
@@ -129,7 +129,7 @@ L'analyse révèle que 1355 gènes complets ont été retrouvés sur 1367.
 - 656 ont été trouvés en une seule copie et 699 ont été trouvés dupliqués.
 - 4 gènes sont fragmentés et 8 sont manquants.
 
-**13/10/2024**
+**13/10/2024** Justine
 
 **Analyse de la qualité du mapping des reads SRR3270634 sur le génome gca de T.septentrionalis**
 
@@ -156,7 +156,7 @@ stringtie mapping/map_gca/T_septentrionalis/SRR3270634_gca_sorted.bam -G genomes
 
 gffcompare -r genomes/gca_genomes/T_septentrionalis/ncbi_dataset/data/GCA_001594115.1/genomic.gtf -o annotation_analysis/annotation_gca/T_septentrionalis/comparison_output transcripts_assembly/gca_assembly/T_septentrionalis/assembled_transcripts.gtf
 
-**14/10/2024**
+**14/10/2024** Justine
 
 **Analyse du rapport généré par gffcompare concernant l'assemblage des transcrits de T.septentrionalis basé sur annotation gca**
 
@@ -186,7 +186,7 @@ L'analyse révèle que 1328 gènes complets ont été retrouvés sur 1367.
 
 Donc globalement, l'annotation gca semble moins bonne que l'annotation gcf.
 
-**20/10/2024**
+**20/10/2024** Dilara, Mina
 
 **Génération du rapport de qualité des reads forward et reverse de T.zeteki avec l'outil Fastqc version 0.11.9 :**
 
@@ -198,13 +198,11 @@ fastqc -o quality_reports/T_zeteki raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_
 
 Longueur des reads : 90 pb avec un contenu GC de 44 %.
 
-
 Duplication des séquences : 30,35 % des séquences étaient uniques après la suppression des duplicats, ce qui est conforme aux attentes pour des transcrits de forte abondance.
-
 
 Séquences surreprésentées : Aucune contamination par des séquences d'adaptateurs n’a été détectée. C'est bien.
 
-**21/10/2024**
+**21/10/2024** Mina
 
 **Génération de l'index du génomes gcf de T.cornetzi avec l'outil STAR version 2.7.11b pour permettre le mapping des reads** :
 
@@ -236,9 +234,9 @@ Nouveaux introns : 1,680 sur 77,351 (2.2 %).
 Loci manqués : 2,186 sur 13,690 (16.0 %).
 Nouveaux loci : 8,001 sur 20,731 (38.6 %).
 
-Ces résultats montrent que l’assemblage offre une couverture incomplète de certains éléments de la référence (exons, introns, et loci). Il révèle surtout des nouveautés au niveau des exons et des loci, ce qui pourrait suggérer la présence de nouveaux gènes, isoformes, ou régulations d'épissage non encore documentés.
+Ces résultats montrent que l’assemblage offre une couverture incomplète de certains éléments de la référence (exons, introns, et loci). Il révèle aussi des nouveautés au niveau des exons et des loci, ce qui pourrait suggérer la présence de nouveaux gènes, isoformes, ou régulations d'épissage non encore documentés.
 
-**27/10/2024**
+**27/10/2024** Justine
 
 **Développement d'un script report_annotation.py pour l'analyse du fichier summary de GFFcompare**
 
@@ -253,7 +251,7 @@ Plusieurs fonctions ont été définies :
 
 L'exécution du script se fait par la commande python script.py /chemin/comparison_output.stats
 
- **29/10/2024**
+ **29/10/2024** Dilara
 
 **Analyse de qualité des reads de T. Zeteki, SRR3270377_1 et SRR3270377_2 avant le mapping :**
 
@@ -272,22 +270,29 @@ STAR --runMode genomeGenerate --genomeDir index_genomes/index_gca/T_zeteki --gen
 
 
  
-**Pour le génome de T. cornetzi** 
-**1. Assemblage des transcrits**
+**Pour le génome de T. cornetzi** Mina
+
+**Génération du rapport de qualité du mapping des reads SRR3270634 sur le génome de référence gcf et gca de T.cornetzi avec l'outil multiqc version 1.25.1:**
+
+multiqc /data/projet1/projet_tutore/mapping/map_gcf/T_cornetzi -o /data/projet1/projet_tutore/mapping_quality_reports/map_qual_gcf/T_cornetzi
+
+**1. Assemblage des transcrits sur l'annotation gcf avec l'outil stringtie version 2.2.3**
 
 On utilise l'Outil StringTie pour assembler les transcrits de T. cornetzi en utilisant les fichiers BAM produits lors du mapping avec STAR.
 
-*Conversion des fichiers SAM en BAM, tri et assemblage: *
+*Conversion des fichiers SAM en BAM, tri et assemblage avec outil samtools version 1.21 *
 
 samtools view -S -b mapping/map_gcf/T_cornetzi/SRR3270378_gcf_Aligned.out.sam > SRR3270378_gcf_Aligned.out.bam
 
 samtools sort SRR3270378_gcf_Aligned.out.bam -o SRR3270378_gcf_sorted.bam
 
-stringtie mapping/map_gcf/T_cornetzi/SRR3270378_gcf_sorted.bam -G genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gtf -o transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf
- 
+On transforme l'annotation de référence .gff en fichier .gtf avec l'outil gffread version 0.12.7 gffread genomic.gff -T -o genomic.gtf
 
+stringtie mapping/map_gcf/T_cornetzi/SRR3270378_gcf_sorted.bam -G genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gtf -o transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf
+
+ 
 **Évaluation de l'annotation des transcrits**
-On Utilise GFFcompare pour évaluer l'assemblage obtenu par rapport à l'annotation de référence. Cette étape permet de valider la qualité de l’assemblage en comparant les transcrits assemblés aux transcrits annotés.
+On Utilise GFFcompare pour évaluer l'assemblage obtenu par rapport à l'annotation de référence. Cette étape permet de valider la qualité de l’assemblage en comparant les transcrits assemblés aux transcrits annotés avec l'outil gffcompare version v0.12.6.
 
    gffcompare -r genomes/gcf_genomes/T_cornetzi/ncbi_dataset/data/GCF_001594075.2/genomic.gtf -o annotation_analysis/annotation_gcf/T_cornetzi/comparison_output transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf
  
@@ -298,7 +303,7 @@ On Utilise GFFcompare pour évaluer l'assemblage obtenu par rapport à l'annotat
 
      gffread transcripts_assembly/gcf_assembly/T_cornetzi/assembled_transcripts.gtf -g reference_genome.fasta -w assembled_transcripts.fasta
 
-*Ayant eu des problemes avec BUSCO nous passons cette etape car elle est pas necessaire à l'analyse pour ce projet.*
+*Ayant des problemes avec BUSCO je passe cette étape* 
 
  **Validation et analyse du rapport d'annotation**
  
@@ -308,7 +313,7 @@ python report_annotation.py annotation_analysis/annotation_gcf/T_cornetzi/compar
 cat comparison_output.stats
 
 
-**30/10/2024** 
+**30/10/2024** Dilara
 
 contrôle qualité du mapping, puis analyse et annotation de GCF
 
@@ -319,14 +324,49 @@ STAR --genomeDir index_genomes/index_gcf/T_zeteki --sjdbGTFfile genomes/gcf_geno
 STAR --genomeDir index_genomes/index_gca/T_zeteki --sjdbGTFfile genomes/gca_genomes/T_zeteki/ncbi_dataset/data/GCA_001594055.1/genomic.gff --readFilesIn raw_reads/T_zeteki/SRR3270377_1.fastq.gz raw_reads/T_zeteki/SRR3270377_2.fastq.gz --runThreadN 4 --outFileNamePrefix mapping/map_gca/T_zeteki/SRR3270377_gca_ --readFilesCommand zcat
 
 
-**01/11/2024**
+**01/11/2024** Mina
 
 **Mapping des reads de T.cornetzi sur les génomes de références gca.**
 
-On suit les memes etapes vu pour GCF mais avec les noms de fichier GCA.
+On suit les memes etapes vu pour GCF mais avec les noms de fichier GCA : 
+
+Génération de l'index du génomes gca de T.cornetzi avec l'outil STAR version 2.7.11b pour permettre le mapping des reads :
 
 
-**Génération du rapport de qualité du mapping des reads SRR3270377 sur le génome de référence gcf et gca de T.zeteki avec l'outil multiqc version 1.25.1:**
+STAR --runMode genomeGenerate --genomeDir index_genomes/index_gca/T_cornetzi --genomeFastaFiles genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594075.2/GCA_001594075.1_Tcor1.1_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
+
+STAR --runMode genomeGenerate --genomeDir index_genomes/index_gca/T_cornetzi --genomeFastaFiles genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594075.2/GCA_001594075.2_Tcor1.1_genomic.fna --runThreadN 4 --genomeSAindexNbases 13
+
+Mapping des reads SRR3270378_1 et SRR3270378_2 de T.cornetzi sur le génome de référence gca vec l'outil STAR version 2.7.11b pour aligner les reads aux sequences de ref et permettre l'assemblage des transcrits :
+
+STAR --genomeDir index_genomes/index_gcf/T_cornetzi --sjdbGTFfile genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594075.2/genomic.gff --readFilesIn raw_reads/T_cornetzi/SRR3270378_1.fastq.gz raw_reads/T_cornetzi/SRR3270378_2.fastq.gz --runThreadN 4 --outFileNamePrefix mapping/map_gcf/T_cornetzi/SRR3270378_gca_ --readFilesCommand zcat
+
+Génération du rapport de qualité du mapping des reads SRR3270634 sur le génome de référence gca de T.cornetzi avec l'outil multiqc version 1.25.1:
+
+multiqc /data/projet1/projet_tutore/mapping/map_gca/T_cornetzi -o /data/projet1/projet_tutore/mapping_quality_reports/map_qual_gca/T_cornetzi
+
+Comme pour l'annotation gcf, on transforme le ficher d'alignement sam généré par star en fichier bam et on a trié ce fichier bam avec l'outil samtools version 1.21
+
+samtools view -S -b SRR3270634_gca_Aligned.out.sam > SRR3270378_gca_Aligned.out.bam
+
+
+samtools sort SRR3270378_gca_Aligned.out.bam -o SRR3270378_gca_sorted.bam
+
+
+On a transformé l'annotation de référence .gff en fichier .gtf avec l'outil gffread version 0.12.7 gffread genomic.gff -T -o genomic.gtf
+
+
+stringtie mapping/map_gca/T_cornetzi/SRR3270378_gca_sorted.bam -G genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594075.1/genomic.gtf -o transcripts_assembly/gca_assembly/T_cornetzi/assembled_transcripts.gtf
+
+
+gffcompare -r genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594115.1/genomic.gtf -o annotation_analysis/annotation_gca/T_cornetzi/comparison_output transcripts_assembly/gca_assembly/T_cornetzi/assembled_transcripts.gtf
+
+
+python report_annotation.py annotation_analysis/annotation_gca/T_cornetzi/comparison_output.stats cat comparison_output.stats
+
+
+Dilara
+**Génération du rapport de qualité du mapping des reads SRR3270377 sur le génome de référence gcf et gca de T.zeteki avec l'outil multiqc version 1.25.1:** 
 
 multiqc /data/projet1/projet_tutore/mapping/map_gcf/T_zeteki -o /data/projet1/projet_tutore/mapping_quality_reports/map_qual_gcf/T_zeteki
 
@@ -338,7 +378,7 @@ Le mapping des lectures SRR3270377 sur le génome de T. zeteki montre une bonne 
 Environ 88,8 % des lectures se sont alignées, dont 87,35 % de manière unique, suggérant un alignement précis. 
 La longueur moyenne des lectures alignées (178,17 nucléotides) est très proche de la longueur moyenne initiale, montrant peu de perte de données. La plupart des jonctions suivent le motif canonique GT/AG, avec des taux d’erreurs, de délétions et d'insertions très faibles (tous inférieurs à 0,4 %), ce qui atteste de la fidélité du mapping.
 
-**05/11/2024**
+**05/11/2024** Dilara
 
 **Assemblage des transcrits de T.zeteki basé sur l'annotation gcf avec l'outil stringtie version 2.2.3:**
 
@@ -423,7 +463,7 @@ On pourrait adapter le script report_annotation.py pour extraire et inclure les 
 
 En parallèle, on pourrait pousser l'analyse des transcrits non appariés en utilisant un alignement secondaire, par exemple avec Exonerate ou BLAST, pour tenter de caractériser leur origine ou leur fonction potentielle.
 
-
+Mina
 **Interprétation des Résultats de transcrit pour GCA T_cornetzi**
 
 cat comparison_output.stats
@@ -432,47 +472,43 @@ Query mRNAs : 36,862 transcrits dans 24,121 loci.
 Reference mRNAs : 18,729 transcrits dans 18,729 loci.
 Il y a beaucoup plus de transcrits assemblés que de transcrits de référence, mais c'est normal dans les études d'annotation de novo où l'on cherche à capturer la diversité transcriptomique.
 
-**Loci et Transcrits :**
+*Loci et Transcrits :*
 
 Multi-transcript loci : 6,145, ce qui signifie qu’il y a des loci avec plusieurs transcrits, montrant une complexité d'expression.
 Environ 1.5 transcrits par locus en moyenne, ce qui est un indicateur de la diversité des isoformes.
 
-**Sensibilité et Précision :**
+*Sensibilité et Précision :*
 
 Base level : Sensibilité de 73.6 % et précision de 47.2 %. Cela signifie que la majorité des bases sont identifiées correctement par rapport à la référence, mais la précision est inférieure, indiquant que de nombreux transcrits identifiés ne sont pas des correspondances exactes.
 Les niveaux d'exon, d'intron, de transcrit et de locus montrent tous des performances similaires, avec des sensibilités plus élevées pour les introns et des précisions plus faibles pour les transcrits.
 
-**Exons et Introns :**
+*Exons et Introns :*
 
 Missed exons : 25,981, ce qui représente 28.2 % des exons manquants par rapport à la référence.
 Novel exons : 21,173, ce qui signifie qu’il y a beaucoup d’exons qui n’étaient pas présents dans l'annotation de référence.
 Cela montre que l'assemblage a identifié de nombreux nouveaux éléments.
 
-**Loci Manqués et Nouveaux :**
+*Loci Manqués et Nouveaux :*
 
 Missed loci : 6,442 (34.4 %), ce qui montre que beaucoup de loci présents dans la référence ne sont pas retrouvés dans l'assemblage.
 Novel loci : 10,504, montrant encore une fois une richesse d'annotations qui ne figurent pas dans le génome de référence.
 
-**Rapport d'alignement des transcrits pour T_cornetzi** 
+**Rapport d'alignement des transcrits pour T_cornetzi**
 
 python report_annotation.py annotation_gca/T_cornetzi/comparison_output.stats annotation_gca/T_cornetzi/comparison_output.tracking annotation_gca/T_cornetzi/report_gca_T_cornetzi.txt
 
 Gènes non-supportés (approximés sur les loci) : 6442 sur 18729 (34.40%)
 
-
 Nombre total de gènes non supportés (selon le fichier .tracking) : 6816
-
 
 Exons manquants : 25981 sur 92170 (28.19%)
 
-
 Erreurs de bornes : 71.30%
-
 
 Transcrits manquants : 14350 sur 18729 (76.62%)
 
 
-**19/11/2024**
+**19/11/2024** Dilara
 
 **Assemblage des transcrits de T.zeteki basé sur l'annotation gca avec l'outil stringtie version 2.2.3**
 
@@ -507,7 +543,7 @@ Les scores de sensibilité et de précision varient selon les niveaux d’analys
 En conclusion, le nombre de transcrits correspondant parfaitement à l'annotation de référence GCA est relativement faible, ce qui pourrait refléter une couverture partielle de l'assemblage ou des divergences potentielles entre les données assemblées et l'annotation de référence.
 
 
-**20/11/2024**
+**20/11/2024** Dilara
 
 **Génération d’un rapport .txt des gènes et transcrits analysés pour T. zeteki**
 
@@ -538,6 +574,7 @@ python report_annotation.py annotation_gca/T_zeteki/comparison_output.stats anno
 En conclusion, l'annotation GCF apparaît plus fiable pour T_zeteki, présentant moins de gènes et d'exons absents, une délimitation des introns plus précise et une correspondance supérieure des transcrits avec les données d'expression.
 
 **25/11/2024**
+
 **Création du script analysis_tracking_file.py pour l'analyse plus approfondie de la correspondance des transcrits**
 
 L'objectif du script analysis_tracking_file.py est d'analyser les fichiers .tracking générés par GFFCompare pour comprendre la répartition des correspondances des transcrits par catégories (=, u, p, et other). 
