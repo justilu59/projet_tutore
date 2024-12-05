@@ -17,6 +17,8 @@ Chaque sous-dossier contient les fichiers générés après l'assemblage des tra
 Exemple de contenu d'un sous-dossier (T_zeteki/)
 
     assembled_transcripts.gtf : Fichier GTF contenant les transcrits assemblés par StringTie ou un autre outil d'assemblage.
+
+    assembled_transcripts.fasta : Fichier FASTA contenant les séquences nucléotidiques des transcrits assemblés. Utilisé pour l'analyse BUSCO afin d'évaluer la complétude des transcrits.
     
     comparison_output.assembled_transcripts.gtf.tmap : Fichier TMAP contenant les correspondances entre les transcrits assemblés et les transcrits de référence.
     
@@ -41,4 +43,7 @@ Notes techniques
 Notes supplémentaires
 
     Le fichier assembled_transcripts.gtf peut être utilisé pour des analyses downstream, comme l'identification des gènes exprimés ou l'amélioration des annotations.
+
+    Le fichier assembled_transcripts.fasta est crucial pour l'évaluation de la complétude des transcrits assemblés à l'aide de BUSCO.
+    
     Les fichiers .tmap et .refmap sont particulièrement utiles pour repérer les transcrits non annotés, les exons manquants ou les erreurs de limites dans les annotations de référence.
