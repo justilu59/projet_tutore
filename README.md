@@ -6,7 +6,7 @@ L'objectif est d'identifier les forces et faiblesses des annotations en comparan
 
 ## Etapes du projet
 
-**1.Récupération des données de génomique et de transcriptomique**
+**1. Récupération des données de génomique et de transcriptomique**
 
     Données transcriptomiques :
         
@@ -33,7 +33,7 @@ L'objectif est d'identifier les forces et faiblesses des annotations en comparan
         Chaque sous-dossier est subdivisé par espèce, et les fichiers originaux (dossier ncbi_dataset) sont conservés.
 
 
-**2.Traitement des données brutes**
+**2. Traitement des données brutes**
 
 Contrôle qualité :
 
@@ -43,7 +43,7 @@ Trimmage des lectures :
 
     Si nécessaire, les adaptateurs et bases de mauvaise qualité sont supprimés avec Trimmomatic ou Cutadapt.
 
-**3.Alignement des lectures**
+**3. Alignement des lectures**
 
 Alignement :
 
@@ -55,7 +55,7 @@ Organisation :
     
     Les fichiers d'alignement au format SAM sont stockés dans mapping, organisé de manière similaire (map_gca/ et map_gcf/).
 
-**4.Assemblage des transcrits**
+**4. Assemblage des transcrits**
 
 Objectif :
 
@@ -70,7 +70,7 @@ Organisation :
     Les fichiers assemblés au format GTF et FASTA sont stockés dans transcripts_assembly, subdivisé en gca_assembly/ et gcf_assembly/, avec des sous-dossiers pour chaque espèce.
 
 
-**5.Analyse de la Qualité des Annotations**
+**5. Analyse de la Qualité des Annotations**
 
 Comparaison des transcrits assemblés :
 
@@ -96,44 +96,83 @@ Résultats supplémentaires :
 /data/projet1/projet_tutore/
 
 ├── Cahier_de_laboratoire.md
+
 ├── README.md
+
 ├── raw_reads/
+
 │   ├── T_septentrionalis/
+
 │   ├── T_cornetzi/
+
 │   ├── T_zeteki/
+
 ├── genomes/
+
 │   ├── gca_genomes/
+
 │   │   ├── T_septentrionalis/
+
 │   │   ├── T_cornetzi/
+
 │   │   ├── T_zeteki/
+
 │   ├── gcf_genomes/
+
 ├── reads_quality_reports/
+
 │   ├── T_septentrionalis/
+
 │   ├── T_cornetzi/
+
 │   ├── T_zeteki/
+
 ├── index_genomes/
+
 │   ├── index_gca/
+
 │   │   ├── T_septentrionalis/
+
 │   │   ├── T_cornetzi/
+
 │   │   ├── T_zeteki/
+
 │   ├── index_gcf/
+
 ├── mapping/
+
 │   ├── map_gca/
+
 │   │   ├── T_septentrionalis/
+
 │   │   ├── T_cornetzi/
+
 │   │   ├── T_zeteki/
+
 │   ├── map_gcf/
+
 ├── transcripts_assembly/
+
 │   ├── gca_assembly/
+
 │   │   ├── T_septentrionalis/
+
 │   │   ├── T_cornetzi/
+
 │   │   ├── T_zeteki/
+
 │   ├── gcf_assembly/
+
 ├── annotation_analysis/
+
 │   ├── annotation_gca/
+
 │   │   ├── T_septentrionalis/
+
 │   │   ├── T_cornetzi/
+
 │   │   ├── T_zeteki/
+
 │   ├── annotation_gcf/
 
 ## Outils utilisés
