@@ -194,6 +194,18 @@ Fichiers CSV :
 
 │   ├── map_gcf/
 
+├── mapping_quality_reports/
+
+│   ├── map_qual_gca/
+
+│   │   ├── T_septentrionalis/
+
+│   │   ├── T_cornetzi/
+
+│   │   ├── T_zeteki/
+
+│   ├── map_qual_gcf/
+
 ├── transcripts_assembly/
 
 │   ├── gca_assembly/
