@@ -41,7 +41,7 @@ Contrôle qualité :
 
 Trimmage des lectures :
 
-    Si nécessaire, les adaptateurs et bases de mauvaise qualité sont supprimés avec Trimmomatic ou Cutadapt.
+    Si nécessaire, les adaptateurs et bases de mauvaise qualité sont supprimés avec Cutadapt.
 
 **3. Alignement des lectures**
 
@@ -55,7 +55,27 @@ Organisation :
     
     Les fichiers d'alignement au format SAM sont stockés dans mapping, organisé de manière similaire (map_gca/ et map_gcf/).
 
-**4. Assemblage des transcrits**
+**4. Qualité de l'alignement**
+
+Objectif :
+
+    Évaluer la qualité des alignements générés par STAR pour s'assurer qu'ils sont fiables.
+
+Rapports MultiQC :
+
+    Les rapports sont générés avec MultiQC et stockés dans mapping_quality_reports, subdivisés en :
+        
+        map_qual_gca/ : Alignements sur GCA.
+        
+        map_qual_gcf/ : Alignements sur GCF.
+    
+    Chaque sous-dossier contient :
+        
+        multiqc_report.html : Rapport global au format HTML.
+        
+        multiqc_data/ : Données brutes utilisées pour générer le rapport.
+
+**5. Assemblage des transcrits**
 
 Objectif :
 
@@ -70,7 +90,7 @@ Organisation :
     Les fichiers assemblés au format GTF et FASTA sont stockés dans transcripts_assembly, subdivisé en gca_assembly/ et gcf_assembly/, avec des sous-dossiers pour chaque espèce.
 
 
-**5. Analyse de la Qualité des Annotations**
+**6. Analyse de la Qualité des Annotations**
 
 Comparaison des transcrits assemblés :
 
@@ -83,6 +103,18 @@ Organisation :
 Scripts d'analyse :
 
     report_annotation.py : Génère un rapport global résumant les loci manquants, exons manquants, transcrits manquants, et erreurs de bornes.
+
+    analysis_tracking_file.py :
+
+    Ce script analyse les fichiers .tracking pour classifier les correspondances des transcrits assemblés avec les annotations de référence.
+    
+    Les différents types de correspondances identifiés incluent :
+        
+        Exact match : Transcrits alignés parfaitement avec l'annotation de référence.
+        
+        Partial match : Transcrits partiellement alignés (e.g., exon manquant).
+        
+        No match : Transcrits sans correspondance dans l'annotation de référence.
     
     compare_busco.py : Compare les résultats BUSCO entre GCA et GCF pour chaque espèce.
 
@@ -90,6 +122,17 @@ Résultats supplémentaires :
 
     Les fichiers FASTA des transcrits assemblés sont analysés avec BUSCO pour évaluer leur complétude.
 
+**7. Résultats supplémentaires**
+
+Fichiers CSV :
+
+    Les résultats des analyses BUSCO pour chaque espèce sont comparés dans les fichiers suivants :
+        
+        busco_differences_Tcornetzi.csv
+        
+        busco_differences_Tseptentrionalis.csv
+        
+        busco_differences_Tzeteki.csv
 
 ## Organisation des fichiers
 
