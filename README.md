@@ -1,58 +1,173 @@
 # Evaluation de l'annotation des génomes par approche transcriptomique
 
-Le but du projet est d'utiliser des données de transcriptomiques pour évaluer la qualité de deux annotation gca et gcf chez trois génomes de la fourmi Trachymyrmex.
+Ce projet vise à évaluer la qualité des annotations génomiques (GCA et GCF) pour trois espèces de la fourmi Trachymyrmex (T. septentrionalis, T. cornetzi, T. zeteki), en utilisant des données transcriptomiques. 
 
-**Récupération des données de génomique et de transcriptomique**
+L'objectif est d'identifier les forces et faiblesses des annotations en comparant les transcrits assemblés aux génomes de référence.
 
-Objectif : Stocker les données dans dossiers dédiés
+## Etapes du projet
 
+**1.Récupération des données de génomique et de transcriptomique**
 
-Les données de transcriptomique ont été récupérés sur SRA et stockées dans le dossier raw_reads qui a été subdivisé en 3 dossiers , un par éspèce différente  T_septentrionalis, T_cornetzi et T_zeteki.
+    Données transcriptomiques :
+        
+        Récupérées depuis SRA.
+        
+        Stockées dans le dossier raw_reads, subdivisé par espèce :
+            
+            T_septentrionalis/
+            
+            T_cornetzi/
+            
+            T_zeteki/
 
-Les données de génomique ont été récupérées sur le site de la NCBI et stockées dans le dossier genomes subdivisé en gca_genomes et gcf_genomes, ces 2 dossiers étant eux-mêmes subdivisés en 3, un pour chaque éspèce différente T_septentrionalis, T_cornetzi et T_zeteki.
-
-Dans chaque dossier d'éspèce a été téléchargé le dossier zippé ncbi_dataset correspondant, la subdivision originale du dossier ncbi_dataset a été conservée (ncbi_dataset/data/GCF_ ou ncbi_dataset/data/GCA_)
-
-**Traitement des données brutes**
-
-Objectif : Nettoyer et préparer les lectures de séquence pour l'analyse
-
-
-La qualité des lectures est contrôlée par l'utilisation d'outils comme FastQC qui effectue une série de contrôles et génére un rapport. Ces rapports sont stockés dans le dossier reads_qality_reports subdivisé en 3, un pour chaque éspèce T_septentrionalis, T_cornetzi et T_zeteki.
-
-Si nécessaire un trimmage est réalisé pour retirer les adapteurs et les bases de mauvaise qualité avec des outils comme Trimmomatic ou Cutadapt.
-
-**Alignement**
-
-Objectif : Aligner les lectures des séquences sur un génome de référence
-
-L'aligner STAR est utilisé pour mapper les lectures sur le génome de référence.
-
-En première étape, un indexage du génome de référence est réalisé et stocké dans le dossier index_genomes subdivisé en index_gca et index_gcf, eux-mêmes subdivisés en 3, un pour chaque éspèce différente T_septentrionalis, T_cornetzi et T_zeteki.
-
-Ensuite, le mapping est effectué et les fichiers SAM générés sont stockés dans le dossier mapping, subdivisé en map_gcf et map_gca, eux-mêmes subdivisés en 3, un pour chaque éspèce différente T_septentrionalis, T_cornetzi et T_zeteki.
-
-
-**Assemblage des transcrits**
-
-Objectif : Assembler les transcrits à partir des lectures alignées pour les comparer avec les annotations génomiques disponibles (GCA et GCF) et évaluer la qualité de ces annotations.
-
-StringTie est utilisé pour assembler les transcrits à partir des fichiers d'alignement BAM.
-
-Les fichiers de sortie de l'assemblage en format GTF sont stockés dans le dossier transcripts_assembly, subdivisé en gca_assembly et gcf_assembly, contenant chacun des sous-dossiers pour chaque espèce.
+    Données génomiques :
+        
+        Récupérées depuis NCBI.
+        
+        Stockées dans le dossier genomes, organisé en deux sous-dossiers :
+            
+            gca_genomes/ (annotations GCA)
+            
+            gcf_genomes/ (annotations GCF)
+        
+        Chaque sous-dossier est subdivisé par espèce, et les fichiers originaux (dossier ncbi_dataset) sont conservés.
 
 
-**Analyse de la Qualité des Annotations**
+**2.Traitement des données brutes**
 
-Objectif : Évaluer la précision et la couverture des annotations génomiques GCA et GCF par rapport aux transcrits assemblés.
+Contrôle qualité :
 
-GFFCompare est utilisé pour comparer les fichiers GTF des transcrits assemblés avec les annotations de référence GCA et GCF.
+    Réalisé avec FastQC, les rapports sont stockés dans reads_quality_reports, subdivisé par espèce.
 
-Différents fichiers de sortie sont créés pour chaque comparaison, fournissant des informations sur les transcrits et exons manquants, les erreurs de borne, etc., stockés dans le dossier annotation_analysis, subdivisé en annotation_gca et annotation_gcf, contenant chacun des sous-dossiers pour chaque espèce.
+Trimmage des lectures :
 
-Utilisation du script Python report_annotation.py pour extraire des statistiques importantes sur les loci manquants, exons manquants, et erreurs de bornes.
+    Si nécessaire, les adaptateurs et bases de mauvaise qualité sont supprimés avec Trimmomatic ou Cutadapt.
 
-Les pourcentages de gènes non supportés, d'exons manquants, de transcrits manquants, et d'erreurs de bornes sont calculés et comparés pour GCA et GCF.
+**3.Alignement des lectures**
 
-Les résultats sont comparés entre les annotations GCA et GCF pour identifier laquelle offre une couverture et une précision supérieures pour chaque espèce.
+Alignement :
+
+    Les lectures sont alignées sur les génomes de référence avec STAR.
+
+Organisation :
+
+    Les index de génomes sont stockés dans index_genomes, subdivisés en index_gca/ et index_gcf/, avec des sous-dossiers pour chaque espèce.
+    
+    Les fichiers d'alignement au format SAM sont stockés dans mapping, organisé de manière similaire (map_gca/ et map_gcf/).
+
+**4.Assemblage des transcrits**
+
+Objectif :
+
+    Assembler les transcrits alignés pour évaluer leur concordance avec les annotations GCA et GCF.
+
+Outil utilisé :
+
+    StringTie
+
+Organisation :
+
+    Les fichiers assemblés au format GTF et FASTA sont stockés dans transcripts_assembly, subdivisé en gca_assembly/ et gcf_assembly/, avec des sous-dossiers pour chaque espèce.
+
+
+**5.Analyse de la Qualité des Annotations**
+
+Comparaison des transcrits assemblés :
+
+    Réalisée avec GFFCompare pour évaluer les concordances, transcrits manquants, exons manquants, et erreurs de bornes.
+
+Organisation :
+
+    Les résultats sont stockés dans annotation_analysis, subdivisé en annotation_gca/ et annotation_gcf/, avec des sous-dossiers pour chaque espèce.
+
+Scripts d'analyse :
+
+    report_annotation.py : Génère un rapport global résumant les loci manquants, exons manquants, transcrits manquants, et erreurs de bornes.
+    
+    compare_busco.py : Compare les résultats BUSCO entre GCA et GCF pour chaque espèce.
+
+Résultats supplémentaires :
+
+    Les fichiers FASTA des transcrits assemblés sont analysés avec BUSCO pour évaluer leur complétude.
+
+
+## Organisation des fichiers
+
+/data/projet1/projet_tutore/
+
+├── Cahier_de_laboratoire.md
+├── README.md
+├── raw_reads/
+│   ├── T_septentrionalis/
+│   ├── T_cornetzi/
+│   ├── T_zeteki/
+├── genomes/
+│   ├── gca_genomes/
+│   │   ├── T_septentrionalis/
+│   │   ├── T_cornetzi/
+│   │   ├── T_zeteki/
+│   ├── gcf_genomes/
+├── reads_quality_reports/
+│   ├── T_septentrionalis/
+│   ├── T_cornetzi/
+│   ├── T_zeteki/
+├── index_genomes/
+│   ├── index_gca/
+│   │   ├── T_septentrionalis/
+│   │   ├── T_cornetzi/
+│   │   ├── T_zeteki/
+│   ├── index_gcf/
+├── mapping/
+│   ├── map_gca/
+│   │   ├── T_septentrionalis/
+│   │   ├── T_cornetzi/
+│   │   ├── T_zeteki/
+│   ├── map_gcf/
+├── transcripts_assembly/
+│   ├── gca_assembly/
+│   │   ├── T_septentrionalis/
+│   │   ├── T_cornetzi/
+│   │   ├── T_zeteki/
+│   ├── gcf_assembly/
+├── annotation_analysis/
+│   ├── annotation_gca/
+│   │   ├── T_septentrionalis/
+│   │   ├── T_cornetzi/
+│   │   ├── T_zeteki/
+│   ├── annotation_gcf/
+
+## Outils utilisés
+
+    FastQC (v0.11.9) : Évaluation de la qualité des lectures.
+    
+    Cutadapt (v3.4) : Nettoyage des lectures.
+    
+    STAR (v2.7.10a) : Alignement des lectures sur le génome de référence.
+    
+    StringTie (v2.1.8) : Assemblage des transcrits.
+    
+    GFFCompare (v0.12.6) : Comparaison des transcrits avec les annotations de référence.
+    
+    BUSCO (v5.4.3) : Évaluation de la complétude des transcrits assemblés.
+    
+    Python scripts :
+        
+        report_annotation.py : Génération de rapports d'analyse.
+        
+        compare_busco.py : Comparaison des résultats BUSCO.
+
+## Résultats attendus
+
+Pourcentages calculés :
+
+    Gènes non supportés.
+    
+    Transcrits et exons manquants.
+    
+    Erreurs de bornes.
+
+Comparaison GCA vs GCF :
+
+    Identifier l'annotation offrant la meilleure couverture et précision pour chaque espèce.
+
 
