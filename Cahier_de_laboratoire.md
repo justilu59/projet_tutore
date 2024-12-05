@@ -341,7 +341,7 @@ Mapping des reads SRR3270378_1 et SRR3270378_2 de T.cornetzi sur le génome de r
 
 STAR --genomeDir index_genomes/index_gcf/T_cornetzi --sjdbGTFfile genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594075.2/genomic.gff --readFilesIn raw_reads/T_cornetzi/SRR3270378_1.fastq.gz raw_reads/T_cornetzi/SRR3270378_2.fastq.gz --runThreadN 4 --outFileNamePrefix mapping/map_gcf/T_cornetzi/SRR3270378_gca_ --readFilesCommand zcat
 
-Génération du rapport de qualité du mapping des reads SRR3270634 sur le génome de référence gca de T.cornetzi avec l'outil multiqc version 1.25.1:
+Génération du rapport de qualité du mapping des reads SRR3270378 sur le génome de référence gca de T.cornetzi avec l'outil multiqc version 1.25.1:
 
 multiqc /data/projet1/projet_tutore/mapping/map_gca/T_cornetzi -o /data/projet1/projet_tutore/mapping_quality_reports/map_qual_gca/T_cornetzi
 
@@ -359,7 +359,7 @@ On a transformé l'annotation de référence .gff en fichier .gtf avec l'outil g
 stringtie mapping/map_gca/T_cornetzi/SRR3270378_gca_sorted.bam -G genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594075.1/genomic.gtf -o transcripts_assembly/gca_assembly/T_cornetzi/assembled_transcripts.gtf
 
 
-gffcompare -r genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594115.1/genomic.gtf -o annotation_analysis/annotation_gca/T_cornetzi/comparison_output transcripts_assembly/gca_assembly/T_cornetzi/assembled_transcripts.gtf
+gffcompare -r genomes/gca_genomes/T_cornetzi/ncbi_dataset/data/GCA_001594075.1/genomic.gtf -o annotation_analysis/annotation_gca/T_cornetzi/comparison_output transcripts_assembly/gca_assembly/T_cornetzi/assembled_transcripts.gtf
 
 
 python report_annotation.py annotation_analysis/annotation_gca/T_cornetzi/comparison_output.stats cat comparison_output.stats
